@@ -77,6 +77,55 @@ def find_sequence_fragments(sequence, csv_file_path, sequence_number):
 
     return result, index
 
+def format_well(well):
+    """Convert well format from B3 to B03"""
+    letter = well[0]
+    number = well[1:]
+    return f"{letter}0{number}" if len(number) == 1 else f"{letter}{number}"
+
+def get_destination_well(seq_num):
+    """Get destination well based on sequence number"""
+    destinations = {1: 'A01', 2: 'B01', 3: 'C01'}
+    return destinations[seq_num]
+
+def write_worklist(all_wells, output_dir):
+    """Write worklist CSV file"""
+    worklist_file = os.path.join(output_dir, 'fragment_assembly_worklist.csv')
+    
+    rows = []
+    index = 1
+    
+    for seq_num, wells in enumerate(all_wells, 1):
+        # Ensure we have exactly 7 fragments
+        if len(wells) != 8:
+            raise ValueError(f"Sequence {seq_num} has {len(wells)} fragments, expected 8")
+        
+        destination_well = get_destination_well(seq_num)
+        
+        for well in wells:
+            rows.append({
+                'Index': f"{index:02d}",
+                'Source_Plate': 'DNA_frags',
+                'Source_Well': format_well(well),
+                'Destination_Plate': 'Rxn_plate',
+                'Destination_Well': destination_well,
+                'Volume': '5',
+                'Pre_Aspirate_Mix_Volume': '0',
+                'Post_Dispense_Mix_Volume': '0'
+            })
+            index += 1
+    
+    with open(worklist_file, 'w', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=[
+            'Index', 'Source_Plate', 'Source_Well', 'Destination_Plate',
+            'Destination_Well', 'Volume', 'Pre_Aspirate_Mix_Volume',
+            'Post_Dispense_Mix_Volume'
+        ])
+        writer.writeheader()
+        writer.writerows(rows)
+    
+    print(f"- Worklist: {worklist_file}")
+
 def write_results(all_fragments, all_wells, output_dir):
     """Write results to output files in a machine-readable format."""
     os.makedirs(output_dir, exist_ok=True)
@@ -103,6 +152,9 @@ def write_results(all_fragments, all_wells, output_dir):
         for seq_num, (fragments, wells) in enumerate(zip(all_fragments, all_wells), 1):
             for fragment, well in zip(fragments, wells):
                 f.write(f"{seq_num}\t{fragment}\t{well}\n")
+    
+    # Write worklist CSV
+    write_worklist(all_wells, output_dir)
     
     print(f"Wrote machine-readable output files:")
     print(f"- Fragments: {fragments_file}")
