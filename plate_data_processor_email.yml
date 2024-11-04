@@ -1,14 +1,15 @@
 email:
-  smtp_server: smtp.gmail.com
-  smtp_port: 587
-  username: proteinautolab@gmail.com
+  from_address: proteinautolabl@gmail.com
   password: lubj hcth bufs jymw
-  from_address: proteinautolab@gmail.com
+  smtp_port: 587
+  smtp_server: smtp.gmail.com
   to_address: coban.duke@gmail.com
   use_tls: true
-
+  username: proteinautolab@gmail.com
 paths:
-  repo_path: /path/to/your/repository
   input_filename: plate_data.csv
-  output_filename: processed_plate_data.csv
   log_file: plate_processor.log
+  output_filename: processed_plate_data.csv
+  repo_path: /Users/cobanbrooks/Documents/RESEARCH/auto_lab
+processing:
+  script_path: /Users/cobanbrooks/Documents/RESEARCH/auto_lab/process_plate_data.py
