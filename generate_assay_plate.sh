@@ -27,6 +27,9 @@ if [ ! -f "$CSV_FILE" ]; then
     error_exit "CSV file '$CSV_FILE' not found"
 fi
 
+# Remove plate_layout.json if it exists (whether file or directory)
+rm -rf "$OUTPUT_JSON"
+
 # Run the Python script
 echo "Starting plate layout generation..."
 echo "Input sequence file: $SEQUENCE_FILE"

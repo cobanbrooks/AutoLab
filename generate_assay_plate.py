@@ -58,9 +58,9 @@ def get_parent_sequence(fragments):
     return parent_sequence
 
 def create_plate_layout(sequences):
-    """Create plate layout dictionary for first fragment only"""
+    """Create plate layout dictionary"""
     layout = {}
-    rows = 'ABC'  # 3 rows for replicates
+    rows = 'ACE'  # 3 spaced rows for replicates
     sugars = ['glu', 'xyl', 'man']
     
     # Get parent sequences for each sequence
@@ -84,38 +84,50 @@ def create_plate_layout(sequences):
                 
                 # Create well identifier using full parent sequence
                 layout[well] = f"{parent_sequences[seq_num]}-R{rep_idx}-{sugar}"
+        
+        # Add negative controls in G row for this sugar
+        for rep_idx in range(3):
+            well = f"G{sugar_col_start + rep_idx}"
+            layout[well] = f"N-{sugar}-R{rep_idx + 1}"
 
     return layout
 
+def write_results(fragments, output_file):
+    """Write results to JSON file."""    
+    # Create plate layout
+    layout = create_plate_layout(fragments)
+    
+    # Write JSON output to specified file
+    with open(output_file, 'w') as f:
+        json.dump(layout, f, indent=2)
+    
+    print(f"Plate layout written to {output_file}")
+
 def main():
     if len(sys.argv) != 4:
-        print("Usage: python script.py <sequence_file> <csv_file> <output_json>")
+        print("Usage: python script_name.py <sequence_file> <csv_file_path> <output_json>")
         sys.exit(1)
 
     sequence_file = sys.argv[1]
-    csv_file = sys.argv[2]
-    output_json = sys.argv[3]
+    csv_file_path = sys.argv[2]
+    output_file = sys.argv[3]
 
     try:
         # Read sequences
         sequences = read_sequence_file(sequence_file)
-
-        # Process each sequence to get fragments
+        
+        # Process each sequence
         sequence_fragments = {}
         for i, sequence in enumerate(sequences, 1):
-            fragments = find_sequence_fragments(sequence, csv_file, i)
+            fragments = find_sequence_fragments(sequence, csv_file_path, i)
             sequence_fragments[str(i)] = fragments
-            print(f"\nSequence {i} fragments: {fragments}")
-
-        # Create plate layout
-        layout = create_plate_layout(sequence_fragments)
-
-        # Write JSON output
-        with open(output_json, 'w') as f:
-            json.dump(layout, f, indent=2)
-
-        print(f"\nPlate layout written to {output_json}")
-
+            print(f"Sequence {i} fragments: {fragments}")
+        
+        # Write results
+        write_results(sequence_fragments, output_file)
+        
+        print("\nProcessing completed successfully!")
+        
     except Exception as e:
         print(f"Error: {e}", file=sys.stderr)
         sys.exit(1)
