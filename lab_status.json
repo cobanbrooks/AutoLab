@@ -1,6 +1,6 @@
 {
   "state": "Waiting for new sequence",
-  "current_step": "Processing complete",
+  "current_step": null,
   "error": null,
-  "last_updated": "2024-12-04T13:20:10.472567"
+  "last_updated": "2024-12-04T13:24:49.909687"
 }
