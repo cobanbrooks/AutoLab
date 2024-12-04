@@ -1,24 +1,76 @@
 import os
-import time
+import sys
 import yaml
 import git
+import json
+import time
 import logging
 import hashlib
 import subprocess
+from enum import Enum
+from datetime import datetime
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
+# Status Tracking
+class LabState(Enum):
+    IDLE = "Waiting for new sequence"
+    SEQUENCE_RECEIVED = "New sequence received, generating instructions"
+    EXPERIMENTING = "Robot performing DNA assembly, amplification, expression, assay"
+    PROCESSING = "Processing plate data"
+    ERROR = "Error encountered"
+
+class LabStatus:
+    def __init__(self, repo_path, status_file='lab_status.json'):
+        self.status_file = os.path.join(repo_path, status_file)
+        self.repo = git.Repo(repo_path)
+        self.state = LabState.IDLE
+        self.current_step = None
+        self.error = None
+        
+    def update_state(self, state: LabState, step_details: str = None, error: str = None):
+        """Update the lab's current state and push to GitHub"""
+        self.state = state
+        self.current_step = step_details
+        self.error = error
+        self._write_and_push_status()
+    
+    def get_status(self):
+        """Get current status"""
+        return {
+            'state': self.state.value,
+            'current_step': self.current_step,
+            'error': self.error,
+            'last_updated': datetime.now().isoformat()
+        }
+    
+    def _write_and_push_status(self):
+        """Write status to file and push to GitHub"""
+        try:
+            # Write status locally
+            with open(self.status_file, 'w') as f:
+                json.dump(self.get_status(), f, indent=2)
+            
+            # Push to GitHub
+            self.repo.index.add([os.path.basename(self.status_file)])
+            self.repo.index.commit('Update lab status')
+            self.repo.remotes.origin.push()
+        except Exception as e:
+            print(f"Error updating status: {e}")
+
 class PlateDataHandler(FileSystemEventHandler):
-    def __init__(self, repo_path, input_file, output_file):
+    def __init__(self, repo_path, input_file, output_file, status):
         self.repo_path = repo_path
         self.input_file = input_file
         self.output_file = output_file
         self.repo = git.Repo(repo_path)
         self.logger = logging.getLogger('lab_automation')
+        self.status = status
         
     def on_modified(self, event):
         if event.src_path.endswith(self.input_file):
             self.logger.info("Plate data modified, processing...")
+            self.status.update_state(LabState.PROCESSING, "Processing plate data")
             self.process_and_push()
             
     def process_and_push(self):
@@ -33,19 +85,21 @@ class PlateDataHandler(FileSystemEventHandler):
             self.repo.index.commit('Update processed plate data')
             self.repo.remotes.origin.push()
             self.logger.info("Processed data pushed to GitHub")
+            self.status.update_state(LabState.IDLE, "Processing complete") 
+
             
         except Exception as e:
             self.logger.error(f"Error processing plate data: {e}")
 
 class LabController:
     def __init__(self, config_path):
-
+        # Setup logging
         logging.basicConfig(
             level=logging.INFO,
             format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-            handlers=[logging.StreamHandler(), logging.FileHandler('lab_automation.log')]
+            handlers=[logging.StreamHandler(), logging.FileHandler('lab_controller.log')]
         )
-        self.logger = logging.getLogger('lab_automation')
+        self.logger = logging.getLogger('lab_controller')
         
         # Load config
         with open(config_path) as f:
@@ -53,6 +107,7 @@ class LabController:
             
         self.repo = git.Repo(self.config['repo_path'])
         self.sequence_hash = None
+        self.status = LabStatus(self.config['repo_path'])
         
     def check_sequence_updates(self):
         """Check for updates to sequence_query.txt on GitHub"""
@@ -101,7 +156,8 @@ class LabController:
         handler = PlateDataHandler(
             self.config['repo_path'],
             'plate_data.csv',
-            'processed_plate_data.csv'
+            'processed_plate_data.csv',
+            self.status
         )
         
         observer = Observer()
@@ -111,6 +167,7 @@ class LabController:
         
     def run(self):
         self.logger.info("Starting lab automation system")
+        self.status.update_state(LabState.IDLE)
         observer = None
         
         try:
@@ -118,6 +175,7 @@ class LabController:
                 # Check for sequence updates
                 if self.check_sequence_updates():
                     self.logger.info("New sequence detected")
+                    self.status.update_state(LabState.SEQUENCE_RECEIVED)
                     
                     # Stop existing monitoring if active
                     if observer:
@@ -126,6 +184,7 @@ class LabController:
                     
                     # Generate new lab files
                     if self.generate_lab_files():
+                        self.status.update_state(LabState.EXPERIMENTING)
                         # Start monitoring plate data
                         observer = self.start_plate_monitoring()
                         
@@ -133,12 +192,21 @@ class LabController:
                 
         except KeyboardInterrupt:
             self.logger.info("Shutting down...")
+            self.status.update_state(LabState.IDLE, "Shutdown complete")
             if observer:
                 observer.stop()
                 observer.join()
+        except Exception as e:
+            self.status.update_state(LabState.ERROR, error=str(e))
+            self.logger.error(f"Error: {e}")
 
 if __name__ == "__main__":
-
+    # Default configuration
+    default_config = {
+        'repo_path': '/path/to/repo',
+        'poll_interval': 60  # seconds
+    }
+    
     config_path = 'lab_config.yml'
     if not os.path.exists(config_path):
         with open(config_path, 'w') as f:
