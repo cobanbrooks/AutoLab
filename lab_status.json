@@ -1,6 +1,6 @@
 {
-  "state": "New sequence received, generating instructions",
+  "state": "Robot performing DNA assembly, amplification, expression, assay",
   "current_step": null,
   "error": null,
-  "last_updated": "2024-12-19T17:14:30.539189"
+  "last_updated": "2024-12-19T17:14:31.409358"
 }
