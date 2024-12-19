@@ -1,6 +1,6 @@
 {
-  "state": "Robot performing DNA assembly, amplification, expression, assay",
+  "state": "Waiting for new sequence",
   "current_step": null,
   "error": null,
-  "last_updated": "2024-12-04T13:45:36.163938"
+  "last_updated": "2024-12-19T16:30:09.661230"
 }
