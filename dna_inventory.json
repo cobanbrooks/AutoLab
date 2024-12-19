@@ -1,0 +1,290 @@
+{
+  "p1f0": {
+    "well": "C3",
+    "volume": 200,
+    "history": []
+  },
+  "p1f1": {
+    "well": "C4",
+    "volume": 200,
+    "history": []
+  },
+  "p1f2": {
+    "well": "C5",
+    "volume": 200,
+    "history": []
+  },
+  "p1f3": {
+    "well": "C6",
+    "volume": 200,
+    "history": []
+  },
+  "p1f4": {
+    "well": "C7",
+    "volume": 200,
+    "history": []
+  },
+  "p1f5": {
+    "well": "C8",
+    "volume": 200,
+    "history": []
+  },
+  "p1f6": {
+    "well": "C9",
+    "volume": 200,
+    "history": []
+  },
+  "p1f7": {
+    "well": "C10",
+    "volume": 200,
+    "history": []
+  },
+  "p2f0": {
+    "well": "D3",
+    "volume": 200,
+    "history": []
+  },
+  "p2f1": {
+    "well": "D4",
+    "volume": 200,
+    "history": []
+  },
+  "p2f2": {
+    "well": "D5",
+    "volume": 200,
+    "history": []
+  },
+  "p2f3": {
+    "well": "D6",
+    "volume": 200,
+    "history": []
+  },
+  "p2f4": {
+    "well": "D7",
+    "volume": 200,
+    "history": []
+  },
+  "p2f5": {
+    "well": "D8",
+    "volume": 200,
+    "history": []
+  },
+  "p2f6": {
+    "well": "D9",
+    "volume": 200,
+    "history": []
+  },
+  "p2f7": {
+    "well": "D10",
+    "volume": 200,
+    "history": []
+  },
+  "p3f0": {
+    "well": "E3",
+    "volume": 200,
+    "history": []
+  },
+  "p3f1": {
+    "well": "E4",
+    "volume": 200,
+    "history": []
+  },
+  "p3f2": {
+    "well": "E5",
+    "volume": 200,
+    "history": []
+  },
+  "p3f3": {
+    "well": "E6",
+    "volume": 200,
+    "history": []
+  },
+  "p3f4": {
+    "well": "E7",
+    "volume": 200,
+    "history": []
+  },
+  "p3f5": {
+    "well": "E8",
+    "volume": 200,
+    "history": []
+  },
+  "p3f6": {
+    "well": "E9",
+    "volume": 200,
+    "history": []
+  },
+  "p3f7": {
+    "well": "E10",
+    "volume": 185.0,
+    "history": [
+      {
+        "timestamp": "2024-12-19T16:30:13.981576",
+        "volume_used": 5.0,
+        "volume_remaining": 195.0
+      },
+      {
+        "timestamp": "2024-12-19T16:38:11.258543",
+        "volume_used": 5.0,
+        "volume_remaining": 190.0
+      },
+      {
+        "timestamp": "2024-12-19T16:40:38.892264",
+        "volume_used": 5.0,
+        "volume_remaining": 185.0
+      }
+    ]
+  },
+  "p4f0": {
+    "well": "F3",
+    "volume": 200,
+    "history": []
+  },
+  "p4f1": {
+    "well": "F4",
+    "volume": 200,
+    "history": []
+  },
+  "p4f2": {
+    "well": "F5",
+    "volume": 200,
+    "history": []
+  },
+  "p4f3": {
+    "well": "F6",
+    "volume": 200,
+    "history": []
+  },
+  "p4f4": {
+    "well": "F7",
+    "volume": 200,
+    "history": []
+  },
+  "p4f5": {
+    "well": "F8",
+    "volume": 200,
+    "history": []
+  },
+  "p4f6": {
+    "well": "F9",
+    "volume": 200,
+    "history": []
+  },
+  "p4f7": {
+    "well": "F10",
+    "volume": 185.0,
+    "history": [
+      {
+        "timestamp": "2024-12-19T16:30:13.981576",
+        "volume_used": 5.0,
+        "volume_remaining": 195.0
+      },
+      {
+        "timestamp": "2024-12-19T16:38:11.258543",
+        "volume_used": 5.0,
+        "volume_remaining": 190.0
+      },
+      {
+        "timestamp": "2024-12-19T16:40:38.892264",
+        "volume_used": 5.0,
+        "volume_remaining": 185.0
+      }
+    ]
+  },
+  "p5f0": {
+    "well": "G3",
+    "volume": 200,
+    "history": []
+  },
+  "p5f1": {
+    "well": "G4",
+    "volume": 200,
+    "history": []
+  },
+  "p5f2": {
+    "well": "G5",
+    "volume": 200,
+    "history": []
+  },
+  "p5f3": {
+    "well": "G6",
+    "volume": 200,
+    "history": []
+  },
+  "p5f4": {
+    "well": "G7",
+    "volume": 200,
+    "history": []
+  },
+  "p5f5": {
+    "well": "G8",
+    "volume": 200,
+    "history": []
+  },
+  "p5f6": {
+    "well": "G9",
+    "volume": 200,
+    "history": []
+  },
+  "p5f7": {
+    "well": "G10",
+    "volume": 185.0,
+    "history": [
+      {
+        "timestamp": "2024-12-19T16:30:13.981576",
+        "volume_used": 5.0,
+        "volume_remaining": 195.0
+      },
+      {
+        "timestamp": "2024-12-19T16:38:11.258543",
+        "volume_used": 5.0,
+        "volume_remaining": 190.0
+      },
+      {
+        "timestamp": "2024-12-19T16:40:38.892264",
+        "volume_used": 5.0,
+        "volume_remaining": 185.0
+      }
+    ]
+  },
+  "p6f0": {
+    "well": "H3",
+    "volume": 200,
+    "history": []
+  },
+  "p6f1": {
+    "well": "H4",
+    "volume": 200,
+    "history": []
+  },
+  "p6f2": {
+    "well": "H5",
+    "volume": 200,
+    "history": []
+  },
+  "p6f3": {
+    "well": "H6",
+    "volume": 200,
+    "history": []
+  },
+  "p6f4": {
+    "well": "H7",
+    "volume": 200,
+    "history": []
+  },
+  "p6f5": {
+    "well": "H8",
+    "volume": 200,
+    "history": []
+  },
+  "p6f6": {
+    "well": "H9",
+    "volume": 200,
+    "history": []
+  },
+  "p6f7": {
+    "well": "H10",
+    "volume": 200,
+    "history": []
+  }
+}
