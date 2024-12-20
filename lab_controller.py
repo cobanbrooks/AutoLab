@@ -7,6 +7,7 @@ import time
 import logging
 import hashlib
 import subprocess
+import pandas as pd
 from enum import Enum
 from datetime import datetime
 from watchdog.observers import Observer
@@ -47,11 +48,9 @@ class LabStatus:
     def _write_and_push_status(self):
         """Write status to file and push to GitHub"""
         try:
-            # Write status locally
             with open(self.status_file, 'w') as f:
                 json.dump(self.get_status(), f, indent=2)
             
-            # Push to GitHub
             self.repo.index.add([os.path.basename(self.status_file)])
             self.repo.index.commit('Update lab status')
             self.repo.remotes.origin.push()
@@ -66,30 +65,212 @@ class PlateDataHandler(FileSystemEventHandler):
         self.repo = git.Repo(repo_path)
         self.logger = logging.getLogger('lab_automation')
         self.status = status
+        self.last_processed_hash = None
+
+    def get_file_hash(self, filepath):
+        with open(filepath, 'rb') as f:
+            return hashlib.md5(f.read()).hexdigest()
         
     def on_modified(self, event):
         if event.src_path.endswith(self.input_file):
+            #checks if content of the file changed
+            current_hash = self.get_file_hash(event.src_path)
+            if current_hash == self.last_processed_hash:
+                return
+            
             self.logger.info("Plate data modified, processing...")
             self.status.update_state(LabState.PROCESSING, "Processing plate data")
             self.process_and_push()
+            self.last_processed_hash = current_hash
             
     def process_and_push(self):
         try:
             # Process plate data
             subprocess.run(['python', 'process_plate_data.py',
-                          '--input', self.input_file,
-                          '--output', self.output_file], check=True)
+                        '--input', self.input_file,
+                        '--output', self.output_file], check=True)
+            
+            # Update DNA inventory CSV
+            dna_tracker = DNATracker()
+            dna_tracker.export_to_csv()
             
             # Push to GitHub
-            self.repo.index.add([self.output_file])
-            self.repo.index.commit('Update processed plate data')
+            self.repo.index.add([
+                self.output_file,
+                'dna_inventory.csv',
+                'dna_inventory.json'
+            ])
+            self.repo.index.commit('Update processed plate data and DNA inventory')
             self.repo.remotes.origin.push()
-            self.logger.info("Processed data pushed to GitHub")
+            self.logger.info("Processed data and DNA inventory pushed to GitHub")
             self.status.update_state(LabState.IDLE, "Processing complete") 
 
-            
         except Exception as e:
             self.logger.error(f"Error processing plate data: {e}")
+
+class DNATracker:
+    def __init__(self, inventory_file='dna_inventory.json'):
+        self.inventory_file = inventory_file
+        self.inventory = self.load_inventory()
+        
+    def load_inventory(self):
+        """Load or initialize DNA fragment inventory"""
+        try:
+            with open(self.inventory_file, 'r') as f:
+                return json.load(f)
+        except FileNotFoundError:
+            # Initialize with 48 fragments, 200µL each
+            inventory = {}
+            for p in range(1, 7):  # 6 parents
+                for f in range(8):  # 8 fragments each
+                    fragment_id = f"p{p}f{f}"
+                    # Format well as "A01", "B01", etc.
+                    row = chr(66 + (p-1))  # B + offset
+                    col = str(f + 3).zfill(2)  # Start at 03
+                    well = f"{row}{col}"
+                    
+                    inventory[fragment_id] = {
+                        "well": well,
+                        "volume": 200,  # Initial volume in µL
+                        "history": []
+                    }
+            
+            self.save_inventory(inventory)
+            return inventory
+            
+    def save_inventory(self, inventory=None):
+        """Save current inventory state"""
+        if inventory is None:
+            inventory = self.inventory
+        with open(self.inventory_file, 'w') as f:
+            json.dump(inventory, f, indent=2)
+            
+    def get_well_formats(self, well):
+        """Convert between A01 and A1 formats to ensure matching"""
+        row = well[0]
+        col = well[1:]
+        return [well, f"{row}{int(col)}", f"{row}{int(col):02d}"]
+
+    def update_volumes(self, worklist_file):
+        """Update volumes based on worklist"""
+        df = pd.read_csv(worklist_file)
+
+        # Track all updates for this run
+        updates = []
+        timestamp = datetime.now().isoformat()
+        
+        for _, row in df.iterrows():
+            well = row['Source_Well']
+            volume_used = float(row['Volume'])
+            well_formats = self.get_well_formats(well)
+            
+            # Find fragment id from well
+            fragment_id = None
+            for fid, data in self.inventory.items():
+                if data['well'] in well_formats:
+                    fragment_id = fid
+                    break
+            
+            if fragment_id:
+                # Update volume
+                current_vol = self.inventory[fragment_id]['volume']
+                new_vol = current_vol - volume_used
+                
+                # Record the update
+                update = {
+                    'timestamp': timestamp,
+                    'volume_used': volume_used,
+                    'volume_remaining': new_vol
+                }
+                
+                self.inventory[fragment_id]['volume'] = new_vol
+                self.inventory[fragment_id]['history'].append(update)
+                
+                updates.append({
+                    'fragment': fragment_id,
+                    'well': well,
+                    'volume_used': volume_used,
+                    'volume_remaining': new_vol
+                })
+            else:
+                print(f"No matching fragment found for well {well}")
+        
+        # Save updated inventory
+        self.save_inventory()
+        return updates
+        
+    def export_to_csv(self, filename='dna_inventory.csv'):
+        """Export current inventory to CSV"""
+        rows = []
+        for fid, data in self.inventory.items():
+            rows.append({
+                'Fragment_ID': fid,
+                'Well': data['well'],
+                'Volume_Remaining': data['volume'],
+                'Last_Updated': data['history'][-1]['timestamp'] if data['history'] else 'Never'
+            })
+            
+        df = pd.DataFrame(rows)
+        df.to_csv(filename, index=False)
+
+    def refill_dna(self, fragment_id=None, well=None, volume_added=200):
+        """
+        Refill DNA fragment wells with specified volume
+        Can use either fragment_id (e.g., 'p1f0') or well location (e.g., 'A01')
+        """
+        timestamp = datetime.now().isoformat()
+        updates = []
+
+        # Handle single refill
+        if fragment_id or well:
+            if fragment_id and fragment_id in self.inventory:
+                target = fragment_id
+            else:
+                # Find fragment_id from well
+                well_formats = self.get_well_formats(well)
+                target = None
+                for fid, data in self.inventory.items():
+                    if data['well'] in well_formats:
+                        target = fid
+                        break
+            
+            if target:
+                current_vol = self.inventory[target]['volume']
+                new_vol = current_vol + volume_added
+                
+                # Record the update
+                self.inventory[target]['volume'] = new_vol
+                self.inventory[target]['history'].append({
+                    'timestamp': timestamp,
+                    'volume_added': volume_added,
+                    'volume_total': new_vol
+                })
+                
+                updates.append({
+                    'fragment': target,
+                    'well': self.inventory[target]['well'],
+                    'volume_added': volume_added,
+                    'volume_total': new_vol
+                })
+                print(f"Refilled {target} with {volume_added}µL. New total: {new_vol}µL")
+            else:
+                print(f"No matching fragment found for {fragment_id or well}")
+        
+        self.save_inventory()
+        return updates
+    
+    def print_inventory_report(self):
+        """Print current inventory status"""
+        print("\nDNA Fragment Inventory Report")
+        print("=" * 50)
+        print(f"{'Fragment':<10} {'Well':<8} {'Volume (µL)':<12} {'Status':<10}")
+        print("-" * 50)
+        
+        for fid, data in sorted(self.inventory.items()):
+            status = "LOW" if data['volume'] < 50 else "OK"
+            print(f"{fid:<10} {data['well']:<8} {data['volume']:<12.1f} {status:<10}")
+            
+        print("=" * 50)
 
 class LabController:
     def __init__(self, config_path):
@@ -135,6 +316,18 @@ class LabController:
                 'sequence_segments.csv',
                 'output'
             ], check=True)
+
+            # Update DNA volumes
+            dna_tracker = DNATracker()
+            updates = dna_tracker.update_volumes('output/fragment_assembly_worklist.csv')
+
+            # Log volume updates
+            self.logger.info("Updated DNA volumes")
+            for update in updates:
+                self.logger.info(
+                    f"Fragment {update['fragment']} in well {update['well']}: "
+                    f"used {update['volume_used']}µL, {update['volume_remaining']}µL remaining"
+            )
             
             # Generate plate layout
             subprocess.run([
@@ -200,6 +393,7 @@ class LabController:
             self.status.update_state(LabState.ERROR, error=str(e))
             self.logger.error(f"Error: {e}")
 
+    
 if __name__ == "__main__":
     # Default configuration
     default_config = {
@@ -214,5 +408,5 @@ if __name__ == "__main__":
         print(f"Created default config at {config_path}")
         exit(1)
         
-    automation = LabAutomation(config_path)
+    automation = LabController(config_path)
     automation.run()
