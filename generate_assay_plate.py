@@ -51,11 +51,12 @@ def find_sequence_fragments(sequence, csv_file_path, sequence_number):
 
     return result
 
-def get_parent_sequence(fragments):
+def get_chimera_sequence(fragments):
     """Create parent sequence string from list of fragments"""
     sorted_fragments = sorted(fragments, key=lambda x: int(x[3:]))
-    parent_sequence = ''.join(fragment[1:2] for fragment in sorted_fragments)
-    return parent_sequence
+    chimera_sequence = ''.join(fragment[1:2] for fragment in sorted_fragments)
+    print("chimera sequence: ", chimera_sequence)
+    return chimera_sequence
 
 def create_plate_layout(sequences):
     """Create plate layout dictionary"""
@@ -65,7 +66,7 @@ def create_plate_layout(sequences):
     
     # Get parent sequences for each sequence
     parent_sequences = {
-        seq_num: get_parent_sequence(fragments)
+        seq_num: get_chimera_sequence(fragments)
         for seq_num, fragments in sequences.items()
     }
     
