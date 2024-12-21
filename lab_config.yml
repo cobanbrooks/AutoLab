@@ -1,0 +1,37 @@
+# Repository Settings
+repo_path: "/Users/cobanbrooks/Documents/RESEARCH/auto_lab"
+branch: "main"
+
+# Timing Settings
+poll_interval: 60  #seconds
+watchdog_interval: 10  #seconds
+
+# File Paths
+files:
+  sequence_query: "sequence_query.txt"
+  sequence_segments: "sequence_segments.csv"
+  plate_data: "plate_data.csv"
+  processed_data: "processed_plate_data.csv"
+  worklist: "fragment_assembly_worklist.csv"
+  plate_layout: "plate_layout.json"
+
+# Logging Configuration
+logging:
+  file: "lab_automation.log"
+  level: "INFO"  # Can be DEBUG, INFO, WARNING, ERROR, CRITICAL
+
+# Email Notifications (optional)
+email:
+  enabled: true
+  smtp_server: "smtp.gmail.com"
+  smtp_port: 587
+  username: "proteinautolab@gmail.com"
+  password: "lubj hcth bufs jymw"  # Your app-specific password
+  from_address: "proteinautolab@gmail.com"
+  to_address: "coban.duke@gmail.com"
+  use_tls: true
+
+# Processing Settings
+processing:
+  max_retries: 3  # Number of times to retry failed operations
+  retry_delay: 5  # Seconds to wait between retries
