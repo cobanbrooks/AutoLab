@@ -1,0 +1,18 @@
+To do items:
+
+Coding:
+- Volume tracking for reagents
+- Running CSV with all tested protein variants and corresponding specificities
+- Plate data processing script (need do run assay first)
+- Retry proteins if inactive below threshold
+- Run method from command line
+
+Lab prep:
+- Miniprep low frags
+- Make reagents + substrates
+- Test each step at a time with gels
+
+Robot:
+- 60uL and 300uL liquid handling
+- Optimize pipetting spacing
+
