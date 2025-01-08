@@ -124,42 +124,9 @@ def write_worklist(all_wells, output_dir):
         writer.writeheader()
         writer.writerows(rows)
     
+    
     print(f"- Worklist: {worklist_file}")
 
-def write_results(all_fragments, all_wells, output_dir):
-    """Write results to output files in a machine-readable format."""
-    os.makedirs(output_dir, exist_ok=True)
-    
-    fragments_file = os.path.join(output_dir, 'fragments.txt')
-    wells_file = os.path.join(output_dir, 'wells.txt')
-    combined_file = os.path.join(output_dir, 'combined.tsv')
-    
-    # Write fragments (tab-delimited: sequence_number<tab>fragment)
-    with open(fragments_file, 'w') as f:
-        for seq_num, fragments in enumerate(all_fragments, 1):
-            for fragment in fragments:
-                f.write(f"{seq_num}\t{fragment}\n")
-    
-    # Write wells (tab-delimited: sequence_number<tab>well)
-    with open(wells_file, 'w') as f:
-        for seq_num, wells in enumerate(all_wells, 1):
-            for well in wells:
-                f.write(f"{seq_num}\t{well}\n")
-    
-    # Write combined file (tab-delimited: sequence_number<tab>fragment<tab>well)
-    with open(combined_file, 'w') as f:
-        f.write("sequence\tfragment\twell\n")  # Header line
-        for seq_num, (fragments, wells) in enumerate(zip(all_fragments, all_wells), 1):
-            for fragment, well in zip(fragments, wells):
-                f.write(f"{seq_num}\t{fragment}\t{well}\n")
-    
-    # Write worklist CSV
-    write_worklist(all_wells, output_dir)
-    
-    print(f"Wrote machine-readable output files:")
-    print(f"- Fragments: {fragments_file}")
-    print(f"- Wells: {wells_file}")
-    print(f"- Combined: {combined_file}")
 
 def main():
     print("Starting sequence fragment finder...")
@@ -184,8 +151,8 @@ def main():
             all_fragments.append(fragments)
             all_wells.append(wells)
         
-        # Write results to files
-        write_results(all_fragments, all_wells, output_dir)
+        # Write worklist
+        write_worklist(all_wells, output_dir)
         
         print("\nProcessing completed successfully!")
         
