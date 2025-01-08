@@ -85,7 +85,7 @@ def format_well(well):
 
 def get_destination_well(seq_num):
     """Get destination well based on sequence number"""
-    destinations = {1: 'A01', 2: 'B01', 3: 'C01'}
+    destinations = {1: 'A01', 2: 'C01', 3: 'E01'}
     return destinations[seq_num]
 
 def write_worklist(all_wells, output_dir):

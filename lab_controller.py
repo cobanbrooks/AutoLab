@@ -490,7 +490,8 @@ class LabController:
                 'python', 'seq_to_pipetting_steps.py',
                 'sequence_query.txt',
                 'sequence_segments.csv',
-                'output'
+                'output',
+                'worklists'
             ], check=True)
 
             # Update DNA volumes
