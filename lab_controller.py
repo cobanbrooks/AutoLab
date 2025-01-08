@@ -272,6 +272,182 @@ class DNATracker:
             
         print("=" * 50)
 
+class RgntTracker:
+    def __init__(self, inventory_file='reagent_inventory.json'):
+        self.inventory_file = inventory_file
+        self.inventory = self.load_inventory()
+
+    def load_inventory(self):
+        """Load or initialize reagent inventory"""
+        try:
+            with open(self.inventory_file, 'r') as f:
+                return json.load(f)
+        except FileNotFoundError:
+
+            reagents = [
+                "GGMM",
+                "Primers",
+                "PCRMM",
+                "E. coli extract",
+                "TXTLMM",
+                "Water"
+            ]
+
+            inventory = {}
+            wells = []
+            for p in range(1,3):
+                for f in range(1,4):
+                    row = chr(68 + (p-1))
+                    col = str(f + 5).zfill(2)
+                    well = f"{row}{col}"
+                    wells.append(well)
+
+        for well, reagent in zip(wells, reagents):
+            reagent_id = reagent
+            inventory[reagent_id] = {
+                "well": well,
+                "volume": 1000, # Initial vol in uL
+                "history": []
+            }
+
+            self.save_inventory(inventory)
+            return inventory
+
+            
+    def save_inventory(self, inventory=None):
+        """Save current inventory state"""
+        if inventory is None:
+            inventory = self.inventory
+        with open(self.inventory_file, 'w') as f:
+            json.dump(inventory, f, indent=2)
+            
+    def get_well_formats(self, well):
+        """Convert between A01 and A1 formats to ensure matching"""
+        row = well[0]
+        col = well[1:]
+        return [well, f"{row}{int(col)}", f"{row}{int(col):02d}"]
+
+    def update_volumes(self, worklist_file):
+        """Update volumes based on worklist"""
+        df = pd.read_csv(worklist_file)
+
+        # Track all updates for this run
+        updates = []
+        timestamp = datetime.now().isoformat()
+        
+        for _, row in df.iterrows():
+            well = row['Source_Well']
+            volume_used = float(row['Volume'])
+            well_formats = self.get_well_formats(well)
+            
+            # Find reagent id from well
+            reagent_id = None
+            for rid, data in self.inventory.items():
+                if data['well'] in well_formats:
+                    reagent_id = rid
+                    break
+            
+            if reagent_id:
+                # Update volume
+                current_vol = self.inventory[reagent_id]['volume']
+                new_vol = current_vol - volume_used
+                
+                # Record the update
+                update = {
+                    'timestamp': timestamp,
+                    'volume_used': volume_used,
+                    'volume_remaining': new_vol
+                }
+                
+                self.inventory[reagent_id]['volume'] = new_vol
+                self.inventory[reagent_id]['history'].append(update)
+                
+                updates.append({
+                    'reagent': reagent_id,
+                    'well': well,
+                    'volume_used': volume_used,
+                    'volume_remaining': new_vol
+                })
+            else:
+                print(f"No matching reagent found for well {well}")
+        
+        # Save updated inventory
+        self.save_inventory()
+        return updates
+        
+    def export_to_csv(self, filename='reagent_inventory.csv'):
+        """Export current inventory to CSV"""
+        rows = []
+        for rid, data in self.inventory.items():
+            rows.append({
+                'Reagent_ID': rid,
+                'Well': data['well'],
+                'Volume_Remaining': data['volume'],
+                'Last_Updated': data['history'][-1]['timestamp'] if data['history'] else 'Never'
+            })
+            
+        df = pd.DataFrame(rows)
+        df.to_csv(filename, index=False)
+
+    def refill_reagent(self, reagent_id=None, well=None, volume_added=200):
+        """
+        Refill DNA fragment wells with specified volume
+        Can use either reagent_id (e.g., 'GGMM') or well location (e.g., 'D05')
+        """
+        timestamp = datetime.now().isoformat()
+        updates = []
+
+        # Handle single refill
+        if reagent_id or well:
+            if reagent_id and reagent_id in self.inventory:
+                target = reagent_id
+            else:
+                # Find reagent_id from well
+                well_formats = self.get_well_formats(well)
+                target = None
+                for rid, data in self.inventory.items():
+                    if data['well'] in well_formats:
+                        target = rid
+                        break
+            
+            if target:
+                current_vol = self.inventory[target]['volume']
+                new_vol = current_vol + volume_added
+                
+                # Record the update
+                self.inventory[target]['volume'] = new_vol
+                self.inventory[target]['history'].append({
+                    'timestamp': timestamp,
+                    'volume_added': volume_added,
+                    'volume_total': new_vol
+                })
+                
+                updates.append({
+                    'reagent': target,
+                    'well': self.inventory[target]['well'],
+                    'volume_added': volume_added,
+                    'volume_total': new_vol
+                })
+                print(f"Refilled {target} with {volume_added}µL. New total: {new_vol}µL")
+            else:
+                print(f"No matching reagent found for {reagent_id or well}")
+        
+        self.save_inventory()
+        return updates
+    
+    def print_inventory_report(self):
+        """Print current inventory status"""
+        print("\nReagent Inventory Report")
+        print("=" * 50)
+        print(f"{'Reagent':<10} {'Well':<8} {'Volume (µL)':<12} {'Status':<10}")
+        print("-" * 50)
+        
+        for rid, data in sorted(self.inventory.items()):
+            status = "LOW" if data['volume'] < 50 else "OK"
+            print(f"{rid:<10} {data['well']:<8} {data['volume']:<12.1f} {status:<10}")
+            
+        print("=" * 50)
+
 class LabController:
     def __init__(self, config_path):
         # Setup logging
