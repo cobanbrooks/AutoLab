@@ -496,7 +496,7 @@ class LabController:
 
             # Update DNA volumes
             dna_tracker = DNATracker()
-            updates = dna_tracker.update_volumes('output/fragment_assembly_worklist.csv')
+            updates = dna_tracker.update_volumes('worklists/fragment_assembly_worklist.csv')
 
             # Log volume updates
             self.logger.info("Updated DNA volumes")
