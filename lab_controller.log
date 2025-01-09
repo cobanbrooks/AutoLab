@@ -1,0 +1,603 @@
+2024-12-04 13:14:00,399 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-04 13:14:00,408 - lab_automation - INFO - Plate data modified, processing...
+2024-12-04 13:14:50,562 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-04 13:16:49,447 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-04 13:17:25,360 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-04 13:19:27,051 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-04 13:20:03,640 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-04 13:20:03,649 - lab_automation - INFO - Plate data modified, processing...
+2024-12-04 13:20:07,102 - lab_automation - INFO - Processed data pushed to GitHub
+2024-12-04 13:20:08,185 - lab_automation - INFO - Plate data modified, processing...
+2024-12-04 13:20:10,472 - lab_automation - INFO - Processed data pushed to GitHub
+2024-12-04 13:22:48,983 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-04 13:24:49,909 - lab_controller - INFO - Starting lab automation system
+2024-12-04 13:24:52,550 - lab_controller - INFO - New sequence detected
+2024-12-04 13:24:55,053 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-04 13:25:47,750 - lab_automation - INFO - Plate data modified, processing...
+2024-12-04 13:25:54,448 - lab_automation - INFO - Processed data pushed to GitHub
+2024-12-04 13:25:57,583 - lab_automation - INFO - Plate data modified, processing...
+2024-12-04 13:26:07,517 - lab_automation - INFO - Processed data pushed to GitHub
+2024-12-04 13:26:13,755 - lab_automation - INFO - Plate data modified, processing...
+2024-12-04 13:26:20,824 - lab_automation - INFO - Processed data pushed to GitHub
+2024-12-04 13:26:21,951 - lab_automation - INFO - Plate data modified, processing...
+2024-12-04 13:26:24,051 - lab_automation - INFO - Processed data pushed to GitHub
+2024-12-04 13:26:24,960 - lab_automation - INFO - Plate data modified, processing...
+2024-12-04 13:26:26,944 - lab_automation - INFO - Processed data pushed to GitHub
+2024-12-04 13:26:27,834 - lab_automation - INFO - Plate data modified, processing...
+2024-12-04 13:26:29,982 - lab_automation - INFO - Processed data pushed to GitHub
+2024-12-04 13:26:30,905 - lab_automation - INFO - Plate data modified, processing...
+2024-12-04 13:26:32,813 - lab_automation - INFO - Processed data pushed to GitHub
+2024-12-04 13:26:33,786 - lab_automation - INFO - Plate data modified, processing...
+2024-12-04 13:26:35,700 - lab_automation - INFO - Processed data pushed to GitHub
+2024-12-04 13:26:36,516 - lab_automation - INFO - Plate data modified, processing...
+2024-12-04 13:26:39,579 - lab_automation - INFO - Processed data pushed to GitHub
+2024-12-04 13:26:40,506 - lab_automation - INFO - Plate data modified, processing...
+2024-12-04 13:26:43,213 - lab_automation - INFO - Processed data pushed to GitHub
+2024-12-04 13:26:44,091 - lab_automation - INFO - Plate data modified, processing...
+2024-12-04 13:26:46,142 - lab_automation - INFO - Processed data pushed to GitHub
+2024-12-04 13:26:47,135 - lab_automation - INFO - Plate data modified, processing...
+2024-12-04 13:26:49,066 - lab_automation - INFO - Processed data pushed to GitHub
+2024-12-04 13:26:50,094 - lab_automation - INFO - Plate data modified, processing...
+2024-12-04 13:26:51,711 - lab_controller - INFO - Shutting down...
+2024-12-04 13:26:51,730 - lab_automation - ERROR - Error processing plate data: Cmd('git') failed due to: exit code(-2)
+  cmdline: git push --porcelain -- origin
+2024-12-04 13:26:51,733 - lab_automation - INFO - Plate data modified, processing...
+2024-12-04 13:26:52,101 - lab_automation - ERROR - Error processing plate data: [Errno 32] Broken pipe
+2024-12-04 13:30:34,941 - lab_controller - INFO - Starting lab automation system
+2024-12-04 13:30:36,915 - lab_controller - INFO - New sequence detected
+2024-12-04 13:30:37,930 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-04 13:32:47,715 - lab_controller - INFO - Shutting down...
+2024-12-04 13:32:51,636 - lab_controller - INFO - Starting lab automation system
+2024-12-04 13:32:53,463 - lab_controller - INFO - New sequence detected
+2024-12-04 13:32:55,130 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-04 13:33:12,468 - lab_automation - INFO - Plate data modified, processing...
+2024-12-04 13:33:15,111 - lab_automation - INFO - Processed data pushed to GitHub
+2024-12-04 13:33:16,036 - lab_automation - INFO - Plate data modified, processing...
+2024-12-04 13:33:18,920 - lab_automation - INFO - Processed data pushed to GitHub
+2024-12-04 13:34:58,277 - lab_controller - INFO - New sequence detected
+2024-12-04 13:34:59,276 - lab_controller - ERROR - Error generating lab files: Command '['python', 'seq_to_pipetting_steps.py', 'sequence_query.txt', 'sequence_segments.csv', 'output']' returned non-zero exit status 1.
+2024-12-04 13:37:19,902 - lab_controller - INFO - Shutting down...
+2024-12-04 13:37:22,704 - lab_controller - INFO - Starting lab automation system
+2024-12-04 13:37:24,621 - lab_controller - INFO - New sequence detected
+2024-12-04 13:37:25,767 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-04 13:37:43,643 - lab_automation - INFO - Plate data modified, processing...
+2024-12-04 13:37:45,818 - lab_automation - INFO - Processed data pushed to GitHub
+2024-12-04 13:37:46,650 - lab_automation - INFO - Plate data modified, processing...
+2024-12-04 13:37:48,815 - lab_automation - INFO - Processed data pushed to GitHub
+2024-12-04 13:45:35,083 - lab_controller - INFO - New sequence detected
+2024-12-04 13:45:36,163 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-04 13:46:18,148 - lab_controller - INFO - Shutting down...
+2024-12-19 16:30:09,660 - lab_controller - INFO - Starting lab automation system
+2024-12-19 16:30:13,087 - lab_controller - INFO - New sequence detected
+2024-12-19 16:30:13,982 - lab_controller - INFO - Updated DNA volumes
+2024-12-19 16:30:13,982 - lab_controller - INFO - Fragment p3f7 in well E10: used 5.0µL, 195.0µL remaining
+2024-12-19 16:30:13,982 - lab_controller - INFO - Fragment p4f7 in well F10: used 5.0µL, 195.0µL remaining
+2024-12-19 16:30:13,982 - lab_controller - INFO - Fragment p5f7 in well G10: used 5.0µL, 195.0µL remaining
+2024-12-19 16:30:14,001 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-19 16:31:01,458 - lab_automation - INFO - Plate data modified, processing...
+2024-12-19 16:31:03,713 - lab_automation - INFO - Processed data pushed to GitHub
+2024-12-19 16:31:04,636 - lab_automation - INFO - Plate data modified, processing...
+2024-12-19 16:31:06,676 - lab_automation - INFO - Processed data pushed to GitHub
+2024-12-19 16:32:36,279 - lab_controller - INFO - Shutting down...
+2024-12-19 16:38:08,361 - lab_controller - INFO - Starting lab automation system
+2024-12-19 16:38:10,194 - lab_controller - INFO - New sequence detected
+2024-12-19 16:38:11,262 - lab_controller - INFO - Updated DNA volumes
+2024-12-19 16:38:11,262 - lab_controller - INFO - Fragment p3f7 in well E10: used 5.0µL, 190.0µL remaining
+2024-12-19 16:38:11,262 - lab_controller - INFO - Fragment p4f7 in well F10: used 5.0µL, 190.0µL remaining
+2024-12-19 16:38:11,262 - lab_controller - INFO - Fragment p5f7 in well G10: used 5.0µL, 190.0µL remaining
+2024-12-19 16:38:11,286 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-19 16:38:32,714 - lab_automation - INFO - Plate data modified, processing...
+2024-12-19 16:38:33,980 - lab_automation - ERROR - Error processing plate data: 'DNATracker' object has no attribute 'export_to_csv'
+2024-12-19 16:38:33,980 - lab_automation - INFO - Plate data modified, processing...
+2024-12-19 16:38:35,083 - lab_automation - ERROR - Error processing plate data: 'DNATracker' object has no attribute 'export_to_csv'
+2024-12-19 16:38:54,580 - lab_controller - INFO - Shutting down...
+2024-12-19 16:40:35,146 - lab_controller - INFO - Starting lab automation system
+2024-12-19 16:40:37,410 - lab_controller - INFO - New sequence detected
+2024-12-19 16:40:38,895 - lab_controller - INFO - Updated DNA volumes
+2024-12-19 16:40:38,895 - lab_controller - INFO - Fragment p3f7 in well E10: used 5.0µL, 185.0µL remaining
+2024-12-19 16:40:38,895 - lab_controller - INFO - Fragment p4f7 in well F10: used 5.0µL, 185.0µL remaining
+2024-12-19 16:40:38,895 - lab_controller - INFO - Fragment p5f7 in well G10: used 5.0µL, 185.0µL remaining
+2024-12-19 16:40:38,913 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-19 16:40:54,671 - lab_automation - INFO - Plate data modified, processing...
+2024-12-19 16:40:57,246 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-19 16:40:58,243 - lab_automation - INFO - Plate data modified, processing...
+2024-12-19 16:41:00,612 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-19 16:41:38,378 - lab_controller - INFO - Shutting down...
+2024-12-19 16:43:10,724 - lab_controller - INFO - Starting lab automation system
+2024-12-19 16:43:12,298 - lab_controller - INFO - New sequence detected
+2024-12-19 16:43:13,238 - lab_controller - INFO - Updated DNA volumes
+2024-12-19 16:43:13,238 - lab_controller - INFO - Fragment p3f7 in well E10: used 5.0µL, 180.0µL remaining
+2024-12-19 16:43:13,238 - lab_controller - INFO - Fragment p4f7 in well F10: used 5.0µL, 180.0µL remaining
+2024-12-19 16:43:13,238 - lab_controller - INFO - Fragment p5f7 in well G10: used 5.0µL, 180.0µL remaining
+2024-12-19 16:43:13,257 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-19 16:44:39,526 - lab_controller - INFO - Shutting down...
+2024-12-19 16:44:41,269 - lab_controller - INFO - Starting lab automation system
+2024-12-19 16:44:42,808 - lab_controller - INFO - New sequence detected
+2024-12-19 16:44:43,732 - lab_controller - INFO - Updated DNA volumes
+2024-12-19 16:44:43,732 - lab_controller - INFO - Fragment p3f7 in well E10: used 5.0µL, 175.0µL remaining
+2024-12-19 16:44:43,732 - lab_controller - INFO - Fragment p4f7 in well F10: used 5.0µL, 175.0µL remaining
+2024-12-19 16:44:43,732 - lab_controller - INFO - Fragment p5f7 in well G10: used 5.0µL, 175.0µL remaining
+2024-12-19 16:44:43,751 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-19 16:47:27,168 - lab_controller - INFO - Shutting down...
+2024-12-19 16:47:29,504 - lab_controller - INFO - Starting lab automation system
+2024-12-19 16:47:33,117 - lab_controller - INFO - New sequence detected
+2024-12-19 16:47:34,397 - lab_controller - INFO - Updated DNA volumes
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p3f0 in well E03: used 5.0µL, 195.0µL remaining
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p3f1 in well E04: used 5.0µL, 195.0µL remaining
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p3f2 in well E05: used 5.0µL, 195.0µL remaining
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p3f3 in well E06: used 5.0µL, 195.0µL remaining
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p3f4 in well E07: used 5.0µL, 195.0µL remaining
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p3f5 in well E08: used 5.0µL, 195.0µL remaining
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p3f6 in well E09: used 5.0µL, 195.0µL remaining
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p3f7 in well E10: used 5.0µL, 170.0µL remaining
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p4f0 in well F03: used 5.0µL, 195.0µL remaining
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p4f1 in well F04: used 5.0µL, 195.0µL remaining
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p4f2 in well F05: used 5.0µL, 195.0µL remaining
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p4f3 in well F06: used 5.0µL, 195.0µL remaining
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p4f4 in well F07: used 5.0µL, 195.0µL remaining
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p4f5 in well F08: used 5.0µL, 195.0µL remaining
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p4f6 in well F09: used 5.0µL, 195.0µL remaining
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p4f7 in well F10: used 5.0µL, 170.0µL remaining
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p5f0 in well G03: used 5.0µL, 195.0µL remaining
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p5f1 in well G04: used 5.0µL, 195.0µL remaining
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p5f2 in well G05: used 5.0µL, 195.0µL remaining
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p5f3 in well G06: used 5.0µL, 195.0µL remaining
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p5f4 in well G07: used 5.0µL, 195.0µL remaining
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p5f5 in well G08: used 5.0µL, 195.0µL remaining
+2024-12-19 16:47:34,397 - lab_controller - INFO - Fragment p5f6 in well G09: used 5.0µL, 195.0µL remaining
+2024-12-19 16:47:34,398 - lab_controller - INFO - Fragment p5f7 in well G10: used 5.0µL, 170.0µL remaining
+2024-12-19 16:47:34,420 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-19 16:48:13,681 - lab_automation - INFO - Plate data modified, processing...
+2024-12-19 16:48:15,165 - lab_automation - ERROR - Error processing plate data: 'DNATracker' object has no attribute 'export_to_csv'
+2024-12-19 16:48:15,166 - lab_automation - INFO - Plate data modified, processing...
+2024-12-19 16:48:16,814 - lab_automation - ERROR - Error processing plate data: 'DNATracker' object has no attribute 'export_to_csv'
+2024-12-19 16:48:55,523 - lab_controller - INFO - Shutting down...
+2024-12-19 16:48:57,632 - lab_controller - INFO - Starting lab automation system
+2024-12-19 16:48:59,082 - lab_controller - INFO - New sequence detected
+2024-12-19 16:49:00,267 - lab_controller - INFO - Updated DNA volumes
+2024-12-19 16:49:00,267 - lab_controller - INFO - Fragment p3f0 in well E03: used 5.0µL, 190.0µL remaining
+2024-12-19 16:49:00,267 - lab_controller - INFO - Fragment p3f1 in well E04: used 5.0µL, 190.0µL remaining
+2024-12-19 16:49:00,267 - lab_controller - INFO - Fragment p3f2 in well E05: used 5.0µL, 190.0µL remaining
+2024-12-19 16:49:00,267 - lab_controller - INFO - Fragment p3f3 in well E06: used 5.0µL, 190.0µL remaining
+2024-12-19 16:49:00,267 - lab_controller - INFO - Fragment p3f4 in well E07: used 5.0µL, 190.0µL remaining
+2024-12-19 16:49:00,267 - lab_controller - INFO - Fragment p3f5 in well E08: used 5.0µL, 190.0µL remaining
+2024-12-19 16:49:00,268 - lab_controller - INFO - Fragment p3f6 in well E09: used 5.0µL, 190.0µL remaining
+2024-12-19 16:49:00,268 - lab_controller - INFO - Fragment p3f7 in well E10: used 5.0µL, 165.0µL remaining
+2024-12-19 16:49:00,268 - lab_controller - INFO - Fragment p4f0 in well F03: used 5.0µL, 190.0µL remaining
+2024-12-19 16:49:00,268 - lab_controller - INFO - Fragment p4f1 in well F04: used 5.0µL, 190.0µL remaining
+2024-12-19 16:49:00,268 - lab_controller - INFO - Fragment p4f2 in well F05: used 5.0µL, 190.0µL remaining
+2024-12-19 16:49:00,268 - lab_controller - INFO - Fragment p4f3 in well F06: used 5.0µL, 190.0µL remaining
+2024-12-19 16:49:00,268 - lab_controller - INFO - Fragment p4f4 in well F07: used 5.0µL, 190.0µL remaining
+2024-12-19 16:49:00,268 - lab_controller - INFO - Fragment p4f5 in well F08: used 5.0µL, 190.0µL remaining
+2024-12-19 16:49:00,268 - lab_controller - INFO - Fragment p4f6 in well F09: used 5.0µL, 190.0µL remaining
+2024-12-19 16:49:00,268 - lab_controller - INFO - Fragment p4f7 in well F10: used 5.0µL, 165.0µL remaining
+2024-12-19 16:49:00,268 - lab_controller - INFO - Fragment p5f0 in well G03: used 5.0µL, 190.0µL remaining
+2024-12-19 16:49:00,268 - lab_controller - INFO - Fragment p5f1 in well G04: used 5.0µL, 190.0µL remaining
+2024-12-19 16:49:00,268 - lab_controller - INFO - Fragment p5f2 in well G05: used 5.0µL, 190.0µL remaining
+2024-12-19 16:49:00,268 - lab_controller - INFO - Fragment p5f3 in well G06: used 5.0µL, 190.0µL remaining
+2024-12-19 16:49:00,268 - lab_controller - INFO - Fragment p5f4 in well G07: used 5.0µL, 190.0µL remaining
+2024-12-19 16:49:00,268 - lab_controller - INFO - Fragment p5f5 in well G08: used 5.0µL, 190.0µL remaining
+2024-12-19 16:49:00,268 - lab_controller - INFO - Fragment p5f6 in well G09: used 5.0µL, 190.0µL remaining
+2024-12-19 16:49:00,268 - lab_controller - INFO - Fragment p5f7 in well G10: used 5.0µL, 165.0µL remaining
+2024-12-19 16:49:00,286 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-19 16:49:11,364 - lab_automation - INFO - Plate data modified, processing...
+2024-12-19 16:49:13,756 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-19 16:49:14,902 - lab_automation - INFO - Plate data modified, processing...
+2024-12-19 16:49:17,350 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-19 16:53:24,968 - lab_controller - INFO - Shutting down...
+2024-12-19 17:03:23,536 - lab_controller - INFO - Starting lab automation system
+2024-12-19 17:03:26,553 - lab_controller - INFO - New sequence detected
+2024-12-19 17:03:27,555 - lab_controller - INFO - Updated DNA volumes
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p3f0 in well E03: used 5.0µL, 215.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p3f1 in well E04: used 5.0µL, 185.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p3f2 in well E05: used 5.0µL, 185.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p3f3 in well E06: used 5.0µL, 185.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p3f4 in well E07: used 5.0µL, 185.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p3f5 in well E08: used 5.0µL, 185.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p3f6 in well E09: used 5.0µL, 185.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p3f7 in well E10: used 5.0µL, 160.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p4f0 in well F03: used 5.0µL, 185.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p4f1 in well F04: used 5.0µL, 185.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p4f2 in well F05: used 5.0µL, 185.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p4f3 in well F06: used 5.0µL, 185.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p4f4 in well F07: used 5.0µL, 185.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p4f5 in well F08: used 5.0µL, 185.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p4f6 in well F09: used 5.0µL, 185.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p4f7 in well F10: used 5.0µL, 160.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p5f0 in well G03: used 5.0µL, 185.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p5f1 in well G04: used 5.0µL, 185.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p5f2 in well G05: used 5.0µL, 185.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p5f3 in well G06: used 5.0µL, 185.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p5f4 in well G07: used 5.0µL, 185.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p5f5 in well G08: used 5.0µL, 185.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p5f6 in well G09: used 5.0µL, 185.0µL remaining
+2024-12-19 17:03:27,555 - lab_controller - INFO - Fragment p5f7 in well G10: used 5.0µL, 160.0µL remaining
+2024-12-19 17:03:27,574 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-19 17:03:41,402 - lab_automation - INFO - Plate data modified, processing...
+2024-12-19 17:03:43,504 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-19 17:03:44,458 - lab_automation - INFO - Plate data modified, processing...
+2024-12-19 17:03:46,567 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-19 17:08:31,861 - lab_controller - INFO - New sequence detected
+2024-12-19 17:08:33,091 - lab_controller - INFO - Updated DNA volumes
+2024-12-19 17:08:33,091 - lab_controller - INFO - Fragment p1f7 in well C10: used 5.0µL, 195.0µL remaining
+2024-12-19 17:08:33,091 - lab_controller - INFO - Fragment p4f0 in well F03: used 5.0µL, 180.0µL remaining
+2024-12-19 17:08:33,091 - lab_controller - INFO - Fragment p4f1 in well F04: used 5.0µL, 180.0µL remaining
+2024-12-19 17:08:33,091 - lab_controller - INFO - Fragment p4f2 in well F05: used 5.0µL, 180.0µL remaining
+2024-12-19 17:08:33,091 - lab_controller - INFO - Fragment p4f3 in well F06: used 5.0µL, 180.0µL remaining
+2024-12-19 17:08:33,091 - lab_controller - INFO - Fragment p4f4 in well F07: used 5.0µL, 180.0µL remaining
+2024-12-19 17:08:33,091 - lab_controller - INFO - Fragment p4f5 in well F08: used 5.0µL, 180.0µL remaining
+2024-12-19 17:08:33,091 - lab_controller - INFO - Fragment p4f6 in well F09: used 5.0µL, 180.0µL remaining
+2024-12-19 17:08:33,091 - lab_controller - INFO - Fragment p4f7 in well F10: used 5.0µL, 155.0µL remaining
+2024-12-19 17:08:33,091 - lab_controller - INFO - Fragment p5f0 in well G03: used 5.0µL, 180.0µL remaining
+2024-12-19 17:08:33,091 - lab_controller - INFO - Fragment p5f1 in well G04: used 5.0µL, 180.0µL remaining
+2024-12-19 17:08:33,091 - lab_controller - INFO - Fragment p5f2 in well G05: used 5.0µL, 180.0µL remaining
+2024-12-19 17:08:33,091 - lab_controller - INFO - Fragment p5f3 in well G06: used 5.0µL, 180.0µL remaining
+2024-12-19 17:08:33,091 - lab_controller - INFO - Fragment p5f4 in well G07: used 5.0µL, 180.0µL remaining
+2024-12-19 17:08:33,091 - lab_controller - INFO - Fragment p5f5 in well G08: used 5.0µL, 180.0µL remaining
+2024-12-19 17:08:33,091 - lab_controller - INFO - Fragment p5f6 in well G09: used 5.0µL, 180.0µL remaining
+2024-12-19 17:08:33,091 - lab_controller - INFO - Fragment p5f7 in well G10: used 5.0µL, 255.0µL remaining
+2024-12-19 17:08:33,114 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-19 17:14:07,021 - lab_controller - INFO - Shutting down...
+2024-12-19 17:14:10,442 - lab_controller - INFO - Starting lab automation system
+2024-12-19 17:14:12,238 - lab_controller - INFO - New sequence detected
+2024-12-19 17:14:13,089 - lab_controller - INFO - Updated DNA volumes
+2024-12-19 17:14:13,089 - lab_controller - INFO - Fragment p1f7 in well C10: used 5.0µL, 190.0µL remaining
+2024-12-19 17:14:13,089 - lab_controller - INFO - Fragment p4f0 in well F03: used 5.0µL, 175.0µL remaining
+2024-12-19 17:14:13,089 - lab_controller - INFO - Fragment p4f1 in well F04: used 5.0µL, 175.0µL remaining
+2024-12-19 17:14:13,089 - lab_controller - INFO - Fragment p4f2 in well F05: used 5.0µL, 175.0µL remaining
+2024-12-19 17:14:13,089 - lab_controller - INFO - Fragment p4f3 in well F06: used 5.0µL, 175.0µL remaining
+2024-12-19 17:14:13,089 - lab_controller - INFO - Fragment p4f4 in well F07: used 5.0µL, 175.0µL remaining
+2024-12-19 17:14:13,089 - lab_controller - INFO - Fragment p4f5 in well F08: used 5.0µL, 175.0µL remaining
+2024-12-19 17:14:13,089 - lab_controller - INFO - Fragment p4f6 in well F09: used 5.0µL, 175.0µL remaining
+2024-12-19 17:14:13,089 - lab_controller - INFO - Fragment p4f7 in well F10: used 5.0µL, 150.0µL remaining
+2024-12-19 17:14:13,089 - lab_controller - INFO - Fragment p5f0 in well G03: used 5.0µL, 175.0µL remaining
+2024-12-19 17:14:13,090 - lab_controller - INFO - Fragment p5f1 in well G04: used 5.0µL, 175.0µL remaining
+2024-12-19 17:14:13,090 - lab_controller - INFO - Fragment p5f2 in well G05: used 5.0µL, 175.0µL remaining
+2024-12-19 17:14:13,090 - lab_controller - INFO - Fragment p5f3 in well G06: used 5.0µL, 175.0µL remaining
+2024-12-19 17:14:13,090 - lab_controller - INFO - Fragment p5f4 in well G07: used 5.0µL, 175.0µL remaining
+2024-12-19 17:14:13,090 - lab_controller - INFO - Fragment p5f5 in well G08: used 5.0µL, 175.0µL remaining
+2024-12-19 17:14:13,090 - lab_controller - INFO - Fragment p5f6 in well G09: used 5.0µL, 175.0µL remaining
+2024-12-19 17:14:13,090 - lab_controller - INFO - Fragment p5f7 in well G10: used 5.0µL, 250.0µL remaining
+2024-12-19 17:14:13,110 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-19 17:14:24,880 - lab_controller - INFO - Shutting down...
+2024-12-19 17:14:29,121 - lab_controller - INFO - Starting lab automation system
+2024-12-19 17:14:30,538 - lab_controller - INFO - New sequence detected
+2024-12-19 17:14:31,389 - lab_controller - INFO - Updated DNA volumes
+2024-12-19 17:14:31,389 - lab_controller - INFO - Fragment p1f7 in well C10: used 5.0µL, 185.0µL remaining
+2024-12-19 17:14:31,390 - lab_controller - INFO - Fragment p4f0 in well F03: used 5.0µL, 170.0µL remaining
+2024-12-19 17:14:31,390 - lab_controller - INFO - Fragment p4f1 in well F04: used 5.0µL, 170.0µL remaining
+2024-12-19 17:14:31,390 - lab_controller - INFO - Fragment p4f2 in well F05: used 5.0µL, 170.0µL remaining
+2024-12-19 17:14:31,390 - lab_controller - INFO - Fragment p4f3 in well F06: used 5.0µL, 170.0µL remaining
+2024-12-19 17:14:31,390 - lab_controller - INFO - Fragment p4f4 in well F07: used 5.0µL, 170.0µL remaining
+2024-12-19 17:14:31,390 - lab_controller - INFO - Fragment p4f5 in well F08: used 5.0µL, 170.0µL remaining
+2024-12-19 17:14:31,390 - lab_controller - INFO - Fragment p4f6 in well F09: used 5.0µL, 170.0µL remaining
+2024-12-19 17:14:31,390 - lab_controller - INFO - Fragment p4f7 in well F10: used 5.0µL, 145.0µL remaining
+2024-12-19 17:14:31,390 - lab_controller - INFO - Fragment p5f0 in well G03: used 5.0µL, 170.0µL remaining
+2024-12-19 17:14:31,390 - lab_controller - INFO - Fragment p5f1 in well G04: used 5.0µL, 170.0µL remaining
+2024-12-19 17:14:31,390 - lab_controller - INFO - Fragment p5f2 in well G05: used 5.0µL, 170.0µL remaining
+2024-12-19 17:14:31,390 - lab_controller - INFO - Fragment p5f3 in well G06: used 5.0µL, 170.0µL remaining
+2024-12-19 17:14:31,390 - lab_controller - INFO - Fragment p5f4 in well G07: used 5.0µL, 170.0µL remaining
+2024-12-19 17:14:31,390 - lab_controller - INFO - Fragment p5f5 in well G08: used 5.0µL, 170.0µL remaining
+2024-12-19 17:14:31,390 - lab_controller - INFO - Fragment p5f6 in well G09: used 5.0µL, 170.0µL remaining
+2024-12-19 17:14:31,390 - lab_controller - INFO - Fragment p5f7 in well G10: used 5.0µL, 245.0µL remaining
+2024-12-19 17:14:31,408 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-19 17:16:05,280 - lab_controller - INFO - Shutting down...
+2024-12-19 17:16:07,835 - lab_controller - INFO - Starting lab automation system
+2024-12-19 17:16:10,160 - lab_controller - INFO - New sequence detected
+2024-12-19 17:16:11,066 - lab_controller - INFO - Updated DNA volumes
+2024-12-19 17:16:11,066 - lab_controller - INFO - Fragment p1f7 in well C10: used 5.0µL, 180.0µL remaining
+2024-12-19 17:16:11,066 - lab_controller - INFO - Fragment p4f0 in well F03: used 5.0µL, 165.0µL remaining
+2024-12-19 17:16:11,066 - lab_controller - INFO - Fragment p4f1 in well F04: used 5.0µL, 165.0µL remaining
+2024-12-19 17:16:11,066 - lab_controller - INFO - Fragment p4f2 in well F05: used 5.0µL, 165.0µL remaining
+2024-12-19 17:16:11,066 - lab_controller - INFO - Fragment p4f3 in well F06: used 5.0µL, 165.0µL remaining
+2024-12-19 17:16:11,066 - lab_controller - INFO - Fragment p4f4 in well F07: used 5.0µL, 165.0µL remaining
+2024-12-19 17:16:11,066 - lab_controller - INFO - Fragment p4f5 in well F08: used 5.0µL, 165.0µL remaining
+2024-12-19 17:16:11,066 - lab_controller - INFO - Fragment p4f6 in well F09: used 5.0µL, 165.0µL remaining
+2024-12-19 17:16:11,066 - lab_controller - INFO - Fragment p4f7 in well F10: used 5.0µL, 140.0µL remaining
+2024-12-19 17:16:11,066 - lab_controller - INFO - Fragment p5f0 in well G03: used 5.0µL, 165.0µL remaining
+2024-12-19 17:16:11,066 - lab_controller - INFO - Fragment p5f1 in well G04: used 5.0µL, 165.0µL remaining
+2024-12-19 17:16:11,066 - lab_controller - INFO - Fragment p5f2 in well G05: used 5.0µL, 165.0µL remaining
+2024-12-19 17:16:11,066 - lab_controller - INFO - Fragment p5f3 in well G06: used 5.0µL, 165.0µL remaining
+2024-12-19 17:16:11,066 - lab_controller - INFO - Fragment p5f4 in well G07: used 5.0µL, 165.0µL remaining
+2024-12-19 17:16:11,066 - lab_controller - INFO - Fragment p5f5 in well G08: used 5.0µL, 165.0µL remaining
+2024-12-19 17:16:11,066 - lab_controller - INFO - Fragment p5f6 in well G09: used 5.0µL, 165.0µL remaining
+2024-12-19 17:16:11,066 - lab_controller - INFO - Fragment p5f7 in well G10: used 5.0µL, 240.0µL remaining
+2024-12-19 17:16:11,085 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-19 17:16:40,552 - lab_controller - INFO - Shutting down...
+2024-12-19 17:16:47,827 - lab_controller - INFO - Starting lab automation system
+2024-12-19 17:16:49,472 - lab_controller - INFO - New sequence detected
+2024-12-19 17:16:50,604 - lab_controller - INFO - Updated DNA volumes
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p2f7 in well C10: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p5f0 in well F03: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p5f1 in well F04: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p5f2 in well F05: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p6f0 in well G03: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p6f3 in well G06: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p6f5 in well G08: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p6f6 in well G09: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,604 - lab_controller - INFO - Fragment p6f7 in well G10: used 5.0µL, 195.0µL remaining
+2024-12-19 17:16:50,625 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-19 17:18:46,066 - lab_automation - INFO - Plate data modified, processing...
+2024-12-19 17:18:47,138 - git.remote - WARNING - Error lines received while fetching: error: failed to push some refs to 'https://github.com/cobanbrooks/auto_lab'
+2024-12-19 17:18:48,159 - git.remote - WARNING - Error lines received while fetching: error: failed to push some refs to 'https://github.com/cobanbrooks/auto_lab'
+2024-12-19 17:18:48,159 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-19 17:18:48,645 - git.remote - WARNING - Error lines received while fetching: error: failed to push some refs to 'https://github.com/cobanbrooks/auto_lab'
+2024-12-19 17:18:48,645 - lab_automation - INFO - Plate data modified, processing...
+2024-12-19 17:18:49,151 - git.remote - WARNING - Error lines received while fetching: error: failed to push some refs to 'https://github.com/cobanbrooks/auto_lab'
+2024-12-19 17:18:50,040 - git.remote - WARNING - Error lines received while fetching: error: failed to push some refs to 'https://github.com/cobanbrooks/auto_lab'
+2024-12-19 17:18:50,040 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-19 17:18:50,604 - git.remote - WARNING - Error lines received while fetching: error: failed to push some refs to 'https://github.com/cobanbrooks/auto_lab'
+2024-12-19 17:18:52,708 - lab_controller - INFO - New sequence detected
+2024-12-19 17:18:53,702 - lab_controller - INFO - Updated DNA volumes
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p4f0 in well E03: used 5.0µL, 195.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p4f1 in well E04: used 5.0µL, 195.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p4f2 in well E05: used 5.0µL, 195.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 195.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 195.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 195.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p4f6 in well E09: used 5.0µL, 195.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 195.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p5f0 in well F03: used 5.0µL, 190.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p5f1 in well F04: used 5.0µL, 190.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p5f2 in well F05: used 5.0µL, 190.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 190.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 190.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 190.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0µL, 190.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0µL, 190.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p6f0 in well G03: used 5.0µL, 190.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 190.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 190.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p6f3 in well G06: used 5.0µL, 190.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 190.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p6f5 in well G08: used 5.0µL, 190.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p6f6 in well G09: used 5.0µL, 190.0µL remaining
+2024-12-19 17:18:53,702 - lab_controller - INFO - Fragment p6f7 in well G10: used 5.0µL, 190.0µL remaining
+2024-12-19 17:18:53,726 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-19 17:20:36,839 - lab_automation - INFO - Plate data modified, processing...
+2024-12-19 17:20:39,235 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-19 17:20:40,165 - lab_automation - INFO - Plate data modified, processing...
+2024-12-19 17:20:42,045 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-19 17:21:13,685 - lab_controller - INFO - Shutting down...
+2024-12-21 12:47:44,173 - lab_controller - INFO - Starting lab automation system
+2024-12-21 12:47:45,891 - lab_controller - INFO - New sequence detected
+2024-12-21 12:47:46,951 - lab_controller - INFO - Updated DNA volumes
+2024-12-21 12:47:46,951 - lab_controller - INFO - Fragment p4f0 in well E03: used 5.0µL, 190.0µL remaining
+2024-12-21 12:47:46,951 - lab_controller - INFO - Fragment p4f1 in well E04: used 5.0µL, 190.0µL remaining
+2024-12-21 12:47:46,951 - lab_controller - INFO - Fragment p4f2 in well E05: used 5.0µL, 190.0µL remaining
+2024-12-21 12:47:46,951 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 190.0µL remaining
+2024-12-21 12:47:46,951 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 190.0µL remaining
+2024-12-21 12:47:46,951 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 190.0µL remaining
+2024-12-21 12:47:46,951 - lab_controller - INFO - Fragment p4f6 in well E09: used 5.0µL, 190.0µL remaining
+2024-12-21 12:47:46,951 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 190.0µL remaining
+2024-12-21 12:47:46,951 - lab_controller - INFO - Fragment p5f0 in well F03: used 5.0µL, 185.0µL remaining
+2024-12-21 12:47:46,951 - lab_controller - INFO - Fragment p5f1 in well F04: used 5.0µL, 185.0µL remaining
+2024-12-21 12:47:46,951 - lab_controller - INFO - Fragment p5f2 in well F05: used 5.0µL, 185.0µL remaining
+2024-12-21 12:47:46,951 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 185.0µL remaining
+2024-12-21 12:47:46,951 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 185.0µL remaining
+2024-12-21 12:47:46,951 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 185.0µL remaining
+2024-12-21 12:47:46,951 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0µL, 185.0µL remaining
+2024-12-21 12:47:46,951 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0µL, 185.0µL remaining
+2024-12-21 12:47:46,951 - lab_controller - INFO - Fragment p6f0 in well G03: used 5.0µL, 185.0µL remaining
+2024-12-21 12:47:46,951 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 185.0µL remaining
+2024-12-21 12:47:46,951 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 185.0µL remaining
+2024-12-21 12:47:46,951 - lab_controller - INFO - Fragment p6f3 in well G06: used 5.0µL, 185.0µL remaining
+2024-12-21 12:47:46,952 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 185.0µL remaining
+2024-12-21 12:47:46,952 - lab_controller - INFO - Fragment p6f5 in well G08: used 5.0µL, 185.0µL remaining
+2024-12-21 12:47:46,952 - lab_controller - INFO - Fragment p6f6 in well G09: used 5.0µL, 185.0µL remaining
+2024-12-21 12:47:46,952 - lab_controller - INFO - Fragment p6f7 in well G10: used 5.0µL, 190.0µL remaining
+2024-12-21 12:47:46,971 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-21 12:48:19,421 - lab_automation - INFO - Plate data modified, processing...
+2024-12-21 12:48:22,437 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-21 12:48:24,057 - lab_automation - INFO - Plate data modified, processing...
+2024-12-21 12:48:26,182 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-21 12:49:49,539 - lab_controller - INFO - New sequence detected
+2024-12-21 12:49:50,823 - lab_controller - INFO - Updated DNA volumes
+2024-12-21 12:49:50,823 - lab_controller - INFO - Fragment p4f0 in well E03: used 5.0µL, 185.0µL remaining
+2024-12-21 12:49:50,823 - lab_controller - INFO - Fragment p4f1 in well E04: used 5.0µL, 185.0µL remaining
+2024-12-21 12:49:50,824 - lab_controller - INFO - Fragment p4f2 in well E05: used 5.0µL, 185.0µL remaining
+2024-12-21 12:49:50,824 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 185.0µL remaining
+2024-12-21 12:49:50,824 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 185.0µL remaining
+2024-12-21 12:49:50,824 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 185.0µL remaining
+2024-12-21 12:49:50,824 - lab_controller - INFO - Fragment p4f6 in well E09: used 5.0µL, 185.0µL remaining
+2024-12-21 12:49:50,824 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 185.0µL remaining
+2024-12-21 12:49:50,824 - lab_controller - INFO - Fragment p5f0 in well F03: used 5.0µL, 180.0µL remaining
+2024-12-21 12:49:50,824 - lab_controller - INFO - Fragment p5f1 in well F04: used 5.0µL, 180.0µL remaining
+2024-12-21 12:49:50,824 - lab_controller - INFO - Fragment p5f2 in well F05: used 5.0µL, 180.0µL remaining
+2024-12-21 12:49:50,824 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 180.0µL remaining
+2024-12-21 12:49:50,824 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 180.0µL remaining
+2024-12-21 12:49:50,824 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 180.0µL remaining
+2024-12-21 12:49:50,824 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0µL, 180.0µL remaining
+2024-12-21 12:49:50,824 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0µL, 180.0µL remaining
+2024-12-21 12:49:50,824 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 190.0µL remaining
+2024-12-21 12:49:50,824 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 180.0µL remaining
+2024-12-21 12:49:50,824 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 180.0µL remaining
+2024-12-21 12:49:50,824 - lab_controller - INFO - Fragment p3f3 in well D06: used 5.0µL, 195.0µL remaining
+2024-12-21 12:49:50,824 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 180.0µL remaining
+2024-12-21 12:49:50,824 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 175.0µL remaining
+2024-12-21 12:49:50,824 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 190.0µL remaining
+2024-12-21 12:49:50,825 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0µL, 175.0µL remaining
+2024-12-21 12:49:50,847 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-21 12:50:24,611 - lab_automation - INFO - Plate data modified, processing...
+2024-12-21 12:50:28,511 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-21 12:50:29,553 - lab_automation - INFO - Plate data modified, processing...
+2024-12-21 12:50:31,689 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-21 12:51:53,091 - lab_controller - INFO - New sequence detected
+2024-12-21 12:51:54,111 - lab_controller - INFO - Updated DNA volumes
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 185.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 175.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 175.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 180.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 180.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 180.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 185.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 195.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 195.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 195.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 190.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 190.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 175.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 170.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 195.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 180.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 180.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 190.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 185.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 175.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 175.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 190.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 190.0µL remaining
+2024-12-21 12:51:54,111 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 190.0µL remaining
+2024-12-21 12:51:54,134 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-21 12:52:17,747 - lab_controller - INFO - Shutting down...
+2024-12-21 12:58:11,684 - lab_controller - INFO - Starting lab automation system
+2024-12-21 12:58:14,984 - lab_controller - INFO - New sequence detected
+2024-12-21 12:58:16,306 - lab_controller - INFO - Updated DNA volumes
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 175.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 170.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 170.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 175.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 175.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 175.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 180.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 185.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 190.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 185.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 180.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 185.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 170.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 165.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 185.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 175.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 170.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 180.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 175.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 170.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 170.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 185.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 180.0µL remaining
+2024-12-21 12:58:16,307 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 180.0µL remaining
+2024-12-21 12:58:16,329 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-21 12:58:23,449 - lab_automation - INFO - Plate data modified, processing...
+2024-12-21 12:58:25,874 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-21 12:58:26,805 - lab_automation - INFO - Plate data modified, processing...
+2024-12-21 12:58:28,826 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-21 13:00:42,586 - lab_controller - INFO - Shutting down...
+2024-12-21 13:00:53,524 - lab_controller - INFO - Starting lab automation system
+2024-12-21 13:00:55,180 - lab_controller - INFO - New sequence detected
+2024-12-21 13:00:56,130 - lab_controller - INFO - Updated DNA volumes
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 165.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 165.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 165.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 170.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 170.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 170.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 175.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 175.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 185.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 175.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 170.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 180.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 165.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 160.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 175.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 170.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 160.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 170.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 165.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 165.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 165.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 180.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 170.0µL remaining
+2024-12-21 13:00:56,130 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 170.0µL remaining
+2024-12-21 13:00:56,149 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-21 13:01:00,616 - lab_automation - INFO - Plate data modified, processing...
+2024-12-21 13:01:03,327 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-21 13:01:03,327 - lab_automation - INFO - Plate data modified, processing...
+2024-12-21 13:01:05,568 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-21 13:02:16,213 - lab_controller - INFO - Shutting down...
+2024-12-21 13:02:27,560 - lab_controller - INFO - Starting lab automation system
+2024-12-21 13:02:30,375 - lab_controller - INFO - New sequence detected
+2024-12-21 13:02:31,421 - lab_controller - INFO - Updated DNA volumes
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 155.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 160.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 160.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 165.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 165.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 165.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 170.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 165.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 180.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 165.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 160.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 175.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 160.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 155.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 165.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 165.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 150.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 160.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 155.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 160.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 160.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 175.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 160.0µL remaining
+2024-12-21 13:02:31,421 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 160.0µL remaining
+2024-12-21 13:02:31,438 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-21 13:02:42,988 - lab_automation - INFO - Plate data modified, processing...
+2024-12-21 13:02:45,300 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-21 13:02:45,301 - lab_automation - INFO - Plate data modified, processing...
+2024-12-21 13:02:47,414 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-21 13:02:54,510 - lab_automation - INFO - Plate data modified, processing...
+2024-12-21 13:02:57,377 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-21 13:02:57,378 - lab_automation - INFO - Plate data modified, processing...
+2024-12-21 13:02:59,539 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-21 13:03:37,007 - lab_controller - INFO - Shutting down...
+2024-12-21 13:03:39,370 - lab_controller - INFO - Starting lab automation system
+2024-12-21 13:03:40,809 - lab_controller - INFO - New sequence detected
+2024-12-21 13:03:41,901 - lab_controller - INFO - Updated DNA volumes
+2024-12-21 13:03:41,901 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 145.0µL remaining
+2024-12-21 13:03:41,901 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 155.0µL remaining
+2024-12-21 13:03:41,901 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 155.0µL remaining
+2024-12-21 13:03:41,901 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 160.0µL remaining
+2024-12-21 13:03:41,901 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 160.0µL remaining
+2024-12-21 13:03:41,901 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 160.0µL remaining
+2024-12-21 13:03:41,902 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 165.0µL remaining
+2024-12-21 13:03:41,902 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 155.0µL remaining
+2024-12-21 13:03:41,902 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 175.0µL remaining
+2024-12-21 13:03:41,902 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 155.0µL remaining
+2024-12-21 13:03:41,902 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 150.0µL remaining
+2024-12-21 13:03:41,902 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 170.0µL remaining
+2024-12-21 13:03:41,902 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 155.0µL remaining
+2024-12-21 13:03:41,902 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 150.0µL remaining
+2024-12-21 13:03:41,902 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 155.0µL remaining
+2024-12-21 13:03:41,902 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 160.0µL remaining
+2024-12-21 13:03:41,902 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 140.0µL remaining
+2024-12-21 13:03:41,902 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 150.0µL remaining
+2024-12-21 13:03:41,902 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 145.0µL remaining
+2024-12-21 13:03:41,902 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 155.0µL remaining
+2024-12-21 13:03:41,902 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 155.0µL remaining
+2024-12-21 13:03:41,902 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 170.0µL remaining
+2024-12-21 13:03:41,902 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 150.0µL remaining
+2024-12-21 13:03:41,902 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 150.0µL remaining
+2024-12-21 13:03:41,923 - lab_controller - INFO - Generated worklist and plate layout
+2024-12-21 13:03:43,420 - lab_automation - INFO - Plate data modified, processing...
+2024-12-21 13:03:45,586 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-21 13:03:46,517 - lab_automation - INFO - Plate data modified, processing...
+2024-12-21 13:03:48,694 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
+2024-12-21 13:13:57,915 - lab_controller - INFO - Shutting down...

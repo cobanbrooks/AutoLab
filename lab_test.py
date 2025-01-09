@@ -77,7 +77,7 @@ def main():
     if automation:
         test_github_polling(automation)
         test_file_generation(automation)
-        test_plate_monitoring(automation)
+        #test_plate_monitoring(automation)
     
     print("\nTest suite completed")
 

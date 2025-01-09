@@ -1,0 +1,232 @@
+2024-11-04 14:09:00,013 - plate_processor - INFO - Starting plate data monitor...
+2024-11-04 14:09:00,013 - plate_processor - INFO - Watching for changes to plate_data.csv
+2024-11-04 14:09:00,013 - plate_processor - INFO - Will process and save results to processed_plate_data.csv
+2024-11-04 14:09:21,454 - plate_processor.handler - INFO - Starting plate data processing...
+2024-11-04 14:09:21,456 - plate_processor.handler - INFO - Processing /Users/cobanbrooks/Documents/RESEARCH/auto_lab/plate_data.csv to /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+2024-11-04 14:09:21,487 - plate_processor.handler - ERROR - Processing failed with return code 2
+2024-11-04 14:09:21,487 - plate_processor.handler - ERROR - Error output: python: can't open file '/path/to/your/process_plate_data.py': [Errno 2] No such file or directory
+
+2024-11-04 14:09:21,487 - plate_processor.handler - ERROR - Processing failed, skipping GitHub push
+2024-11-04 14:09:22,512 - plate_processor.email - INFO - Email sent: Processing Failed
+2024-11-04 14:10:20,898 - plate_processor - INFO - Shutting down gracefully...
+2024-11-04 14:10:21,347 - plate_processor - INFO - Monitoring stopped
+2024-11-04 14:10:23,442 - plate_processor - INFO - Starting plate data monitor...
+2024-11-04 14:10:23,442 - plate_processor - INFO - Watching for changes to plate_data.csv
+2024-11-04 14:10:23,442 - plate_processor - INFO - Will process and save results to processed_plate_data.csv
+2024-11-04 14:10:30,484 - plate_processor.handler - INFO - Starting plate data processing...
+2024-11-04 14:10:30,485 - plate_processor.handler - INFO - Processing /Users/cobanbrooks/Documents/RESEARCH/auto_lab/plate_data.csv to /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+2024-11-04 14:10:31,258 - plate_processor.handler - INFO - Processing completed successfully
+2024-11-04 14:10:31,258 - plate_processor.handler - INFO - Process output: Successfully processed /Users/cobanbrooks/Documents/RESEARCH/auto_lab/plate_data.csv
+Processed data saved to /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+
+2024-11-04 14:10:34,185 - plate_processor.handler - INFO - Successfully processed data and pushed to GitHub at 2024-11-04 14:10:31
+2024-11-04 14:10:35,111 - plate_processor.email - INFO - Email sent: Processing Successful
+2024-11-04 14:10:35,111 - plate_processor.handler - INFO - Starting plate data processing...
+2024-11-04 14:10:35,111 - plate_processor.handler - INFO - Processing /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv to /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+2024-11-04 14:10:35,369 - plate_processor.handler - INFO - Processing completed successfully
+2024-11-04 14:10:35,369 - plate_processor.handler - INFO - Process output: Successfully processed /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+Processed data saved to /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+
+2024-11-04 14:10:36,471 - plate_processor.handler - INFO - Successfully processed data and pushed to GitHub at 2024-11-04 14:10:35
+2024-11-04 14:10:37,344 - plate_processor.email - INFO - Email sent: Processing Successful
+2024-11-04 14:10:37,344 - plate_processor.handler - INFO - File content unchanged, skipping processing
+2024-11-04 14:13:22,172 - plate_processor.handler - INFO - Starting plate data processing...
+2024-11-04 14:13:22,210 - plate_processor.handler - INFO - Processing /Users/cobanbrooks/Documents/RESEARCH/auto_lab/plate_data.csv to /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+2024-11-04 14:13:22,953 - plate_processor.handler - INFO - Processing completed successfully
+2024-11-04 14:13:22,953 - plate_processor.handler - INFO - Process output: Successfully processed /Users/cobanbrooks/Documents/RESEARCH/auto_lab/plate_data.csv
+Processed data saved to /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+
+2024-11-04 14:13:24,241 - plate_processor.handler - INFO - Successfully processed data and pushed to GitHub at 2024-11-04 14:13:23
+2024-11-04 14:13:24,997 - plate_processor.email - INFO - Email sent: Processing Successful
+2024-11-04 14:13:24,998 - plate_processor.handler - INFO - Starting plate data processing...
+2024-11-04 14:13:24,998 - plate_processor.handler - INFO - Processing /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv to /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+2024-11-04 14:13:25,319 - plate_processor.handler - INFO - Processing completed successfully
+2024-11-04 14:13:25,319 - plate_processor.handler - INFO - Process output: Successfully processed /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+Processed data saved to /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+
+2024-11-04 14:13:26,110 - plate_processor.handler - INFO - Successfully processed data and pushed to GitHub at 2024-11-04 14:13:25
+2024-11-04 14:13:26,857 - plate_processor.email - INFO - Email sent: Processing Successful
+2024-11-04 14:13:26,857 - plate_processor.handler - INFO - File content unchanged, skipping processing
+2024-11-04 14:14:30,648 - plate_processor - INFO - Shutting down gracefully...
+2024-11-04 14:14:31,298 - plate_processor - INFO - Monitoring stopped
+2024-11-04 14:19:34,527 - plate_processor - INFO - Starting plate data monitor...
+2024-11-04 14:19:34,528 - plate_processor - INFO - Watching for changes to plate_data.csv
+2024-11-04 14:19:34,528 - plate_processor - INFO - Will process and save results to processed_plate_data.csv
+2024-11-04 14:19:42,289 - plate_processor.handler - INFO - Starting plate data processing...
+2024-11-04 14:19:42,294 - plate_processor.handler - INFO - Processing /Users/cobanbrooks/Documents/RESEARCH/auto_lab/plate_data.csv to /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+2024-11-04 14:19:43,149 - plate_processor.handler - INFO - Processing completed successfully
+2024-11-04 14:19:43,149 - plate_processor.handler - INFO - Process output: Successfully processed /Users/cobanbrooks/Documents/RESEARCH/auto_lab/plate_data.csv
+Processed data saved to /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+
+2024-11-04 14:19:43,150 - plate_processor.handler - INFO - Starting plate data processing...
+2024-11-04 14:19:43,150 - plate_processor.handler - INFO - Processing /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv to /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+2024-11-04 14:19:43,412 - plate_processor.handler - INFO - Processing completed successfully
+2024-11-04 14:19:43,412 - plate_processor.handler - INFO - Process output: Successfully processed /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+Processed data saved to /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+
+2024-11-04 14:19:43,412 - plate_processor.handler - INFO - Input file content unchanged, skipping processing
+2024-11-04 14:22:37,014 - plate_processor - INFO - Shutting down gracefully...
+2024-11-04 14:22:37,233 - plate_processor - INFO - Monitoring stopped
+2024-11-04 14:22:39,197 - plate_processor - INFO - Starting plate data monitor...
+2024-11-04 14:22:39,197 - plate_processor - INFO - Watching for changes to plate_data.csv
+2024-11-04 14:22:39,197 - plate_processor - INFO - Will process and save results to processed_plate_data.csv
+2024-11-04 14:22:45,746 - plate_processor.handler - INFO - Detected change in: /Users/cobanbrooks/Documents/RESEARCH/auto_lab/plate_data.csv
+2024-11-04 14:22:45,746 - plate_processor.handler - INFO - Identified as input file change
+2024-11-04 14:22:45,746 - plate_processor.handler - INFO - New input file MD5: c6cd30ef7ba97ae1e727facc50c0b6b0
+2024-11-04 14:22:45,746 - plate_processor.handler - INFO - Starting plate data processing...
+2024-11-04 14:22:45,746 - plate_processor.handler - INFO - Processing /Users/cobanbrooks/Documents/RESEARCH/auto_lab/plate_data.csv to /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+2024-11-04 14:22:46,195 - plate_processor.handler - INFO - Processing completed successfully
+2024-11-04 14:22:46,195 - plate_processor.handler - INFO - Process output: Successfully processed /Users/cobanbrooks/Documents/RESEARCH/auto_lab/plate_data.csv
+Processed data saved to /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+
+2024-11-04 14:22:46,195 - plate_processor.handler - INFO - Detected change in: /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+2024-11-04 14:22:46,195 - plate_processor.handler - INFO - Identified as input file change
+2024-11-04 14:22:46,195 - plate_processor.handler - INFO - New input file MD5: 911aa0d0a75abcf48b99b42ae934b814
+2024-11-04 14:22:46,195 - plate_processor.handler - INFO - Starting plate data processing...
+2024-11-04 14:22:46,195 - plate_processor.handler - INFO - Processing /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv to /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+2024-11-04 14:22:46,407 - plate_processor.handler - INFO - Processing completed successfully
+2024-11-04 14:22:46,408 - plate_processor.handler - INFO - Process output: Successfully processed /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+Processed data saved to /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+
+2024-11-04 14:22:46,408 - plate_processor.handler - INFO - Detected change in: /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+2024-11-04 14:22:46,408 - plate_processor.handler - INFO - Identified as input file change
+2024-11-04 14:22:46,408 - plate_processor.handler - INFO - Input file content unchanged, skipping processing
+2024-11-04 14:23:47,858 - plate_processor - INFO - Shutting down gracefully...
+2024-11-04 14:23:48,442 - plate_processor - INFO - Monitoring stopped
+2024-11-04 14:24:31,652 - plate_processor - INFO - Starting plate data monitor...
+2024-11-04 14:24:31,653 - plate_processor - INFO - Watching for changes to plate_data.csv
+2024-11-04 14:24:31,653 - plate_processor - INFO - Will process and save results to processed_plate_data.csv
+2024-11-04 14:24:47,105 - plate_processor.handler - INFO - Detected change in: /Users/cobanbrooks/Documents/RESEARCH/auto_lab/plate_data.csv
+2024-11-04 14:24:47,105 - plate_processor.handler - INFO - Identified as input file change
+2024-11-04 14:24:47,105 - plate_processor.handler - INFO - New input file MD5: 28f907de39a0fe5272cb73f626da1609
+2024-11-04 14:24:47,106 - plate_processor.handler - INFO - Starting plate data processing...
+2024-11-04 14:24:47,106 - plate_processor.handler - INFO - Processing /Users/cobanbrooks/Documents/RESEARCH/auto_lab/plate_data.csv to /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+2024-11-04 14:24:47,543 - plate_processor.handler - INFO - Processing completed successfully
+2024-11-04 14:24:47,544 - plate_processor.handler - INFO - Process output: Successfully processed /Users/cobanbrooks/Documents/RESEARCH/auto_lab/plate_data.csv
+Processed data saved to /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+
+2024-11-04 14:24:47,544 - plate_processor.handler - INFO - Detected change in: /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+2024-11-04 14:24:47,544 - plate_processor.handler - INFO - Identified as output file change
+2024-11-04 14:24:47,544 - plate_processor.handler - INFO - Output file MD5: 5114a71529609b08dd0fded191dbc689
+2024-11-04 14:24:47,544 - plate_processor.handler - INFO - Previous output MD5: None
+2024-11-04 14:24:47,544 - plate_processor.handler - INFO - Input path: /Users/cobanbrooks/Documents/RESEARCH/auto_lab/plate_data.csv
+2024-11-04 14:24:47,544 - plate_processor.handler - INFO - Output path: /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+2024-11-04 14:24:47,544 - plate_processor.handler - INFO - Repo path: /Users/cobanbrooks/Documents/RESEARCH/auto_lab
+2024-11-04 14:24:47,544 - plate_processor.handler - INFO - Relative input path: plate_data.csv
+2024-11-04 14:24:47,544 - plate_processor.handler - INFO - Relative output path: processed_plate_data.csv
+2024-11-04 14:24:47,544 - plate_processor.handler - INFO - Git status before staging:
+2024-11-04 14:24:47,618 - plate_processor.handler - INFO - On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   plate_data.csv
+	modified:   plate_data_processor_email.yml
+	modified:   platereader_watchdog.py
+	modified:   processed_plate_data.csv
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	CreiLOV_Fluorescence_Rep2.xlsx
+	auto_lab_env/bin/watchmedo
+	auto_lab_env/lib/python3.11/site-packages/GitPython-3.1.43.dist-info/
+	auto_lab_env/lib/python3.11/site-packages/PyYAML-6.0.2.dist-info/
+	auto_lab_env/lib/python3.11/site-packages/_watchdog_fsevents.cpython-311-darwin.so
+	auto_lab_env/lib/python3.11/site-packages/_yaml/
+	auto_lab_env/lib/python3.11/site-packages/git/
+	auto_lab_env/lib/python3.11/site-packages/gitdb-4.0.11.dist-info/
+	auto_lab_env/lib/python3.11/site-packages/gitdb/
+	auto_lab_env/lib/python3.11/site-packages/smmap-5.0.1.dist-info/
+	auto_lab_env/lib/python3.11/site-packages/smmap/
+	auto_lab_env/lib/python3.11/site-packages/watchdog-6.0.0.dist-info/
+	auto_lab_env/lib/python3.11/site-packages/watchdog/
+	auto_lab_env/lib/python3.11/site-packages/yaml/
+	plate_processor.log
+	platereader_process_config.yml
+	process_plate_data.py
+	test_input.csv
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2024-11-04 14:24:47,618 - plate_processor.handler - INFO - Staging files...
+2024-11-04 14:24:47,718 - plate_processor.handler - INFO - Git status after staging:
+2024-11-04 14:24:47,790 - plate_processor.handler - INFO - On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   plate_data.csv
+	modified:   processed_plate_data.csv
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   plate_data_processor_email.yml
+	modified:   platereader_watchdog.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	CreiLOV_Fluorescence_Rep2.xlsx
+	auto_lab_env/bin/watchmedo
+	auto_lab_env/lib/python3.11/site-packages/GitPython-3.1.43.dist-info/
+	auto_lab_env/lib/python3.11/site-packages/PyYAML-6.0.2.dist-info/
+	auto_lab_env/lib/python3.11/site-packages/_watchdog_fsevents.cpython-311-darwin.so
+	auto_lab_env/lib/python3.11/site-packages/_yaml/
+	auto_lab_env/lib/python3.11/site-packages/git/
+	auto_lab_env/lib/python3.11/site-packages/gitdb-4.0.11.dist-info/
+	auto_lab_env/lib/python3.11/site-packages/gitdb/
+	auto_lab_env/lib/python3.11/site-packages/smmap-5.0.1.dist-info/
+	auto_lab_env/lib/python3.11/site-packages/smmap/
+	auto_lab_env/lib/python3.11/site-packages/watchdog-6.0.0.dist-info/
+	auto_lab_env/lib/python3.11/site-packages/watchdog/
+	auto_lab_env/lib/python3.11/site-packages/yaml/
+	plate_processor.log
+	platereader_process_config.yml
+	process_plate_data.py
+	test_input.csv
+
+2024-11-04 14:24:47,790 - plate_processor.handler - INFO - Creating commit...
+2024-11-04 14:24:47,867 - plate_processor.handler - INFO - Pushing to remote...
+2024-11-04 14:24:50,143 - plate_processor.handler - INFO - Push complete. Push info:
+2024-11-04 14:24:50,143 - plate_processor.handler - INFO -   9d1bc0a..b0414a2
+
+2024-11-04 14:24:50,143 - plate_processor.handler - INFO - Successfully pushed to GitHub at 2024-11-04 14:24:47
+2024-11-04 14:24:50,999 - plate_processor.email - INFO - Email sent: Plate Data Update
+2024-11-04 14:26:32,148 - plate_processor - INFO - Shutting down gracefully...
+2024-11-04 14:26:33,089 - plate_processor - INFO - Monitoring stopped
+2024-11-04 14:30:39,094 - plate_processor - INFO - Starting plate data monitor...
+2024-11-04 14:30:39,095 - plate_processor - INFO - Watching for changes to plate_data.csv
+2024-11-04 14:30:39,095 - plate_processor - INFO - Will process and save results to processed_plate_data.csv
+2024-11-04 14:30:45,120 - plate_processor.handler - INFO - Detected change in: /Users/cobanbrooks/Documents/RESEARCH/auto_lab/plate_data.csv
+2024-11-04 14:30:45,121 - plate_processor.handler - INFO - Identified as input file change
+2024-11-04 14:30:45,122 - plate_processor.handler - INFO - New input file MD5: 3033e510c3764a45feadefb5158bde7c
+2024-11-04 14:30:45,122 - plate_processor.handler - INFO - Starting plate data processing...
+2024-11-04 14:30:45,122 - plate_processor.handler - INFO - Processing /Users/cobanbrooks/Documents/RESEARCH/auto_lab/plate_data.csv to /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+2024-11-04 14:30:45,607 - plate_processor.handler - INFO - Processing completed successfully
+2024-11-04 14:30:45,607 - plate_processor.handler - INFO - Process output: Successfully processed /Users/cobanbrooks/Documents/RESEARCH/auto_lab/plate_data.csv
+Processed data saved to /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+
+2024-11-04 14:30:45,607 - plate_processor.handler - INFO - Detected change in: /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+2024-11-04 14:30:45,607 - plate_processor.handler - INFO - Identified as output file change
+2024-11-04 14:30:45,607 - plate_processor.handler - INFO - Output file MD5: a5340551d25e50d37f009286577001f0
+2024-11-04 14:30:45,607 - plate_processor.handler - INFO - Previous output MD5: None
+2024-11-04 14:30:45,607 - plate_processor.handler - INFO - Input path: /Users/cobanbrooks/Documents/RESEARCH/auto_lab/plate_data.csv
+2024-11-04 14:30:45,607 - plate_processor.handler - INFO - Output path: /Users/cobanbrooks/Documents/RESEARCH/auto_lab/processed_plate_data.csv
+2024-11-04 14:30:45,607 - plate_processor.handler - INFO - Repo path: /Users/cobanbrooks/Documents/RESEARCH/auto_lab
+2024-11-04 14:30:45,607 - plate_processor.handler - INFO - Relative input path: plate_data.csv
+2024-11-04 14:30:45,607 - plate_processor.handler - INFO - Relative output path: processed_plate_data.csv
+2024-11-04 14:30:45,607 - plate_processor.handler - INFO - Staging files...
+2024-11-04 14:30:45,706 - plate_processor.handler - INFO - Creating commit...
+2024-11-04 14:30:45,802 - plate_processor.handler - INFO - Pushing to remote...
+2024-11-04 14:30:46,868 - plate_processor.handler - INFO - Push complete. Push info:
+2024-11-04 14:30:46,868 - plate_processor.handler - INFO -   b0414a2..f61f6b0
+
+2024-11-04 14:30:46,868 - plate_processor.handler - INFO - Successfully pushed to GitHub at 2024-11-04 14:30:45
+2024-11-04 14:30:47,742 - plate_processor.email - INFO - Email sent: Plate Data Update
+2024-11-04 14:31:12,438 - plate_processor - INFO - Shutting down gracefully...
+2024-11-04 14:31:13,215 - plate_processor - INFO - Monitoring stopped
