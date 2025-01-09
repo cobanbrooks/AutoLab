@@ -109,7 +109,7 @@ class PlateDataHandler(FileSystemEventHandler):
             self.logger.error(f"Error processing plate data: {e}")
 
 class DNATracker:
-    def __init__(self, inventory_file='dna_inventory.json'):
+    def __init__(self, inventory_file='inventories/dna_inventory.json'):
         self.inventory_file = inventory_file
         self.inventory = self.load_inventory()
         
@@ -199,7 +199,7 @@ class DNATracker:
         self.save_inventory()
         return updates
         
-    def export_to_csv(self, filename='dna_inventory.csv'):
+    def export_to_csv(self, filename='inventories/dna_inventory.csv'):
         """Export current inventory to CSV"""
         rows = []
         for fid, data in self.inventory.items():
@@ -273,7 +273,7 @@ class DNATracker:
         print("=" * 50)
 
 class RgntTracker:
-    def __init__(self, inventory_file='reagent_inventory.json'):
+    def __init__(self, inventory_file='inventories/reagent_inventory.json'):
         self.inventory_file = inventory_file
         self.inventory = self.load_inventory()
 
@@ -375,7 +375,7 @@ class RgntTracker:
         self.save_inventory()
         return updates
         
-    def export_to_csv(self, filename='reagent_inventory.csv'):
+    def export_to_csv(self, filename='inventories/reagent_inventory.csv'):
         """Export current inventory to CSV"""
         rows = []
         for rid, data in self.inventory.items():
@@ -490,7 +490,6 @@ class LabController:
                 'python', 'seq_to_pipetting_steps.py',
                 'sequence_query.txt',
                 'sequence_segments.csv',
-                'output',
                 'worklists'
             ], check=True)
 
