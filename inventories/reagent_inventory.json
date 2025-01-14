@@ -1,7 +1,7 @@
 {
   "GGMM": {
     "well": "D06",
-    "volume": 820.0,
+    "volume": 790.0,
     "history": [
       {
         "timestamp": "2025-01-13T21:19:57.159347",
@@ -92,6 +92,21 @@
         "timestamp": "2025-01-13T22:47:49.875741",
         "volume_used": 10.0,
         "volume_remaining": 820.0
+      },
+      {
+        "timestamp": "2025-01-13T22:51:29.648452",
+        "volume_used": 10.0,
+        "volume_remaining": 810.0
+      },
+      {
+        "timestamp": "2025-01-13T22:51:29.648452",
+        "volume_used": 10.0,
+        "volume_remaining": 800.0
+      },
+      {
+        "timestamp": "2025-01-13T22:51:29.648452",
+        "volume_used": 10.0,
+        "volume_remaining": 790.0
       }
     ]
   }
