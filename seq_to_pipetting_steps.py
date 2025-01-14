@@ -23,7 +23,6 @@ def read_sequence_file(file_path):
 def find_sequence_fragments(sequence, csv_file_path, sequence_number):
     print(f"\nProcessing Sequence {sequence_number}:")
     print(f"Searching for fragments in sequence: {sequence[:50]}...")
-    print(f"Using CSV file: {csv_file_path}")
 
     # Read the CSV file
     try:
@@ -31,7 +30,6 @@ def find_sequence_fragments(sequence, csv_file_path, sequence_number):
             csv_reader = csv.reader(file)
             headers = next(csv_reader)
             data = {row[0]: row[1:] for row in csv_reader}
-        print(f"Successfully read CSV file. Found {len(data)} rows.")
     except FileNotFoundError:
         raise FileNotFoundError(f"CSV file not found: {csv_file_path}")
     except csv.Error as e:
@@ -59,7 +57,6 @@ def find_sequence_fragments(sequence, csv_file_path, sequence_number):
             for f, fragment in enumerate(data[p]):
                 if fragment and sequence.startswith(fragment, start):
                     result.append(f"{p}f{f}")
-                    print(f"Found match: {p}f{f} at position {start}")
                     start += len(fragment)
                     found = True
                     break
@@ -71,7 +68,6 @@ def find_sequence_fragments(sequence, csv_file_path, sequence_number):
     for i in result:
         if i in well_dict:
             index.append(well_dict[i])
-            print(f"Mapped fragment {i} to well {well_dict[i]}")
         else:
             print(f"Warning: No well mapping found for fragment {i}")
 
@@ -125,7 +121,8 @@ def write_worklist(all_wells, output_dir):
         writer.writerows(rows)
     
     
-    print(f"- Worklist: {worklist_file}")
+    print(f"- Generated worklist: {worklist_file}")
+
 
 
 def main():
