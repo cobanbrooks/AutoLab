@@ -1,6 +1,6 @@
 {
-  "state": "Processing plate data",
-  "current_step": "Processing plate data",
+  "state": "Waiting for new sequence",
+  "current_step": null,
   "error": null,
-  "last_updated": "2025-01-13T21:12:02.763770"
+  "last_updated": "2025-01-13T21:13:11.991045"
 }
