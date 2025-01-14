@@ -93,16 +93,22 @@ class PlateDataHandler(FileSystemEventHandler):
             # Update DNA inventory CSV
             dna_tracker = DNATracker()
             dna_tracker.export_to_csv()
+
+            # Update reagent inventory CSV
+            rgnt_tracker = RgntTracker()
+            rgnt_tracker.export_to_csv()
             
             # Push to GitHub
             self.repo.index.add([
                 self.output_file,
-                'dna_inventory.csv',
-                'dna_inventory.json'
+                'inventories/dna_inventory.csv',
+                'inventories/dna_inventory.json',
+                'inventories/reagent_inventory.csv',
+                'inventories/reagent_inventory.json'
             ])
-            self.repo.index.commit('Update processed plate data and DNA inventory')
+            self.repo.index.commit('Update processed plate data and inventories')
             self.repo.remotes.origin.push()
-            self.logger.info("Processed data and DNA inventory pushed to GitHub")
+            self.logger.info("Processed data and inventories pushed to GitHub")
             self.status.update_state(LabState.IDLE, "Processing complete") 
 
         except Exception as e:
@@ -277,6 +283,8 @@ class RgntTracker:
         self.inventory_file = inventory_file
         self.inventory = self.load_inventory()
 
+
+
     def load_inventory(self):
         """Load or initialize reagent inventory"""
         try:
@@ -302,13 +310,13 @@ class RgntTracker:
                     well = f"{row}{col}"
                     wells.append(well)
 
-        for well, reagent in zip(wells, reagents):
-            reagent_id = reagent
-            inventory[reagent_id] = {
-                "well": well,
-                "volume": 1000, # Initial vol in uL
-                "history": []
-            }
+            for well, reagent in zip(wells, reagents):
+                reagent_id = reagent
+                inventory[reagent_id] = {
+                    "well": well,
+                    "volume": 1000, # Initial vol in uL
+                    "history": []
+                }
 
             self.save_inventory(inventory)
             return inventory
@@ -328,14 +336,18 @@ class RgntTracker:
         return [well, f"{row}{int(col)}", f"{row}{int(col):02d}"]
 
     def update_volumes(self, worklist_file):
-        """Update volumes based on worklist"""
+        """Update volumes based on worklist, only for Reagents source plate"""
         df = pd.read_csv(worklist_file)
+
 
         # Track all updates for this run
         updates = []
         timestamp = datetime.now().isoformat()
         
-        for _, row in df.iterrows():
+        # Filter for only Reagents source plate
+        reagents_df = df[df['Source_Plate'] == 'Reagents']
+        
+        for _, row in reagents_df.iterrows():
             well = row['Source_Well']
             volume_used = float(row['Volume'])
             well_formats = self.get_well_formats(well)
@@ -495,15 +507,40 @@ class LabController:
 
             # Update DNA volumes
             dna_tracker = DNATracker()
-            updates = dna_tracker.update_volumes('worklists/fragment_assembly_worklist.csv')
+            updates_dna = dna_tracker.update_volumes('worklists/fragment_assembly_worklist.csv')
 
-            # Log volume updates
+            # Update rgnt volumes
+            worklist_files = [
+                'worklists/GGMM_Wklist.csv',
+                'worklists/PrimerTransfer_Wklist.csv',
+                'worklists/PCRMM_Transfer_Wklist.csv',
+                'worklists/PCR_product_dilution_Wklist.csv',
+                'worklists/TXTL_Wklist.csv'
+            ]
+
+            rgnt_tracker = RgntTracker()
+            all_updates = []
+
+            for worklist_file in worklist_files:
+                updates = rgnt_tracker.update_volumes(worklist_file)
+                all_updates.extend(updates)
+
+            # Log volume dna updates
             self.logger.info("Updated DNA volumes")
-            for update in updates:
+            for update in updates_dna:
                 self.logger.info(
                     f"Fragment {update['fragment']} in well {update['well']}: "
                     f"used {update['volume_used']}µL, {update['volume_remaining']}µL remaining"
             )
+                
+            # Log volume rgnt updates
+            self.logger.info("Updated reagent volumes")
+            for update in all_updates:
+                self.logger.info(
+                    f"Reagent {update['reagent']} in well {update['well']}: "
+                    f"used {update['volume_used']}µL, {update['volume_remaining']}µL remaining"
+            )
+
             
             # Generate plate layout
             subprocess.run([
