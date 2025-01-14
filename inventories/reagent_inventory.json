@@ -1,7 +1,7 @@
 {
   "GGMM": {
     "well": "D06",
-    "volume": 940.0,
+    "volume": 910.0,
     "history": [
       {
         "timestamp": "2025-01-13T22:54:28.413771",
@@ -32,12 +32,27 @@
         "timestamp": "2025-01-13T22:55:57.294865",
         "volume_used": 10.0,
         "volume_remaining": 940.0
+      },
+      {
+        "timestamp": "2025-01-13T22:56:51.719367",
+        "volume_used": 10.0,
+        "volume_remaining": 930.0
+      },
+      {
+        "timestamp": "2025-01-13T22:56:51.719367",
+        "volume_used": 10.0,
+        "volume_remaining": 920.0
+      },
+      {
+        "timestamp": "2025-01-13T22:56:51.719367",
+        "volume_used": 10.0,
+        "volume_remaining": 910.0
       }
     ]
   },
   "Primers": {
     "well": "D07",
-    "volume": 460.0,
+    "volume": 190.0,
     "history": [
       {
         "timestamp": "2025-01-13T22:54:28.419983",
@@ -68,12 +83,27 @@
         "timestamp": "2025-01-13T22:55:57.302309",
         "volume_used": 90.0,
         "volume_remaining": 460.0
+      },
+      {
+        "timestamp": "2025-01-13T22:56:51.725602",
+        "volume_used": 90.0,
+        "volume_remaining": 370.0
+      },
+      {
+        "timestamp": "2025-01-13T22:56:51.725602",
+        "volume_used": 90.0,
+        "volume_remaining": 280.0
+      },
+      {
+        "timestamp": "2025-01-13T22:56:51.725602",
+        "volume_used": 90.0,
+        "volume_remaining": 190.0
       }
     ]
   },
   "PCRMM": {
     "well": "D08",
-    "volume": 940.0,
+    "volume": 910.0,
     "history": [
       {
         "timestamp": "2025-01-13T22:54:28.425747",
@@ -104,12 +134,27 @@
         "timestamp": "2025-01-13T22:55:57.307123",
         "volume_used": 10.0,
         "volume_remaining": 940.0
+      },
+      {
+        "timestamp": "2025-01-13T22:56:51.729675",
+        "volume_used": 10.0,
+        "volume_remaining": 930.0
+      },
+      {
+        "timestamp": "2025-01-13T22:56:51.729675",
+        "volume_used": 10.0,
+        "volume_remaining": 920.0
+      },
+      {
+        "timestamp": "2025-01-13T22:56:51.729675",
+        "volume_used": 10.0,
+        "volume_remaining": 910.0
       }
     ]
   },
   "E. coli extract": {
     "well": "E06",
-    "volume": 840.0400000000002,
+    "volume": 760.0600000000003,
     "history": [
       {
         "timestamp": "2025-01-13T22:54:28.435250",
@@ -140,12 +185,27 @@
         "timestamp": "2025-01-13T22:55:57.322781",
         "volume_used": 26.66,
         "volume_remaining": 840.0400000000002
+      },
+      {
+        "timestamp": "2025-01-13T22:56:51.739599",
+        "volume_used": 26.66,
+        "volume_remaining": 813.3800000000002
+      },
+      {
+        "timestamp": "2025-01-13T22:56:51.739599",
+        "volume_used": 26.66,
+        "volume_remaining": 786.7200000000003
+      },
+      {
+        "timestamp": "2025-01-13T22:56:51.739599",
+        "volume_used": 26.66,
+        "volume_remaining": 760.0600000000003
       }
     ]
   },
   "TXTLMM": {
     "well": "E07",
-    "volume": 679.9599999999998,
+    "volume": 519.9399999999997,
     "history": [
       {
         "timestamp": "2025-01-13T22:54:28.435250",
@@ -176,12 +236,27 @@
         "timestamp": "2025-01-13T22:55:57.322781",
         "volume_used": 53.34,
         "volume_remaining": 679.9599999999998
+      },
+      {
+        "timestamp": "2025-01-13T22:56:51.739599",
+        "volume_used": 53.34,
+        "volume_remaining": 626.6199999999998
+      },
+      {
+        "timestamp": "2025-01-13T22:56:51.739599",
+        "volume_used": 53.34,
+        "volume_remaining": 573.2799999999997
+      },
+      {
+        "timestamp": "2025-01-13T22:56:51.739599",
+        "volume_used": 53.34,
+        "volume_remaining": 519.9399999999997
       }
     ]
   },
   "Water": {
     "well": "E08",
-    "volume": 760.0,
+    "volume": 640.0,
     "history": [
       {
         "timestamp": "2025-01-13T22:54:28.430361",
@@ -212,6 +287,21 @@
         "timestamp": "2025-01-13T22:55:57.314055",
         "volume_used": 40.0,
         "volume_remaining": 760.0
+      },
+      {
+        "timestamp": "2025-01-13T22:56:51.734401",
+        "volume_used": 40.0,
+        "volume_remaining": 720.0
+      },
+      {
+        "timestamp": "2025-01-13T22:56:51.734401",
+        "volume_used": 40.0,
+        "volume_remaining": 680.0
+      },
+      {
+        "timestamp": "2025-01-13T22:56:51.734401",
+        "volume_used": 40.0,
+        "volume_remaining": 640.0
       }
     ]
   }
