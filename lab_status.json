@@ -1,6 +1,6 @@
 {
   "state": "Waiting for new sequence",
-  "current_step": "Shutdown complete",
+  "current_step": null,
   "error": null,
-  "last_updated": "2024-12-21T13:13:57.921175"
+  "last_updated": "2025-01-13T21:11:44.228899"
 }
