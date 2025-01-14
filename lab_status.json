@@ -1,6 +1,6 @@
 {
-  "state": "Robot performing DNA assembly, amplification, expression, assay",
-  "current_step": null,
+  "state": "Processing plate data",
+  "current_step": "Processing plate data",
   "error": null,
-  "last_updated": "2025-01-13T22:44:04.731928"
+  "last_updated": "2025-01-13T22:44:13.739123"
 }
