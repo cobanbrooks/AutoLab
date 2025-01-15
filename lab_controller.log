@@ -601,3 +601,835 @@
 2024-12-21 13:03:46,517 - lab_automation - INFO - Plate data modified, processing...
 2024-12-21 13:03:48,694 - lab_automation - INFO - Processed data and DNA inventory pushed to GitHub
 2024-12-21 13:13:57,915 - lab_controller - INFO - Shutting down...
+2025-01-13 21:11:44,227 - lab_controller - INFO - Starting lab automation system
+2025-01-13 21:11:47,368 - lab_controller - INFO - New sequence detected
+2025-01-13 21:11:48,293 - lab_controller - INFO - Updated DNA volumes
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 135.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 150.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 150.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 155.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 155.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 155.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 160.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 145.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 170.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 145.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 140.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 165.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 150.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 145.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 145.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 155.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 130.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 140.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 135.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 150.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 150.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 165.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 140.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 140.0µL remaining
+2025-01-13 21:11:48,293 - lab_controller - INFO - Updated reagent volumes
+2025-01-13 21:11:48,311 - lab_controller - INFO - Generated worklist and plate layout
+2025-01-13 21:12:01,408 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 21:12:02,763 - lab_automation - ERROR - Error processing plate data: [Errno 2] No such file or directory: 'dna_inventory.csv'
+2025-01-13 21:12:02,763 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 21:12:03,847 - lab_automation - ERROR - Error processing plate data: [Errno 2] No such file or directory: 'dna_inventory.csv'
+2025-01-13 21:12:36,087 - lab_controller - INFO - Shutting down...
+2025-01-13 21:13:11,990 - lab_controller - INFO - Starting lab automation system
+2025-01-13 21:13:13,512 - lab_controller - INFO - New sequence detected
+2025-01-13 21:13:14,563 - lab_controller - INFO - Updated DNA volumes
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 125.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 145.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 145.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 150.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 150.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 150.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 155.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 135.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 165.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 135.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 130.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 160.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 145.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 140.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 135.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 150.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 120.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 130.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 125.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 145.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 145.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 160.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 130.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 130.0µL remaining
+2025-01-13 21:13:14,563 - lab_controller - INFO - Updated reagent volumes
+2025-01-13 21:13:14,583 - lab_controller - INFO - Generated worklist and plate layout
+2025-01-13 21:13:19,461 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 21:13:22,944 - lab_automation - ERROR - Error processing plate data: [Errno 2] No such file or directory: 'inventories/rngt_tracker.csv'
+2025-01-13 21:13:22,944 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 21:13:24,133 - lab_automation - ERROR - Error processing plate data: [Errno 2] No such file or directory: 'inventories/rngt_tracker.csv'
+2025-01-13 21:14:52,749 - lab_controller - INFO - Shutting down...
+2025-01-13 21:15:45,024 - lab_controller - INFO - Starting lab automation system
+2025-01-13 21:15:46,870 - lab_controller - INFO - New sequence detected
+2025-01-13 21:15:47,764 - lab_controller - INFO - Updated DNA volumes
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 115.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 140.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 140.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 145.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 145.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 145.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 150.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 125.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 160.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 125.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 120.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 155.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 140.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 135.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 125.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 145.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 110.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 120.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 115.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 140.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 140.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 155.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 120.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 120.0µL remaining
+2025-01-13 21:15:47,764 - lab_controller - INFO - Updated reagent volumes
+2025-01-13 21:15:47,782 - lab_controller - INFO - Generated worklist and plate layout
+2025-01-13 21:15:51,937 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 21:15:53,155 - lab_automation - ERROR - Error processing plate data: [Errno 2] No such file or directory: 'inventories/rngt_inventory.csv'
+2025-01-13 21:15:53,155 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 21:15:54,587 - lab_automation - ERROR - Error processing plate data: [Errno 2] No such file or directory: 'inventories/rngt_inventory.csv'
+2025-01-13 21:16:01,651 - lab_controller - INFO - Shutting down...
+2025-01-13 21:16:20,036 - lab_controller - INFO - Starting lab automation system
+2025-01-13 21:16:21,416 - lab_controller - INFO - New sequence detected
+2025-01-13 21:16:22,438 - lab_controller - INFO - Updated DNA volumes
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 105.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 135.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 135.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 140.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 140.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 140.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 145.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 115.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 155.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 115.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 110.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 150.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 135.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 130.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 115.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 140.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 100.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 110.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 105.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 135.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 135.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 150.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 110.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 110.0µL remaining
+2025-01-13 21:16:22,439 - lab_controller - INFO - Updated reagent volumes
+2025-01-13 21:16:22,456 - lab_controller - INFO - Generated worklist and plate layout
+2025-01-13 21:16:25,790 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 21:16:27,926 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-13 21:16:28,870 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 21:16:31,117 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-13 21:17:53,458 - lab_controller - INFO - Shutting down...
+2025-01-13 21:19:54,762 - lab_controller - INFO - Starting lab automation system
+2025-01-13 21:19:56,313 - lab_controller - INFO - New sequence detected
+2025-01-13 21:19:57,159 - lab_controller - INFO - Updated DNA volumes
+2025-01-13 21:19:57,159 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 95.0µL remaining
+2025-01-13 21:19:57,159 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 130.0µL remaining
+2025-01-13 21:19:57,159 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 130.0µL remaining
+2025-01-13 21:19:57,159 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 135.0µL remaining
+2025-01-13 21:19:57,159 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 135.0µL remaining
+2025-01-13 21:19:57,159 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 135.0µL remaining
+2025-01-13 21:19:57,159 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 140.0µL remaining
+2025-01-13 21:19:57,159 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 105.0µL remaining
+2025-01-13 21:19:57,159 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 150.0µL remaining
+2025-01-13 21:19:57,159 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 105.0µL remaining
+2025-01-13 21:19:57,160 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 100.0µL remaining
+2025-01-13 21:19:57,160 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 145.0µL remaining
+2025-01-13 21:19:57,160 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 130.0µL remaining
+2025-01-13 21:19:57,160 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 125.0µL remaining
+2025-01-13 21:19:57,160 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 105.0µL remaining
+2025-01-13 21:19:57,160 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 135.0µL remaining
+2025-01-13 21:19:57,160 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 90.0µL remaining
+2025-01-13 21:19:57,160 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 100.0µL remaining
+2025-01-13 21:19:57,160 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 95.0µL remaining
+2025-01-13 21:19:57,160 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 130.0µL remaining
+2025-01-13 21:19:57,160 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 130.0µL remaining
+2025-01-13 21:19:57,160 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 145.0µL remaining
+2025-01-13 21:19:57,160 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 100.0µL remaining
+2025-01-13 21:19:57,160 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 100.0µL remaining
+2025-01-13 21:19:57,160 - lab_controller - INFO - Updated reagent volumes
+2025-01-13 21:19:57,160 - lab_controller - ERROR - Error generating lab files: 'fragment'
+2025-01-13 21:24:37,888 - lab_controller - INFO - Shutting down...
+2025-01-13 21:24:39,804 - lab_controller - INFO - Starting lab automation system
+2025-01-13 21:24:41,321 - lab_controller - INFO - New sequence detected
+2025-01-13 21:24:42,486 - lab_controller - INFO - Updated DNA volumes
+2025-01-13 21:24:42,486 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 85.0µL remaining
+2025-01-13 21:24:42,486 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 125.0µL remaining
+2025-01-13 21:24:42,486 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 125.0µL remaining
+2025-01-13 21:24:42,486 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 130.0µL remaining
+2025-01-13 21:24:42,486 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 130.0µL remaining
+2025-01-13 21:24:42,486 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 130.0µL remaining
+2025-01-13 21:24:42,486 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 135.0µL remaining
+2025-01-13 21:24:42,487 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 95.0µL remaining
+2025-01-13 21:24:42,487 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 145.0µL remaining
+2025-01-13 21:24:42,487 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 95.0µL remaining
+2025-01-13 21:24:42,487 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 90.0µL remaining
+2025-01-13 21:24:42,487 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 140.0µL remaining
+2025-01-13 21:24:42,487 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 125.0µL remaining
+2025-01-13 21:24:42,487 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 120.0µL remaining
+2025-01-13 21:24:42,487 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 95.0µL remaining
+2025-01-13 21:24:42,487 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 130.0µL remaining
+2025-01-13 21:24:42,487 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 80.0µL remaining
+2025-01-13 21:24:42,487 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 90.0µL remaining
+2025-01-13 21:24:42,487 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 85.0µL remaining
+2025-01-13 21:24:42,487 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 125.0µL remaining
+2025-01-13 21:24:42,487 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 125.0µL remaining
+2025-01-13 21:24:42,487 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 140.0µL remaining
+2025-01-13 21:24:42,487 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 90.0µL remaining
+2025-01-13 21:24:42,487 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 90.0µL remaining
+2025-01-13 21:24:42,487 - lab_controller - INFO - Updated reagent volumes
+2025-01-13 21:24:42,487 - lab_controller - ERROR - Error generating lab files: 'fragment'
+2025-01-13 21:28:09,506 - lab_controller - INFO - Shutting down...
+2025-01-13 21:28:11,246 - lab_controller - INFO - Starting lab automation system
+2025-01-13 21:28:12,760 - lab_controller - INFO - New sequence detected
+2025-01-13 21:28:13,672 - lab_controller - INFO - Updated DNA volumes
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 75.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 120.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 120.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 125.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 125.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 125.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 130.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 85.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 140.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 85.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 80.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 135.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 120.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 115.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 85.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 125.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 70.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 80.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 75.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 120.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 120.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 135.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 80.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 80.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Updated reagent volumes
+2025-01-13 21:28:13,672 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 930.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 920.0µL remaining
+2025-01-13 21:28:13,672 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 910.0µL remaining
+2025-01-13 21:28:13,690 - lab_controller - INFO - Generated worklist and plate layout
+2025-01-13 21:28:23,204 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 21:28:25,507 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-13 21:28:26,352 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 21:28:28,332 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-13 21:29:58,033 - lab_controller - INFO - Shutting down...
+2025-01-13 22:43:05,954 - lab_controller - INFO - Starting lab automation system
+2025-01-13 22:43:08,941 - lab_controller - INFO - New sequence detected
+2025-01-13 22:43:09,901 - lab_controller - INFO - Updated DNA volumes
+2025-01-13 22:43:09,903 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 65.0µL remaining
+2025-01-13 22:43:09,903 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 115.0µL remaining
+2025-01-13 22:43:09,903 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 115.0µL remaining
+2025-01-13 22:43:09,903 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 120.0µL remaining
+2025-01-13 22:43:09,903 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 120.0µL remaining
+2025-01-13 22:43:09,903 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 120.0µL remaining
+2025-01-13 22:43:09,903 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 125.0µL remaining
+2025-01-13 22:43:09,904 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 75.0µL remaining
+2025-01-13 22:43:09,904 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 135.0µL remaining
+2025-01-13 22:43:09,904 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 75.0µL remaining
+2025-01-13 22:43:09,904 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 70.0µL remaining
+2025-01-13 22:43:09,904 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 130.0µL remaining
+2025-01-13 22:43:09,904 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 115.0µL remaining
+2025-01-13 22:43:09,904 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 110.0µL remaining
+2025-01-13 22:43:09,904 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 75.0µL remaining
+2025-01-13 22:43:09,904 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 120.0µL remaining
+2025-01-13 22:43:09,904 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 60.0µL remaining
+2025-01-13 22:43:09,904 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 70.0µL remaining
+2025-01-13 22:43:09,906 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 65.0µL remaining
+2025-01-13 22:43:09,906 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 115.0µL remaining
+2025-01-13 22:43:09,906 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 115.0µL remaining
+2025-01-13 22:43:09,909 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 130.0µL remaining
+2025-01-13 22:43:09,909 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 70.0µL remaining
+2025-01-13 22:43:09,909 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 70.0µL remaining
+2025-01-13 22:43:09,909 - lab_controller - INFO - Updated reagent volumes
+2025-01-13 22:43:09,909 - lab_controller - ERROR - Error generating lab files: name 'updates_rgnt' is not defined
+2025-01-13 22:44:00,475 - lab_controller - INFO - Shutting down...
+2025-01-13 22:44:02,169 - lab_controller - INFO - Starting lab automation system
+2025-01-13 22:44:03,673 - lab_controller - INFO - New sequence detected
+2025-01-13 22:44:04,711 - lab_controller - INFO - Updated DNA volumes
+2025-01-13 22:44:04,711 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 55.0µL remaining
+2025-01-13 22:44:04,711 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 110.0µL remaining
+2025-01-13 22:44:04,711 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 110.0µL remaining
+2025-01-13 22:44:04,711 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 115.0µL remaining
+2025-01-13 22:44:04,711 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 115.0µL remaining
+2025-01-13 22:44:04,711 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 115.0µL remaining
+2025-01-13 22:44:04,711 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 120.0µL remaining
+2025-01-13 22:44:04,711 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 65.0µL remaining
+2025-01-13 22:44:04,711 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 130.0µL remaining
+2025-01-13 22:44:04,711 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 65.0µL remaining
+2025-01-13 22:44:04,711 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 60.0µL remaining
+2025-01-13 22:44:04,711 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 125.0µL remaining
+2025-01-13 22:44:04,711 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 110.0µL remaining
+2025-01-13 22:44:04,711 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 105.0µL remaining
+2025-01-13 22:44:04,711 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 65.0µL remaining
+2025-01-13 22:44:04,711 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 115.0µL remaining
+2025-01-13 22:44:04,711 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 50.0µL remaining
+2025-01-13 22:44:04,711 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 60.0µL remaining
+2025-01-13 22:44:04,711 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 55.0µL remaining
+2025-01-13 22:44:04,711 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 110.0µL remaining
+2025-01-13 22:44:04,711 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 110.0µL remaining
+2025-01-13 22:44:04,712 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 125.0µL remaining
+2025-01-13 22:44:04,712 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 60.0µL remaining
+2025-01-13 22:44:04,712 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 60.0µL remaining
+2025-01-13 22:44:04,712 - lab_controller - INFO - Updated reagent volumes
+2025-01-13 22:44:04,712 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 870.0µL remaining
+2025-01-13 22:44:04,712 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 860.0µL remaining
+2025-01-13 22:44:04,712 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 850.0µL remaining
+2025-01-13 22:44:04,731 - lab_controller - INFO - Generated worklist and plate layout
+2025-01-13 22:44:13,738 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 22:44:15,860 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-13 22:44:16,833 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 22:44:19,068 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-13 22:44:47,691 - lab_controller - INFO - Shutting down...
+2025-01-13 22:47:46,120 - lab_controller - INFO - Starting lab automation system
+2025-01-13 22:47:48,410 - lab_controller - INFO - New sequence detected
+2025-01-13 22:47:49,890 - lab_controller - INFO - Updated DNA volumes
+2025-01-13 22:47:49,890 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 45.0µL remaining
+2025-01-13 22:47:49,890 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 105.0µL remaining
+2025-01-13 22:47:49,890 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 105.0µL remaining
+2025-01-13 22:47:49,890 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 110.0µL remaining
+2025-01-13 22:47:49,890 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 110.0µL remaining
+2025-01-13 22:47:49,890 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 110.0µL remaining
+2025-01-13 22:47:49,890 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 115.0µL remaining
+2025-01-13 22:47:49,890 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 55.0µL remaining
+2025-01-13 22:47:49,890 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 125.0µL remaining
+2025-01-13 22:47:49,890 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 55.0µL remaining
+2025-01-13 22:47:49,890 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 50.0µL remaining
+2025-01-13 22:47:49,890 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 120.0µL remaining
+2025-01-13 22:47:49,890 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 105.0µL remaining
+2025-01-13 22:47:49,890 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 100.0µL remaining
+2025-01-13 22:47:49,890 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 55.0µL remaining
+2025-01-13 22:47:49,890 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 110.0µL remaining
+2025-01-13 22:47:49,890 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 40.0µL remaining
+2025-01-13 22:47:49,890 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 50.0µL remaining
+2025-01-13 22:47:49,890 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 45.0µL remaining
+2025-01-13 22:47:49,890 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 105.0µL remaining
+2025-01-13 22:47:49,890 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 105.0µL remaining
+2025-01-13 22:47:49,890 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 120.0µL remaining
+2025-01-13 22:47:49,891 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 50.0µL remaining
+2025-01-13 22:47:49,891 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 50.0µL remaining
+2025-01-13 22:47:49,891 - lab_controller - INFO - Updated reagent volumes
+2025-01-13 22:47:49,891 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 840.0µL remaining
+2025-01-13 22:47:49,891 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 830.0µL remaining
+2025-01-13 22:47:49,891 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 820.0µL remaining
+2025-01-13 22:47:49,911 - lab_controller - INFO - Generated worklist and plate layout
+2025-01-13 22:47:57,047 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 22:47:59,615 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-13 22:48:00,959 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 22:48:03,299 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-13 22:51:25,019 - lab_controller - INFO - Shutting down...
+2025-01-13 22:51:26,947 - lab_controller - INFO - Starting lab automation system
+2025-01-13 22:51:28,756 - lab_controller - INFO - New sequence detected
+2025-01-13 22:51:29,672 - lab_controller - INFO - Updated DNA volumes
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 35.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 100.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 100.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 105.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 105.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 105.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 110.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 45.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 120.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 45.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 40.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 115.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 100.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 95.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 45.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 105.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 30.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 40.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 35.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 100.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 100.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 115.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 40.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 40.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Updated reagent volumes
+2025-01-13 22:51:29,672 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 810.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 800.0µL remaining
+2025-01-13 22:51:29,672 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 790.0µL remaining
+2025-01-13 22:51:29,690 - lab_controller - INFO - Generated worklist and plate layout
+2025-01-13 22:51:32,322 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 22:51:34,701 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-13 22:51:35,591 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 22:51:37,649 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-13 22:54:23,942 - lab_controller - INFO - Shutting down...
+2025-01-13 22:54:25,908 - lab_controller - INFO - Starting lab automation system
+2025-01-13 22:54:27,422 - lab_controller - INFO - New sequence detected
+2025-01-13 22:54:28,438 - lab_controller - INFO - Updated DNA volumes
+2025-01-13 22:54:28,438 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 25.0µL remaining
+2025-01-13 22:54:28,438 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 95.0µL remaining
+2025-01-13 22:54:28,438 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 95.0µL remaining
+2025-01-13 22:54:28,438 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 100.0µL remaining
+2025-01-13 22:54:28,438 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 100.0µL remaining
+2025-01-13 22:54:28,438 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 100.0µL remaining
+2025-01-13 22:54:28,438 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 105.0µL remaining
+2025-01-13 22:54:28,438 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 35.0µL remaining
+2025-01-13 22:54:28,438 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 115.0µL remaining
+2025-01-13 22:54:28,438 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 35.0µL remaining
+2025-01-13 22:54:28,438 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 30.0µL remaining
+2025-01-13 22:54:28,438 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 110.0µL remaining
+2025-01-13 22:54:28,438 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 95.0µL remaining
+2025-01-13 22:54:28,438 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 90.0µL remaining
+2025-01-13 22:54:28,438 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 35.0µL remaining
+2025-01-13 22:54:28,439 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 100.0µL remaining
+2025-01-13 22:54:28,439 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 20.0µL remaining
+2025-01-13 22:54:28,439 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 30.0µL remaining
+2025-01-13 22:54:28,439 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 25.0µL remaining
+2025-01-13 22:54:28,439 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 95.0µL remaining
+2025-01-13 22:54:28,439 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 95.0µL remaining
+2025-01-13 22:54:28,439 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 110.0µL remaining
+2025-01-13 22:54:28,439 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 30.0µL remaining
+2025-01-13 22:54:28,439 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 30.0µL remaining
+2025-01-13 22:54:28,439 - lab_controller - INFO - Updated reagent volumes
+2025-01-13 22:54:28,439 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 990.0µL remaining
+2025-01-13 22:54:28,439 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 980.0µL remaining
+2025-01-13 22:54:28,440 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 970.0µL remaining
+2025-01-13 22:54:28,440 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, 910.0µL remaining
+2025-01-13 22:54:28,440 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, 820.0µL remaining
+2025-01-13 22:54:28,440 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, 730.0µL remaining
+2025-01-13 22:54:28,440 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 990.0µL remaining
+2025-01-13 22:54:28,440 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 980.0µL remaining
+2025-01-13 22:54:28,440 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 970.0µL remaining
+2025-01-13 22:54:28,440 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 960.0µL remaining
+2025-01-13 22:54:28,440 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 920.0µL remaining
+2025-01-13 22:54:28,440 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 880.0µL remaining
+2025-01-13 22:54:28,440 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 973.34µL remaining
+2025-01-13 22:54:28,440 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 946.6800000000001µL remaining
+2025-01-13 22:54:28,440 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 920.0200000000001µL remaining
+2025-01-13 22:54:28,440 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 946.66µL remaining
+2025-01-13 22:54:28,440 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 893.3199999999999µL remaining
+2025-01-13 22:54:28,440 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 839.9799999999999µL remaining
+2025-01-13 22:54:28,465 - lab_controller - INFO - Generated worklist and plate layout
+2025-01-13 22:54:33,114 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 22:54:35,381 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-13 22:54:36,208 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 22:54:38,563 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-13 22:55:52,731 - lab_controller - INFO - Shutting down...
+2025-01-13 22:55:54,839 - lab_controller - INFO - Starting lab automation system
+2025-01-13 22:55:56,254 - lab_controller - INFO - New sequence detected
+2025-01-13 22:55:57,326 - lab_controller - INFO - Updated DNA volumes
+2025-01-13 22:55:57,326 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 15.0µL remaining
+2025-01-13 22:55:57,326 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 90.0µL remaining
+2025-01-13 22:55:57,326 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 90.0µL remaining
+2025-01-13 22:55:57,326 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 95.0µL remaining
+2025-01-13 22:55:57,326 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 95.0µL remaining
+2025-01-13 22:55:57,326 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 95.0µL remaining
+2025-01-13 22:55:57,326 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 100.0µL remaining
+2025-01-13 22:55:57,326 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 25.0µL remaining
+2025-01-13 22:55:57,326 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 110.0µL remaining
+2025-01-13 22:55:57,331 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 25.0µL remaining
+2025-01-13 22:55:57,331 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 20.0µL remaining
+2025-01-13 22:55:57,331 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 105.0µL remaining
+2025-01-13 22:55:57,331 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 90.0µL remaining
+2025-01-13 22:55:57,331 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 85.0µL remaining
+2025-01-13 22:55:57,331 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 25.0µL remaining
+2025-01-13 22:55:57,331 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 95.0µL remaining
+2025-01-13 22:55:57,331 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 10.0µL remaining
+2025-01-13 22:55:57,331 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 20.0µL remaining
+2025-01-13 22:55:57,331 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 15.0µL remaining
+2025-01-13 22:55:57,331 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 90.0µL remaining
+2025-01-13 22:55:57,331 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 90.0µL remaining
+2025-01-13 22:55:57,331 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 105.0µL remaining
+2025-01-13 22:55:57,332 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 20.0µL remaining
+2025-01-13 22:55:57,332 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 20.0µL remaining
+2025-01-13 22:55:57,332 - lab_controller - INFO - Updated reagent volumes
+2025-01-13 22:55:57,332 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 960.0µL remaining
+2025-01-13 22:55:57,332 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 950.0µL remaining
+2025-01-13 22:55:57,332 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 940.0µL remaining
+2025-01-13 22:55:57,332 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, 640.0µL remaining
+2025-01-13 22:55:57,332 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, 550.0µL remaining
+2025-01-13 22:55:57,332 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, 460.0µL remaining
+2025-01-13 22:55:57,332 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 960.0µL remaining
+2025-01-13 22:55:57,332 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 950.0µL remaining
+2025-01-13 22:55:57,332 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 940.0µL remaining
+2025-01-13 22:55:57,332 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 840.0µL remaining
+2025-01-13 22:55:57,332 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 800.0µL remaining
+2025-01-13 22:55:57,332 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 760.0µL remaining
+2025-01-13 22:55:57,332 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 893.3600000000001µL remaining
+2025-01-13 22:55:57,332 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 866.7000000000002µL remaining
+2025-01-13 22:55:57,332 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 840.0400000000002µL remaining
+2025-01-13 22:55:57,332 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 786.6399999999999µL remaining
+2025-01-13 22:55:57,332 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 733.2999999999998µL remaining
+2025-01-13 22:55:57,332 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 679.9599999999998µL remaining
+2025-01-13 22:55:57,352 - lab_controller - INFO - Generated worklist and plate layout
+2025-01-13 22:56:00,310 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 22:56:02,830 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-13 22:56:03,986 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 22:56:06,137 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-13 22:56:47,240 - lab_controller - INFO - Shutting down...
+2025-01-13 22:56:49,191 - lab_controller - INFO - Starting lab automation system
+2025-01-13 22:56:50,754 - lab_controller - INFO - New sequence detected
+2025-01-13 22:56:51,742 - lab_controller - INFO - Updated DNA volumes
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 5.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 85.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 85.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 90.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 90.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 90.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 95.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 15.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 105.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 15.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 10.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 100.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 85.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 80.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 15.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 90.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 0.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 10.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 5.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 85.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 85.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 100.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 10.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 10.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Updated reagent volumes
+2025-01-13 22:56:51,742 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 930.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 920.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 910.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, 370.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, 280.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, 190.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 930.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 920.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 910.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 720.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 680.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 640.0µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 813.3800000000002µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 786.7200000000003µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 760.0600000000003µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 626.6199999999998µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 573.2799999999997µL remaining
+2025-01-13 22:56:51,742 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 519.9399999999997µL remaining
+2025-01-13 22:56:51,763 - lab_controller - INFO - Generated worklist and plate layout
+2025-01-13 22:56:55,183 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 22:56:57,447 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-13 22:56:58,355 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 22:57:00,645 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-13 22:58:25,425 - lab_controller - INFO - Shutting down...
+2025-01-13 23:00:43,229 - lab_controller - INFO - Starting lab automation system
+2025-01-13 23:00:45,190 - lab_controller - INFO - New sequence detected
+2025-01-13 23:00:46,109 - lab_controller - INFO - Updated DNA volumes
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -5.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 80.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 80.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 85.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 85.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 85.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 90.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 5.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 100.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 5.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 0.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 95.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 80.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 75.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 5.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 85.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -10.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 0.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -5.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 80.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 80.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 95.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 0.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 0.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Updated reagent volumes
+2025-01-13 23:00:46,109 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 900.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 890.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 880.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, 100.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, 10.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, -80.0µL remaining
+2025-01-13 23:00:46,109 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 900.0µL remaining
+2025-01-13 23:00:46,110 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 890.0µL remaining
+2025-01-13 23:00:46,110 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 880.0µL remaining
+2025-01-13 23:00:46,110 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 600.0µL remaining
+2025-01-13 23:00:46,110 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 560.0µL remaining
+2025-01-13 23:00:46,110 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 520.0µL remaining
+2025-01-13 23:00:46,110 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 733.4000000000003µL remaining
+2025-01-13 23:00:46,110 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 706.7400000000004µL remaining
+2025-01-13 23:00:46,110 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 680.0800000000004µL remaining
+2025-01-13 23:00:46,110 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 466.5999999999997µL remaining
+2025-01-13 23:00:46,110 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 413.25999999999965µL remaining
+2025-01-13 23:00:46,110 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 359.9199999999996µL remaining
+2025-01-13 23:00:46,132 - lab_controller - INFO - Generated worklist and plate layout
+2025-01-13 23:04:26,890 - lab_controller - INFO - Shutting down...
+2025-01-13 23:04:29,739 - lab_controller - INFO - Starting lab automation system
+2025-01-13 23:04:31,304 - lab_controller - INFO - New sequence detected
+2025-01-13 23:04:32,216 - lab_controller - INFO - Updated DNA volumes
+2025-01-13 23:04:32,216 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -15.0µL remaining
+2025-01-13 23:04:32,216 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 75.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 75.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 80.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 80.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 80.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 85.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, -5.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 95.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, -5.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -10.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 90.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 75.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 70.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, -5.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 80.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -20.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, -10.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -15.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 75.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 75.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 90.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, -10.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, -10.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Updated reagent volumes
+2025-01-13 23:04:32,217 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 870.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 860.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 850.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, -170.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, -260.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, -350.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 870.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 860.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 850.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 480.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 440.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 400.0µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 653.4200000000004µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 626.7600000000004µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 600.1000000000005µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 306.5799999999996µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 253.23999999999958µL remaining
+2025-01-13 23:04:32,217 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 199.89999999999958µL remaining
+2025-01-13 23:04:32,235 - lab_controller - INFO - Generated worklist and plate layout
+2025-01-13 23:06:43,637 - lab_controller - INFO - Shutting down...
+2025-01-13 23:06:45,298 - lab_controller - INFO - Starting lab automation system
+2025-01-13 23:06:46,685 - lab_controller - INFO - New sequence detected
+2025-01-13 23:06:47,982 - lab_controller - INFO - Updated DNA volumes
+2025-01-13 23:06:47,982 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -25.0µL remaining
+2025-01-13 23:06:47,982 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 70.0µL remaining
+2025-01-13 23:06:47,982 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 70.0µL remaining
+2025-01-13 23:06:47,982 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 75.0µL remaining
+2025-01-13 23:06:47,982 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 75.0µL remaining
+2025-01-13 23:06:47,982 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 75.0µL remaining
+2025-01-13 23:06:47,982 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 80.0µL remaining
+2025-01-13 23:06:47,982 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, -15.0µL remaining
+2025-01-13 23:06:47,982 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 90.0µL remaining
+2025-01-13 23:06:47,982 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, -15.0µL remaining
+2025-01-13 23:06:47,982 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -20.0µL remaining
+2025-01-13 23:06:47,982 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 85.0µL remaining
+2025-01-13 23:06:47,982 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 70.0µL remaining
+2025-01-13 23:06:47,982 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 65.0µL remaining
+2025-01-13 23:06:47,982 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, -15.0µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 75.0µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -30.0µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, -20.0µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -25.0µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 70.0µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 70.0µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 85.0µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, -20.0µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, -20.0µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Updated reagent volumes
+2025-01-13 23:06:47,983 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 840.0µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 830.0µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 820.0µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, -440.0µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, -530.0µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, -620.0µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 840.0µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 830.0µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 820.0µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 360.0µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 320.0µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 280.0µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 573.4400000000005µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 546.7800000000005µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 520.1200000000006µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 146.55999999999958µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 93.21999999999957µL remaining
+2025-01-13 23:06:47,983 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 39.87999999999957µL remaining
+2025-01-13 23:06:48,005 - lab_controller - INFO - Generated worklist and plate layout
+2025-01-13 23:07:21,052 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 23:07:23,404 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-13 23:07:24,323 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 23:07:27,470 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-13 23:08:15,944 - lab_controller - INFO - Shutting down...
+2025-01-13 23:08:17,562 - lab_controller - INFO - Starting lab automation system
+2025-01-13 23:08:19,373 - lab_controller - INFO - New sequence detected
+2025-01-13 23:08:20,360 - lab_controller - INFO - Updated DNA volumes
+2025-01-13 23:08:20,360 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -35.0µL remaining
+2025-01-13 23:08:20,360 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 65.0µL remaining
+2025-01-13 23:08:20,360 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 65.0µL remaining
+2025-01-13 23:08:20,360 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 70.0µL remaining
+2025-01-13 23:08:20,360 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 70.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 70.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 75.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, -25.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 85.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, -25.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -30.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 80.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 65.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 60.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, -25.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 70.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -40.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, -30.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -35.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 65.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 65.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 80.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, -30.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, -30.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Updated reagent volumes
+2025-01-13 23:08:20,361 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 810.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 800.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 790.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, -710.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, -800.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, -890.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 810.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 800.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 790.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 240.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 200.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 160.0µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 493.46000000000055µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 466.8000000000005µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 440.1400000000005µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -13.460000000000434µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -66.80000000000044µL remaining
+2025-01-13 23:08:20,361 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -120.14000000000044µL remaining
+2025-01-13 23:08:20,381 - lab_controller - INFO - Generated worklist and plate layout
+2025-01-13 23:08:28,287 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 23:08:31,250 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-13 23:08:32,429 - lab_automation - INFO - Plate data modified, processing...
+2025-01-13 23:08:34,478 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-13 23:08:59,070 - lab_controller - INFO - Shutting down...
+2025-01-14 11:48:35,515 - lab_controller - INFO - Starting lab automation system
+2025-01-14 11:48:38,408 - lab_controller - INFO - New sequence detected
+2025-01-14 11:48:39,555 - lab_controller - INFO - Updated DNA volumes
+2025-01-14 11:48:39,555 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 195.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p6f1 in well G04: used 5.0µL, 195.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p6f2 in well G05: used 5.0µL, 195.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p4f3 in well E06: used 5.0µL, 195.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p4f4 in well E07: used 5.0µL, 195.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p4f5 in well E08: used 5.0µL, 195.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 195.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 195.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p2f0 in well C03: used 5.0µL, 195.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 195.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 195.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 195.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p6f4 in well G07: used 5.0µL, 195.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 195.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 195.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 195.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 190.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p2f1 in well C04: used 5.0µL, 190.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 190.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0µL, 195.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 195.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, 195.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p2f6 in well C09: used 5.0µL, 190.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 190.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Updated reagent volumes
+2025-01-14 11:48:39,556 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 990.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 980.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 970.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, 910.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, 820.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, 730.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 990.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 980.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 970.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 960.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 920.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 880.0µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 973.34µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 946.6800000000001µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 920.0200000000001µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 946.66µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 893.3199999999999µL remaining
+2025-01-14 11:48:39,556 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 839.9799999999999µL remaining
+2025-01-14 11:48:39,574 - lab_controller - INFO - Generated worklist and plate layout
+2025-01-14 11:49:40,710 - lab_automation - INFO - Plate data modified, processing...
+2025-01-14 11:49:43,340 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-14 11:49:44,367 - lab_automation - INFO - Plate data modified, processing...
+2025-01-14 11:49:46,716 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-14 11:53:45,668 - lab_controller - INFO - New sequence detected
+2025-01-14 11:53:47,768 - lab_controller - INFO - Updated DNA volumes
+2025-01-14 11:53:47,768 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 185.0µL remaining
+2025-01-14 11:53:47,768 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, 195.0µL remaining
+2025-01-14 11:53:47,768 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 185.0µL remaining
+2025-01-14 11:53:47,768 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 190.0µL remaining
+2025-01-14 11:53:47,768 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0µL, 195.0µL remaining
+2025-01-14 11:53:47,768 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 190.0µL remaining
+2025-01-14 11:53:47,768 - lab_controller - INFO - Fragment p3f6 in well D09: used 5.0µL, 195.0µL remaining
+2025-01-14 11:53:47,768 - lab_controller - INFO - Fragment p1f7 in well B10: used 5.0µL, 195.0µL remaining
+2025-01-14 11:53:47,768 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 180.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, 190.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 180.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 185.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0µL, 190.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 185.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0µL, 195.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0µL, 185.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, 175.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, 185.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, 175.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, 180.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Fragment p2f4 in well C07: used 5.0µL, 195.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, 180.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0µL, 190.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, 190.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Updated reagent volumes
+2025-01-14 11:53:47,769 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 960.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 950.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, 940.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, 640.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, 550.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Reagent Primers in well D07: used 90.0µL, 460.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 960.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 950.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, 940.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 840.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 800.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, 760.0µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 893.3600000000001µL remaining
+2025-01-14 11:53:47,769 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 866.7000000000002µL remaining
+2025-01-14 11:53:47,770 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, 840.0400000000002µL remaining
+2025-01-14 11:53:47,770 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 786.6399999999999µL remaining
+2025-01-14 11:53:47,770 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 733.2999999999998µL remaining
+2025-01-14 11:53:47,770 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, 679.9599999999998µL remaining
+2025-01-14 11:53:47,788 - lab_controller - INFO - Generated worklist and plate layout
+2025-01-14 11:54:31,123 - lab_automation - INFO - Plate data modified, processing...
+2025-01-14 11:54:33,620 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-14 11:54:34,455 - lab_automation - INFO - Plate data modified, processing...
+2025-01-14 11:54:36,387 - lab_automation - INFO - Processed data and inventories pushed to GitHub
+2025-01-14 11:55:04,627 - lab_controller - INFO - Shutting down...
