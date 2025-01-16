@@ -11,13 +11,6 @@ import ssl
 PASSWORD_HASH = None
 app = Flask(__name__)
 
-
-#cert_path = r'C:\Users\cb643\robot\auto_lab\cert.pem'
-#key_path = r'C:\Users\cb643\robot\auto_lab\key.pem'
-
-#context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
-#context.load_cert_chain(cert_path, key_path)
-
 class Camera:
     def __init__(self, camera_id):
         self.camera_id = camera_id
