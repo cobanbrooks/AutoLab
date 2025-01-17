@@ -126,7 +126,7 @@ def index():
         <title>Robot Lab Monitor</title>
         <style>
             body {{
-                font-family: Arial, sans-serif;
+                font-family: Menlo, monospace;
                 margin: 20px;
                 background-color: #f0f0f0;
             }}
@@ -217,7 +217,7 @@ def login():
         <title>Robot Camera Login</title>
         <style>
             body {
-                font-family: Arial, sans-serif;
+                font-family: Menlo, monospace;
                 margin: 40px;
                 background-color: #f0f0f0;
             }
