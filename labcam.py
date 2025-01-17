@@ -8,6 +8,12 @@ import platform
 import argparse
 import hashlib
 import getpass
+import logging
+import numpy as np
+
+# Set up logging
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger('labcam')
 
 def check_password(password):
     """Check if password matches the stored hash"""
@@ -31,25 +37,42 @@ class Camera:
         self.frame = None
         self.running = False
         self._lock = threading.Lock()
+        self.error = None
         
     def start(self):
         """Start the camera capture thread"""
         try:
+            logger.info(f"Initializing camera {self.name} (ID: {self.camera_id})")
             self.camera = cv2.VideoCapture(self.camera_id)
+            
+            # Check if camera opened successfully
             if not self.camera.isOpened():
-                print(f"Error: Could not open camera {self.name} (ID: {self.camera_id})")
+                self.error = f"Could not open camera {self.name} (ID: {self.camera_id})"
+                logger.error(self.error)
+                return False
+            
+            # Try to read a test frame
+            ret, frame = self.camera.read()
+            if not ret or frame is None:
+                self.error = f"Could not read initial frame from camera {self.name}"
+                logger.error(self.error)
                 return False
                 
-            self.camera.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
-            self.camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
+            logger.info(f"Successfully read initial frame from camera {self.name}")
+            logger.info(f"Frame shape: {frame.shape}")
+                
+            # Set lower resolution to help with performance
+            self.camera.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+            self.camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
             
             self.running = True
             threading.Thread(target=self._capture_loop, daemon=True).start()
-            print(f"Successfully started camera: {self.name}")
+            logger.info(f"Successfully started camera: {self.name}")
             return True
             
         except Exception as e:
-            print(f"Error initializing camera {self.name}: {str(e)}")
+            self.error = f"Error initializing camera {self.name}: {str(e)}"
+            logger.error(self.error, exc_info=True)
             return False
         
     def stop(self):
@@ -60,46 +83,74 @@ class Camera:
         
     def _capture_loop(self):
         """Continuously capture frames from the camera"""
+        frame_count = 0
+        last_log = datetime.datetime.now()
+        
         while self.running:
             try:
                 if self.camera is None or not self.camera.isOpened():
-                    print(f"Error: Camera {self.name} is not open")
+                    self.error = f"Error: Camera {self.name} is not open"
+                    logger.error(self.error)
                     break
                     
                 success, frame = self.camera.read()
                 if success:
                     with self._lock:
                         self.frame = frame
+                        frame_count += 1
+                        
+                        # Log frame rate every 5 seconds
+                        now = datetime.datetime.now()
+                        if (now - last_log).seconds >= 5:
+                            fps = frame_count / 5
+                            logger.debug(f"Camera {self.name} capturing at {fps:.1f} FPS")
+                            frame_count = 0
+                            last_log = now
                 else:
-                    print(f"Warning: Failed to read frame from camera {self.name}")
+                    self.error = f"Failed to read frame from camera {self.name}"
+                    logger.warning(self.error)
                     
             except Exception as e:
-                print(f"Error capturing frame from {self.name}: {str(e)}")
+                self.error = f"Error capturing frame from {self.name}: {str(e)}"
+                logger.error(self.error, exc_info=True)
                 break
                 
         self.running = False
     
     def get_frame(self):
-        """Get the current frame with timestamp"""
+        """Get the current frame with timestamp and error message if applicable"""
         with self._lock:
             if self.frame is None:
-                return None
+                # Create an error frame
+                frame = np.zeros((480, 640, 3), np.uint8)
+                cv2.putText(frame, "No video signal", (50, 240), 
+                           cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
+                if self.error:
+                    cv2.putText(frame, self.error, (50, 270), 
+                               cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1)
+            else:
+                frame = self.frame.copy()
             
             try:
-                frame = self.frame.copy()
                 # Add timestamp
                 timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 cv2.putText(frame, timestamp, (10, 30), 
                            cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
                 
+                # Add error message if exists
+                if self.error:
+                    cv2.putText(frame, self.error, (10, 60), 
+                               cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1)
+                
                 # Encode frame to JPEG
                 ret, buffer = cv2.imencode('.jpg', frame)
                 if not ret:
-                    return None
+                    raise Exception("Failed to encode frame")
                     
                 return buffer.tobytes()
+                
             except Exception as e:
-                print(f"Error processing frame from {self.name}: {str(e)}")
+                logger.error(f"Error processing frame from {self.name}: {str(e)}", exc_info=True)
                 return None
 
 # Initialize Flask app
@@ -157,7 +208,7 @@ def auth():
 @requires_auth
 def index():
     """Render main page with all camera streams"""
-    password = "request.args.get('password')"
+    password = request.args.get('password')
     streams_html = ""
     for cam_name in cameras:
         streams_html += f'''
@@ -195,7 +246,11 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Lab Camera Stream')
     parser.add_argument('--host', default='0.0.0.0', help='Host IP address')
     parser.add_argument('--port', type=int, default=8000, help='Port number')
+    parser.add_argument('--debug', action='store_true', help='Enable debug mode')
     args = parser.parse_args()
+    
+    if args.debug:
+        logger.setLevel(logging.DEBUG)
     
     # Get password from user
     password = getpass.getpass("Enter password for stream access: ")
@@ -208,9 +263,15 @@ if __name__ == '__main__':
     PASSWORD_HASH = hashlib.sha256(password.encode()).hexdigest()
     
     # Print system info
-    print(f"\nOperating System: {platform.system()} {platform.release()}")
-    print(f"Python version: {sys.version}")
-    print(f"OpenCV version: {cv2.__version__}")
+    logger.info(f"Operating System: {platform.system()} {platform.release()}")
+    logger.info(f"Python version: {sys.version}")
+    logger.info(f"OpenCV version: {cv2.__version__}")
+    
+    # Get list of video devices on Linux
+    if platform.system() == 'Linux':
+        from pathlib import Path
+        video_devices = list(Path('/dev').glob('video*'))
+        logger.info(f"Available video devices: {video_devices}")
     
     # List available cameras
     print("\nScanning for available cameras...")
@@ -274,7 +335,7 @@ if __name__ == '__main__':
     
     try:
         print(f"\nStarting web server on {args.host}:{args.port}...")
-        app.run(host=args.host, port=args.port)
+        app.run(host=args.host, port=args.port, debug=args.debug)
     except KeyboardInterrupt:
         print("\nShutting down...")
     except Exception as e:
