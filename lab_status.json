@@ -1,6 +1,6 @@
 {
-  "state": "Error encountered",
+  "state": "Waiting for new sequence",
   "current_step": null,
-  "error": "Created default config at sftp_config.yml. Please edit before running.",
-  "last_updated": "2025-01-29T23:17:28.974149"
+  "error": null,
+  "last_updated": "2025-01-29T23:18:12.283513"
 }
