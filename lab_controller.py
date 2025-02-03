@@ -1,7 +1,6 @@
 import os
 import sys
 import yaml
-import git
 import json
 import time
 import logging
@@ -12,6 +11,7 @@ from enum import Enum
 from datetime import datetime
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
+from data_transfer import SFTPTransfer
 
 # Status Tracking
 class LabState(Enum):
@@ -21,102 +21,76 @@ class LabState(Enum):
     PROCESSING = "Processing plate data"
     ERROR = "Error encountered"
 
-class LabStatus:
-    def __init__(self, repo_path, status_file='lab_status.json'):
-        self.status_file = os.path.join(repo_path, status_file)
-        self.repo = git.Repo(repo_path)
-        self.state = LabState.IDLE
-        self.current_step = None
-        self.error = None
-        
-    def update_state(self, state: LabState, step_details: str = None, error: str = None):
-        """Update the lab's current state and push to GitHub"""
-        self.state = state
-        self.current_step = step_details
-        self.error = error
-        self._write_and_push_status()
-    
-    def get_status(self):
-        """Get current status"""
-        return {
-            'state': self.state.value,
-            'current_step': self.current_step,
-            'error': self.error,
-            'last_updated': datetime.now().isoformat()
-        }
-    
-    def _write_and_push_status(self):
-        """Write status to file and push to GitHub"""
-        try:
-            with open(self.status_file, 'w') as f:
-                json.dump(self.get_status(), f, indent=2)
-            
-            self.repo.index.add([os.path.basename(self.status_file)])
-            self.repo.index.commit('Update lab status')
-            self.repo.remotes.origin.push()
-        except Exception as e:
-            print(f"Error updating status: {e}")
-
 class PlateDataHandler(FileSystemEventHandler):
-    def __init__(self, repo_path, input_file, output_file, status):
-        self.repo_path = repo_path
-        self.input_file = input_file
-        self.output_file = output_file
-        self.repo = git.Repo(repo_path)
+    def __init__(self, data_dir: str, input_filename: str, output_filename: str, controller=None):
+        self.data_dir = data_dir
+        self.input_filename = input_filename
+        self.output_filename = output_filename
         self.logger = logging.getLogger('lab_automation')
-        self.status = status
         self.last_processed_hash = None
+        self.transfer = SFTPTransfer()
+        self.controller = controller
+
+        # Log initialization
+        self.logger.info(f"Initialized PlateDataHandler:")
+        self.logger.info(f"  data_dir: {data_dir}")
+        self.logger.info(f"  input_file: {input_filename}")
+        self.logger.info(f"  output_file: {output_filename}")
 
     def get_file_hash(self, filepath):
         with open(filepath, 'rb') as f:
             return hashlib.md5(f.read()).hexdigest()
-        
+
+    def process_and_transfer(self):
+        """Process plate data and transfer to GPU server"""
+        try:
+            # Process the data
+            input_path = os.path.join(self.data_dir, self.input_filename)
+            output_path = os.path.join(self.data_dir, self.output_filename)
+            
+            subprocess.run([
+                'python', 'process_plate_data.py',
+                '--input', input_path,
+                '--output', output_path
+            ], check=True)
+            
+            # Transfer to GPU server
+            if self.transfer.connect():
+                self.transfer.transfer_file(output_path)
+                self.transfer.close()
+                self.logger.info("Processed data and transferred to GPU server")
+
+                # Stop plate monitoring and restart sequence monitoring
+                if self.controller:
+                    if self.controller.plate_observer:
+                        self.controller.plate_observer.stop()
+                        self.controller.plate_observer = None
+                    self.controller.start_sequence_monitoring()
+                return True
+            else:
+                self.logger.error("Failed to connect to GPU server")
+                return False
+                
+                
+        except Exception as e:
+            self.logger.error(f"Error processing/transferring data: {e}")
+
     def on_modified(self, event):
-        if event.src_path.endswith(self.input_file):
-            #checks if content of the file changed
+        if event.src_path.endswith(self.input_filename):
             current_hash = self.get_file_hash(event.src_path)
             if current_hash == self.last_processed_hash:
                 return
             
             self.logger.info("Plate data modified, processing...")
-            self.status.update_state(LabState.PROCESSING, "Processing plate data")
-            self.process_and_push()
+            self.process_and_transfer()
             self.last_processed_hash = current_hash
-            
-    def process_and_push(self):
-        try:
-            # Process plate data
-            subprocess.run(['python', 'process_plate_data.py',
-                        '--input', self.input_file,
-                        '--output', self.output_file], check=True)
-            
-            # Update DNA inventory CSV
-            dna_tracker = DNATracker()
-            dna_tracker.export_to_csv()
 
-            # Update reagent inventory CSV
-            rgnt_tracker = RgntTracker()
-            rgnt_tracker.export_to_csv()
-            
-            # Push to GitHub
-            self.repo.index.add([
-                self.output_file,
-                'inventories/dna_inventory.csv',
-                'inventories/dna_inventory.json',
-                'inventories/reagent_inventory.csv',
-                'inventories/reagent_inventory.json'
-            ])
-            self.repo.index.commit('Update processed plate data and inventories')
-            self.repo.remotes.origin.push()
-            self.logger.info("Processed data and inventories pushed to GitHub")
-            self.status.update_state(LabState.IDLE, "Processing complete") 
-
-        except Exception as e:
-            self.logger.error(f"Error processing plate data: {e}")
 
 class DNATracker:
-    def __init__(self, inventory_file='inventories/dna_inventory.json'):
-        self.inventory_file = inventory_file
+    def __init__(self, inventory_dir='inventories'):
+        self.inventory_dir = inventory_dir
+        self.inventory_file = os.path.join(inventory_dir,'dna_inventory.json')
+        os.makedirs(inventory_dir,exist_ok=True)
         self.inventory = self.load_inventory()
         
     def load_inventory(self):
@@ -205,8 +179,9 @@ class DNATracker:
         self.save_inventory()
         return updates
         
-    def export_to_csv(self, filename='inventories/dna_inventory.csv'):
+    def export_to_csv(self):
         """Export current inventory to CSV"""
+        csv_path = os.path.join(self.inventory_dir, 'dna_inventory.csv')
         rows = []
         for fid, data in self.inventory.items():
             rows.append({
@@ -217,7 +192,7 @@ class DNATracker:
             })
             
         df = pd.DataFrame(rows)
-        df.to_csv(filename, index=False)
+        df.to_csv(csv_path, index=False)
 
     def refill_dna(self, fragment_id=None, well=None, volume_added=200):
         """
@@ -279,10 +254,11 @@ class DNATracker:
         print("=" * 50)
 
 class RgntTracker:
-    def __init__(self, inventory_file='inventories/reagent_inventory.json'):
-        self.inventory_file = inventory_file
+    def __init__(self, inventory_dir='inventories'):
+        self.inventory_dir = inventory_dir
+        self.inventory_file = os.path.join(inventory_dir, 'reagent_inventory.json')
+        os.makedirs(inventory_dir, exist_ok=True)
         self.inventory = self.load_inventory()
-
 
 
     def load_inventory(self):
@@ -387,8 +363,9 @@ class RgntTracker:
         self.save_inventory()
         return updates
         
-    def export_to_csv(self, filename='inventories/reagent_inventory.csv'):
+    def export_to_csv(self):
         """Export current inventory to CSV"""
+        csv_path = os.path.join(self.inventory_dir, 'reagent_inventory.csv')
         rows = []
         for rid, data in self.inventory.items():
             rows.append({
@@ -399,7 +376,7 @@ class RgntTracker:
             })
             
         df = pd.DataFrame(rows)
-        df.to_csv(filename, index=False)
+        df.to_csv(csv_path, index=False)
 
     def refill_reagent(self, reagent_id=None, well=None, volume_added=200):
         """
@@ -473,43 +450,73 @@ class LabController:
         # Load config
         with open(config_path) as f:
             self.config = yaml.safe_load(f)
+        self.status = LabState.IDLE
+        self.sequence_observer = None
+        self.plate_observer = None
+
+    class SequenceHandler(FileSystemEventHandler):
+        def __init__(self, controller):
+            self.controller = controller
+            self.sequence_file = os.path.join(
+            self.controller.config['paths']['data_dir'],
+            self.controller.config['files']['sequence_query']
+        )
             
-        self.repo = git.Repo(self.config['repo_path'])
-        self.sequence_hash = None
-        self.status = LabStatus(self.config['repo_path'])
+        def on_modified(self, event):
+            if event.src_path.endswith(self.sequence_file):
+                self.controller.logger.info("New sequence detected")
+                self.controller.status = LabState.SEQUENCE_RECEIVED
+                if self.controller.generate_lab_files():
+                    self.controller.status = LabState.EXPERIMENTING
+                    self.controller.start_plate_monitoring()
+
+    def start_sequence_monitoring(self):
+        handler = self.SequenceHandler(self)
+        self.sequence_observer = Observer()
+        self.sequence_observer.schedule(handler, self.config['paths']['data_dir'])
+        self.sequence_observer.start()
+
+    def start_plate_monitoring(self):
+        """Start monitoring plate_data.csv for changes"""
+        if self.plate_observer:
+            self.plate_observer.stop()
+            self.plate_observer.join()
+
+        handler = PlateDataHandler(
+            self.config['paths']['data_dir'],
+            self.config['files']['plate_data'],
+            self.config['files']['processed_data'],
+            controller=self
+        )
         
-    def check_sequence_updates(self):
-        """Check for updates to sequence_query.txt on GitHub"""
-        try:
-            self.repo.remotes.origin.fetch()
-            self.repo.remotes.origin.pull()
-            
-            with open(os.path.join(self.config['repo_path'], 'sequence_query.txt'), 'rb') as f:
-                current_hash = hashlib.md5(f.read()).hexdigest()
-                
-            if current_hash != self.sequence_hash:
-                self.sequence_hash = current_hash
-                return True
-        except Exception as e:
-            self.logger.error(f"Error checking sequence updates: {e}")
-        return False
-    
+        self.plate_observer = Observer()
+        self.plate_observer.schedule(handler, self.config['paths']['data_dir'], recursive=False)
+        self.plate_observer.start()
+        self.logger.info("Started plate data monitoring")
+
+
+
     def generate_lab_files(self):
         """Generate worklist and plate layout files"""
         try:
             # Generate pipetting worklist
             subprocess.run([
                 'python', 'seq_to_pipetting_steps.py',
-                'sequence_query.txt',
-                'sequence_segments.csv',
-                'worklists'
+                os.path.join(self.config['paths']['data_dir'], 'sequence_query.txt'),
+                os.path.join(self.config['paths']['data_dir'], 'sequence_segments.csv'), 
+                self.config['paths']['worklists_dir']
             ], check=True)
 
+
+            # Initialize trackers
+            inventory_dir = os.path.join(self.config['paths']['inventory_dir'])
+            dna_tracker = DNATracker(inventory_dir)
+            rgnt_tracker = RgntTracker(inventory_dir)
+
             # Update DNA volumes
-            dna_tracker = DNATracker()
             updates_dna = dna_tracker.update_volumes('worklists/fragment_assembly_worklist.csv')
 
-            # Update rgnt volumes
+            # Update reagent volumes from all worklists
             worklist_files = [
                 'worklists/GGMM_Wklist.csv',
                 'worklists/PrimerTransfer_Wklist.csv',
@@ -517,109 +524,120 @@ class LabController:
                 'worklists/PCR_product_dilution_Wklist.csv',
                 'worklists/TXTL_Wklist.csv'
             ]
-
-            rgnt_tracker = RgntTracker()
-            all_updates = []
-
+            
+            rgnt_updates = []
             for worklist_file in worklist_files:
                 updates = rgnt_tracker.update_volumes(worklist_file)
-                all_updates.extend(updates)
+                rgnt_updates.extend(updates)
 
-            # Log volume dna updates
+            # Log volume updates
             self.logger.info("Updated DNA volumes")
             for update in updates_dna:
                 self.logger.info(
                     f"Fragment {update['fragment']} in well {update['well']}: "
                     f"used {update['volume_used']}µL, {update['volume_remaining']}µL remaining"
-            )
+                )
                 
-            # Log volume rgnt updates
             self.logger.info("Updated reagent volumes")
-            for update in all_updates:
+            for update in rgnt_updates:
                 self.logger.info(
                     f"Reagent {update['reagent']} in well {update['well']}: "
                     f"used {update['volume_used']}µL, {update['volume_remaining']}µL remaining"
-            )
-
+                )
             
             # Generate plate layout
             subprocess.run([
                 'python', 'generate_assay_plate.py',
-                'sequence_query.txt',
-                'sequence_segments.csv',
+                os.path.join(self.config['paths']['data_dir'], 'sequence_query.txt'),
+                os.path.join(self.config['paths']['data_dir'], 'sequence_segments.csv'), 
                 'plate_layout.json'
             ], check=True)
             
             self.logger.info("Generated worklist and plate layout")
+            self.sequence_observer.stop() #here
             return True
             
         except Exception as e:
             self.logger.error(f"Error generating lab files: {e}")
             return False
-            
+    '''      
     def start_plate_monitoring(self):
         """Start monitoring plate_data.csv for changes"""
+
+        if self.plate_observer:
+            self.plate_observer.stop()
+            self.plate_observer.join()
+
         handler = PlateDataHandler(
-            self.config['repo_path'],
-            'plate_data.csv',
-            'processed_plate_data.csv',
-            self.status
+            self.config['paths']['data_dir'],
+            self.config['files']['plate_data'],
+            self.config['files']['processed_data']
         )
         
-        observer = Observer()
-        observer.schedule(handler, self.config['repo_path'], recursive=False)
-        observer.start()
-        return observer
+        self.plate_observer = Observer()
+        self.plate_observer.schedule(handler, self.config['paths']['data_dir'], recursive=False)
+        self.plate_observer.start()
+        '''
         
     def run(self):
         self.logger.info("Starting lab automation system")
-        self.status.update_state(LabState.IDLE)
-        observer = None
-        
         try:
+            self.start_sequence_monitoring()
             while True:
-                # Check for sequence updates
-                if self.check_sequence_updates():
-                    self.logger.info("New sequence detected")
-                    self.status.update_state(LabState.SEQUENCE_RECEIVED)
-                    
-                    # Stop existing monitoring if active
-                    if observer:
-                        observer.stop()
-                        observer.join()
-                    
-                    # Generate new lab files
-                    if self.generate_lab_files():
-                        self.status.update_state(LabState.EXPERIMENTING)
-                        # Start monitoring plate data
-                        observer = self.start_plate_monitoring()
-                        
-                time.sleep(self.config.get('poll_interval', 60))
-                
+                time.sleep(1)
         except KeyboardInterrupt:
             self.logger.info("Shutting down...")
-            self.status.update_state(LabState.IDLE, "Shutdown complete")
-            if observer:
-                observer.stop()
-                observer.join()
+            if self.sequence_observer:
+                self.sequence_observer.stop()
+                self.sequence_observer.join()
+            if self.plate_observer:
+                self.plate_observer.stop()
+                self.plate_observer.join()
         except Exception as e:
-            self.status.update_state(LabState.ERROR, error=str(e))
+            self.status = LabState.ERROR
             self.logger.error(f"Error: {e}")
-
     
 if __name__ == "__main__":
-    # Default configuration
-    default_config = {
-        'repo_path': '/path/to/repo',
-        'poll_interval': 60  # seconds
-    }
+    config_path = os.path.join('configs', 'lab_config.yml')
     
-    config_path = 'lab_config.yml'
+    # Create default config if it doesn't exist
     if not os.path.exists(config_path):
-        with open(config_path, 'w') as f:
-            yaml.dump(default_config, f)
-        print(f"Created default config at {config_path}")
-        exit(1)
+        default_config = {
+            'paths': {
+                'data_dir': "data",
+                'worklists_dir': "worklists",
+                'inventory_dir': "inventories",
+                'logs_dir': "logs"
+            },
+            'files': {
+                'plate_data': "plate_data.csv",
+                'processed_data': "processed_plate_data.csv",
+                'sequence_query': "sequence_query.txt",
+                'sequence_segments': "sequence_segments.csv"
+            },
+            'sftp': {
+                'hostname': "coltrane.egr.duke.edu",
+                'username': "cb643",
+                'remote_path': "/home/cb643",
+                'key_filename': "/Users/cobanbrooks/.ssh/id_rsa",
+                'port': 22
+            }
+        }
         
-    automation = LabController(config_path)
-    automation.run()
+        # Create worklists directory if it doesn't exist
+        os.makedirs(default_config['paths']['worklists_dir'], exist_ok=True)
+        
+        with open(config_path, 'w') as f:
+            yaml.dump(default_config, f, default_flow_style=False)
+        print(f"Created default config at {config_path}")
+        print("Please edit the config file with your settings before running again.")
+        exit(1)
+    
+    try:    
+        automation = LabController(config_path)
+        automation.run()
+    except KeyboardInterrupt:
+        print("\nShutting down gracefully...")
+    except Exception as e:
+        print(f"Fatal error: {e}")
+        exit(1)
