@@ -1,0 +1,17 @@
+files:
+  plate_data: plate_data.csv
+  processed_data: processed_plate_data.csv
+  sequence_query: sequence_query.txt
+  sequence_segments: sequence_segments.csv
+paths:
+  config_dir: configs
+  data_dir: data
+  inventory_dir: inventories
+  logs_dir: logs
+  worklists_dir: worklists
+sftp:
+  hostname: coltrane.egr.duke.edu
+  key_filename: /Users/cobanbrooks/.ssh/id_rsa
+  port: 22
+  remote_path: /home/cb643
+  username: cb643
