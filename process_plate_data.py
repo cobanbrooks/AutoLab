@@ -1,8 +1,11 @@
 import pandas as pd
 import numpy as np
+from scipy.stats import sem
 
-def normalize_plate_data(input_file, output_file):
-
+def normalize_plate_data(input_file, output_file, sequence_file):
+    """
+    Normalize plate reader data and create sequence-to-means mapping.
+    """
     # Read the file line by line
     with open(input_file, 'r') as f:
         lines = f.readlines()
@@ -58,7 +61,7 @@ def normalize_plate_data(input_file, output_file):
                 except ValueError:
                     continue
     
-    # Calculate column averages
+    # Calculate column averages for fluorescein
     col_averages = {}
     for well, value in fluorescein_data.items():
         col = well[1:]
@@ -77,11 +80,50 @@ def normalize_plate_data(input_file, output_file):
                 norm_constant = fluor_value / col_averages[col]
                 normalized_data[well] = rfu_value / norm_constant
     
-    # Create output DataFrame
+    # Group replicates and calculate statistics
+    replicate_stats = {}
+    cols = sorted(set(well[1:] for well in normalized_data.keys()))
+    
+    for col in cols:
+        # Get normalized values for this column's replicates (rows A, C, E)
+        replicates = [normalized_data.get(f"A{col}"),
+                     normalized_data.get(f"C{col}"),
+                     normalized_data.get(f"E{col}")]
+        replicates = [x for x in replicates if x is not None]  # Remove None values
+        
+        if len(replicates) >= 2:  # Need at least 2 values for statistics
+            mean = np.mean(replicates)
+            replicate_stats[col] = {
+                'mean': mean,
+            }
+    
+    # Create sequence mapping
+    with open(sequence_file, 'r') as f:
+        sequences = [line.strip() for line in f.readlines()]
+    
+    # Define column groupings for each sequence
+    col_groups = {
+        0: ['1', '4', '7'],    # First sequence gets columns 1,4,7
+        1: ['2', '5', '8'],    # Second sequence gets columns 2,5,8
+        2: ['3', '6', '9']     # Third sequence gets columns 3,6,9
+    }
+    
+    # Create sequence to mean mapping
+    sequence_mapping = {}
+    for i, seq in enumerate(sequences):
+        cols = col_groups[i]
+        means = []
+        for col in cols:
+            if col in replicate_stats:
+                means.append(replicate_stats[col]['mean'])
+            else:
+                means.append(None)
+        sequence_mapping[seq] = means
+    
+    # Create output DataFrames for normalized values
     rows = 'ABCDEFGH'
     cols = range(1, 13)
     output_data = []
-    
     for row in rows:
         row_data = []
         for col in cols:
@@ -89,17 +131,30 @@ def normalize_plate_data(input_file, output_file):
             row_data.append(normalized_data.get(well, None))
         output_data.append(row_data)
     
-    df_output = pd.DataFrame(output_data, 
-                           index=list(rows),
-                           columns=[str(i) for i in cols])
+    df_normalized = pd.DataFrame(output_data, 
+                               index=list(rows),
+                               columns=[str(i) for i in cols])
     
-    # Save to CSV
-    df_output.to_csv(output_file)
-    return df_output
+    # Save normalized data to CSV
+    df_normalized.to_csv(output_file)
+    
+    return df_normalized, sequence_mapping
 
 if __name__ == "__main__":
     input_file = "data/raw_plate_data.csv"
     output_file = "data/normalized_plate_data.csv"
-    normalized_data = normalize_plate_data(input_file, output_file)
+    sequence_file = "data/sequence_query.txt"
+    phenotype_file = 'data/phenotype.txt'
+    
+    df_norm, seq_mapping = normalize_plate_data(input_file, output_file, sequence_file)
+    
     print("\nNormalized values:")
-    print(normalized_data)
+    print(df_norm)
+    print("\nSequence mapping:")
+    print(seq_mapping)
+
+    with open(phenotype_file, 'w') as f:
+        f.write(str(seq_mapping))
+        f.close()
+
+    
