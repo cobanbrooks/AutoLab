@@ -2,6 +2,6 @@
 01,Rxn_plate,A02,Rxn_plate,A03,5,0,0
 02,Rxn_plate,C02,Rxn_plate,C03,5,0,0
 03,Rxn_plate,E02,Rxn_plate,E03,5,0,0
-04,Reagents,D07,Rxn_plate,A03,45,0,50
-05,Reagents,D07,Rxn_plate,C03,45,0,50
-06,Reagents,D07,Rxn_plate,E03,45,0,50
+04,Reagents,D07,Rxn_plate,A03,45,0,40
+05,Reagents,D07,Rxn_plate,C03,45,0,40
+06,Reagents,D07,Rxn_plate,E03,45,0,40
