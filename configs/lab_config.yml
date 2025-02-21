@@ -1,6 +1,6 @@
 files:
-  plate_data: plate_data.csv
-  processed_data: processed_plate_data.csv
+  plate_data: raw_plate_data.csv
+  processed_data: phenotype.json
   sequence_query: sequence_query.txt
   sequence_segments: sequence_segments.csv
 paths:
@@ -13,5 +13,5 @@ sftp:
   hostname: coltrane.egr.duke.edu
   key_filename: /Users/cobanbrooks/.ssh/id_rsa
   port: 22
-  remote_path: /home/cb643
+  remote_path: /home/cb643/self_driving/data/plate_data
   username: cb643

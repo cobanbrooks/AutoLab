@@ -18,7 +18,7 @@ class Camera:
         self.frame_lock = threading.Lock()
         self.frame = None
         self.running = False
-        self.connect_camera()
+        self.connect_camera()   
         
     def connect_camera(self):
         """Initialize camera connection with retries"""

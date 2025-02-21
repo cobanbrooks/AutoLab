@@ -1,11 +1,9 @@
 import pandas as pd
 import numpy as np
-from scipy.stats import sem
+import argparse
+import json
 
 def normalize_plate_data(input_file, output_file, sequence_file):
-    """
-    Normalize plate reader data and create sequence-to-means mapping.
-    """
     # Read the file line by line
     with open(input_file, 'r') as f:
         lines = f.readlines()
@@ -140,21 +138,23 @@ def normalize_plate_data(input_file, output_file, sequence_file):
     
     return df_normalized, sequence_mapping
 
-if __name__ == "__main__":
-    input_file = "data/raw_plate_data.csv"
-    output_file = "data/normalized_plate_data.csv"
-    sequence_file = "data/sequence_query.txt"
-    phenotype_file = 'data/phenotype.txt'
-    
-    df_norm, seq_mapping = normalize_plate_data(input_file, output_file, sequence_file)
-    
-    print("\nNormalized values:")
-    print(df_norm)
-    print("\nSequence mapping:")
-    print(seq_mapping)
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--input', required=True, help="Path to input file")
+    parser.add_argument('--output', required=True, help="Path to output file")
+    parser.add_argument('--sequence_file', required=True, help="Path to sequence file")  # Add this line
 
+    args = parser.parse_args()
+
+    df_norm, seq_mapping = normalize_plate_data(args.input, args.output, args.sequence_file)
+
+    # Save the sequence mapping to the phenotype file
+    phenotype_file = args.output
     with open(phenotype_file, 'w') as f:
-        f.write(str(seq_mapping))
-        f.close()
+        json.dump(seq_mapping, f, indent=4)
+        print("\nPhenotype file written")
+
+if __name__ == "__main__":
+    main()  # Call the main function
 
     

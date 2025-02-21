@@ -51,8 +51,11 @@ class PlateDataHandler(FileSystemEventHandler):
             subprocess.run([
                 'python', 'process_plate_data.py',
                 '--input', input_path,
-                '--output', output_path
+                '--output', output_path,
+                '--sequence_file', os.path.join(self.data_dir,'sequence_query.txt')
             ], check=True)
+
+            time.sleep(1)
             
             # Transfer to GPU server
             if self.transfer.connect():
@@ -610,15 +613,15 @@ if __name__ == "__main__":
                 'logs_dir': "logs"
             },
             'files': {
-                'plate_data': "plate_data.csv",
-                'processed_data': "processed_plate_data.csv",
+                'plate_data': "raw_plate_data.csv",
+                'processed_data': "phenotype.json",
                 'sequence_query': "sequence_query.txt",
                 'sequence_segments': "sequence_segments.csv"
             },
             'sftp': {
                 'hostname': "coltrane.egr.duke.edu",
                 'username': "cb643",
-                'remote_path': "/home/cb643",
+                'remote_path': "/home/cb643/self_driving/data/plate_data",
                 'key_filename': "/Users/cobanbrooks/.ssh/id_rsa",
                 'port': 22
             }
