@@ -3128,3 +3128,565 @@ RuntimeError: Cannot add watch <ObservedWatch: path='data', is_recursive=False> 
 2025-02-14 16:31:06,791 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
 2025-02-14 16:31:06,791 - lab_automation - INFO - Processed data and transferred to GPU server
 2025-02-17 13:38:09,521 - lab_controller - INFO - Shutting down...
+2025-02-24 11:29:59,609 - lab_controller - INFO - Starting lab automation system
+2025-02-24 11:30:15,912 - lab_controller - INFO - New sequence detected
+2025-02-24 11:30:16,066 - lab_controller - INFO - Updated DNA volumes
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -730.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -720.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -730.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p2f3 in well C06: used 5.0µL, -145.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0µL, -145.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, -175.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p3f6 in well D09: used 5.0µL, -110.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, -15.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -735.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -725.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -735.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, -385.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 20.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, -180.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p6f6 in well G09: used 5.0µL, 25.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0µL, -75.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -740.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -730.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -740.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p2f3 in well C06: used 5.0µL, -150.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p3f4 in well D07: used 5.0µL, -165.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p3f5 in well D08: used 5.0µL, 15.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0µL, -105.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Fragment p1f7 in well B10: used 5.0µL, -105.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Updated reagent volumes
+2025-02-24 11:30:16,066 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -870.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -880.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -890.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -15785.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -15830.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -15875.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -870.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -880.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -890.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -6480.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -6520.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -6560.0µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -3985.419999999992µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4012.0799999999917µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4038.7399999999916µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -8974.580000000018µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -9027.920000000018µL remaining
+2025-02-24 11:30:16,066 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -9081.260000000018µL remaining
+2025-02-24 11:30:16,085 - lab_controller - INFO - Generated worklist and plate layout
+2025-02-24 11:30:16,087 - lab_controller - INFO - Started evagreen monitoring
+2025-02-24 11:33:26,334 - lab_controller - INFO - Shutting down...
+2025-02-24 11:33:30,005 - lab_controller - INFO - Starting lab automation system
+2025-02-24 11:33:37,360 - lab_controller - INFO - New sequence detected
+2025-02-24 11:33:37,461 - lab_controller - INFO - Updated DNA volumes
+2025-02-24 11:33:37,461 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -745.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -735.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -745.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p2f3 in well C06: used 5.0µL, -155.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0µL, -150.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, -180.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p3f6 in well D09: used 5.0µL, -115.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, -20.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -750.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -740.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -750.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, -390.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 15.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, -185.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p6f6 in well G09: used 5.0µL, 20.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0µL, -80.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -755.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -745.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -755.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p2f3 in well C06: used 5.0µL, -160.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p3f4 in well D07: used 5.0µL, -170.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p3f5 in well D08: used 5.0µL, 10.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0µL, -110.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Fragment p1f7 in well B10: used 5.0µL, -110.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Updated reagent volumes
+2025-02-24 11:33:37,462 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -900.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -910.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -920.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -15920.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -15965.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -16010.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -900.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -910.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -920.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -6600.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -6640.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -6680.0µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4065.3999999999915µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4092.0599999999913µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4118.719999999991µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -9134.600000000019µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -9187.940000000019µL remaining
+2025-02-24 11:33:37,462 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -9241.280000000019µL remaining
+2025-02-24 11:33:37,526 - lab_controller - INFO - Generated worklist and plate layout
+2025-02-24 11:33:37,528 - lab_controller - INFO - Started evagreen monitoring
+2025-02-24 11:33:41,347 - lab_automation - INFO - Evagreen data updated, processing assemblies...
+2025-02-24 11:33:41,372 - lab_automation - INFO - Initialized PlateDataHandler:
+2025-02-24 11:33:41,373 - lab_automation - INFO -   data_dir: data
+2025-02-24 11:33:41,373 - lab_automation - INFO -   input_file: raw_plate_data.csv
+2025-02-24 11:33:41,373 - lab_automation - INFO -   output_file: phenotype.json
+2025-02-24 11:33:41,374 - lab_controller - INFO - Started plate data monitoring
+2025-02-24 11:33:41,374 - lab_automation - INFO - Transitioned to plate monitoring
+2025-02-24 11:34:04,370 - lab_automation - INFO - Plate data modified, processing...
+2025-02-24 11:34:05,785 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2025-02-24 11:34:06,365 - paramiko.transport - INFO - Authentication (publickey) successful!
+2025-02-24 11:34:06,784 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2025-02-24 11:34:06,784 - data_transfer - INFO - Connected to coltrane.egr.duke.edu
+2025-02-24 11:34:06,784 - data_transfer - INFO - Attempting transfer: data/phenotype.json → /home/cb643/self_driving/data/plate_data/phenotype.json
+2025-02-24 11:34:06,804 - data_transfer - INFO - Transferred data/phenotype.json to /home/cb643/self_driving/data/plate_data/phenotype.json
+2025-02-24 11:34:06,804 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2025-02-24 11:34:06,805 - lab_automation - INFO - Processed data and transferred to GPU server
+2025-02-24 11:46:24,147 - lab_controller - INFO - Shutting down...
+2025-02-24 11:46:31,842 - lab_controller - INFO - Starting lab automation system
+2025-02-24 11:46:38,014 - lab_controller - INFO - New sequence detected
+2025-02-24 11:46:38,119 - lab_controller - INFO - Updated DNA volumes
+2025-02-24 11:46:38,119 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -760.0µL remaining
+2025-02-24 11:46:38,119 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -750.0µL remaining
+2025-02-24 11:46:38,119 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -760.0µL remaining
+2025-02-24 11:46:38,119 - lab_controller - INFO - Fragment p2f3 in well C06: used 5.0µL, -165.0µL remaining
+2025-02-24 11:46:38,119 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0µL, -155.0µL remaining
+2025-02-24 11:46:38,119 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, -185.0µL remaining
+2025-02-24 11:46:38,119 - lab_controller - INFO - Fragment p3f6 in well D09: used 5.0µL, -120.0µL remaining
+2025-02-24 11:46:38,119 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, -25.0µL remaining
+2025-02-24 11:46:38,119 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -765.0µL remaining
+2025-02-24 11:46:38,119 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -755.0µL remaining
+2025-02-24 11:46:38,119 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -765.0µL remaining
+2025-02-24 11:46:38,119 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, -395.0µL remaining
+2025-02-24 11:46:38,119 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 10.0µL remaining
+2025-02-24 11:46:38,119 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, -190.0µL remaining
+2025-02-24 11:46:38,121 - lab_controller - INFO - Fragment p6f6 in well G09: used 5.0µL, 15.0µL remaining
+2025-02-24 11:46:38,121 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0µL, -85.0µL remaining
+2025-02-24 11:46:38,121 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -770.0µL remaining
+2025-02-24 11:46:38,121 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -760.0µL remaining
+2025-02-24 11:46:38,121 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -770.0µL remaining
+2025-02-24 11:46:38,121 - lab_controller - INFO - Fragment p2f3 in well C06: used 5.0µL, -170.0µL remaining
+2025-02-24 11:46:38,121 - lab_controller - INFO - Fragment p3f4 in well D07: used 5.0µL, -175.0µL remaining
+2025-02-24 11:46:38,121 - lab_controller - INFO - Fragment p3f5 in well D08: used 5.0µL, 5.0µL remaining
+2025-02-24 11:46:38,121 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0µL, -115.0µL remaining
+2025-02-24 11:46:38,121 - lab_controller - INFO - Fragment p1f7 in well B10: used 5.0µL, -115.0µL remaining
+2025-02-24 11:46:38,121 - lab_controller - INFO - Updated reagent volumes
+2025-02-24 11:46:38,121 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -930.0µL remaining
+2025-02-24 11:46:38,121 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -940.0µL remaining
+2025-02-24 11:46:38,121 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -950.0µL remaining
+2025-02-24 11:46:38,121 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -16055.0µL remaining
+2025-02-24 11:46:38,121 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -16100.0µL remaining
+2025-02-24 11:46:38,121 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -16145.0µL remaining
+2025-02-24 11:46:38,121 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -930.0µL remaining
+2025-02-24 11:46:38,121 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -940.0µL remaining
+2025-02-24 11:46:38,121 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -950.0µL remaining
+2025-02-24 11:46:38,121 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -6720.0µL remaining
+2025-02-24 11:46:38,121 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -6760.0µL remaining
+2025-02-24 11:46:38,129 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -6800.0µL remaining
+2025-02-24 11:46:38,129 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4145.379999999991µL remaining
+2025-02-24 11:46:38,129 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4172.039999999991µL remaining
+2025-02-24 11:46:38,129 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4198.699999999991µL remaining
+2025-02-24 11:46:38,129 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -9294.620000000019µL remaining
+2025-02-24 11:46:38,129 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -9347.96000000002µL remaining
+2025-02-24 11:46:38,129 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -9401.30000000002µL remaining
+2025-02-24 11:46:38,148 - lab_controller - INFO - Generated worklist and plate layout
+2025-02-24 11:46:38,150 - lab_controller - INFO - Started evagreen monitoring
+2025-02-24 11:46:49,799 - lab_automation - INFO - Evagreen data updated, processing assemblies...
+2025-02-24 11:46:50,122 - lab_automation - INFO - Initialized PlateDataHandler:
+2025-02-24 11:46:50,122 - lab_automation - INFO -   data_dir: data
+2025-02-24 11:46:50,122 - lab_automation - INFO -   input_file: raw_plate_data.csv
+2025-02-24 11:46:50,122 - lab_automation - INFO -   output_file: phenotype.json
+2025-02-24 11:46:50,122 - lab_controller - INFO - Started plate data monitoring
+2025-02-24 11:46:50,123 - lab_automation - INFO - Transitioned to plate monitoring
+2025-02-24 11:47:07,900 - lab_controller - INFO - Shutting down...
+2025-02-24 11:48:12,361 - lab_controller - INFO - Starting lab automation system
+2025-02-24 11:48:20,212 - lab_controller - INFO - New sequence detected
+2025-02-24 11:48:20,315 - lab_controller - INFO - Updated DNA volumes
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -775.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -765.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -775.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p2f3 in well C06: used 5.0µL, -175.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0µL, -160.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, -190.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p3f6 in well D09: used 5.0µL, -125.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, -30.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -780.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -770.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -780.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, -400.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 5.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, -195.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p6f6 in well G09: used 5.0µL, 10.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0µL, -90.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -785.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -775.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -785.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p2f3 in well C06: used 5.0µL, -180.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p3f4 in well D07: used 5.0µL, -180.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p3f5 in well D08: used 5.0µL, 0.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0µL, -120.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Fragment p1f7 in well B10: used 5.0µL, -120.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Updated reagent volumes
+2025-02-24 11:48:20,315 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -960.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -970.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -980.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -16190.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -16235.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -16280.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -960.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -970.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -980.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -6840.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -6880.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -6920.0µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4225.359999999991µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4252.01999999999µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4278.67999999999µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -9454.64000000002µL remaining
+2025-02-24 11:48:20,315 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -9507.98000000002µL remaining
+2025-02-24 11:48:20,316 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -9561.32000000002µL remaining
+2025-02-24 11:48:20,333 - lab_controller - INFO - Generated worklist and plate layout
+2025-02-24 11:48:20,335 - lab_controller - INFO - Started evagreen monitoring
+2025-02-24 11:48:23,459 - lab_automation - INFO - Evagreen data updated, processing assemblies...
+2025-02-24 11:48:23,784 - lab_automation - INFO - Initialized PlateDataHandler:
+2025-02-24 11:48:23,784 - lab_automation - INFO -   data_dir: data
+2025-02-24 11:48:23,784 - lab_automation - INFO -   input_file: raw_plate_data.csv
+2025-02-24 11:48:23,784 - lab_automation - INFO -   output_file: phenotype.json
+2025-02-24 11:48:23,785 - lab_controller - INFO - Started plate data monitoring
+2025-02-24 11:48:23,785 - lab_automation - INFO - Transitioned to plate monitoring
+2025-02-24 11:49:13,021 - lab_controller - INFO - Shutting down...
+2025-02-24 11:49:49,612 - lab_controller - INFO - Starting lab automation system
+2025-02-24 11:49:57,185 - lab_controller - INFO - New sequence detected
+2025-02-24 11:49:57,302 - lab_controller - INFO - Updated DNA volumes
+2025-02-24 11:49:57,302 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -790.0µL remaining
+2025-02-24 11:49:57,302 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -780.0µL remaining
+2025-02-24 11:49:57,302 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -790.0µL remaining
+2025-02-24 11:49:57,302 - lab_controller - INFO - Fragment p2f3 in well C06: used 5.0µL, -185.0µL remaining
+2025-02-24 11:49:57,302 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0µL, -165.0µL remaining
+2025-02-24 11:49:57,302 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, -195.0µL remaining
+2025-02-24 11:49:57,302 - lab_controller - INFO - Fragment p3f6 in well D09: used 5.0µL, -130.0µL remaining
+2025-02-24 11:49:57,302 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, -35.0µL remaining
+2025-02-24 11:49:57,302 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -795.0µL remaining
+2025-02-24 11:49:57,302 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -785.0µL remaining
+2025-02-24 11:49:57,302 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -795.0µL remaining
+2025-02-24 11:49:57,302 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, -405.0µL remaining
+2025-02-24 11:49:57,302 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, 0.0µL remaining
+2025-02-24 11:49:57,302 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, -200.0µL remaining
+2025-02-24 11:49:57,302 - lab_controller - INFO - Fragment p6f6 in well G09: used 5.0µL, 5.0µL remaining
+2025-02-24 11:49:57,302 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0µL, -95.0µL remaining
+2025-02-24 11:49:57,302 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -800.0µL remaining
+2025-02-24 11:49:57,302 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -790.0µL remaining
+2025-02-24 11:49:57,302 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -800.0µL remaining
+2025-02-24 11:49:57,302 - lab_controller - INFO - Fragment p2f3 in well C06: used 5.0µL, -190.0µL remaining
+2025-02-24 11:49:57,302 - lab_controller - INFO - Fragment p3f4 in well D07: used 5.0µL, -185.0µL remaining
+2025-02-24 11:49:57,302 - lab_controller - INFO - Fragment p3f5 in well D08: used 5.0µL, -5.0µL remaining
+2025-02-24 11:49:57,303 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0µL, -125.0µL remaining
+2025-02-24 11:49:57,303 - lab_controller - INFO - Fragment p1f7 in well B10: used 5.0µL, -125.0µL remaining
+2025-02-24 11:49:57,303 - lab_controller - INFO - Updated reagent volumes
+2025-02-24 11:49:57,303 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -990.0µL remaining
+2025-02-24 11:49:57,303 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -1000.0µL remaining
+2025-02-24 11:49:57,303 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -1010.0µL remaining
+2025-02-24 11:49:57,303 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -16325.0µL remaining
+2025-02-24 11:49:57,303 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -16370.0µL remaining
+2025-02-24 11:49:57,303 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -16415.0µL remaining
+2025-02-24 11:49:57,303 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -990.0µL remaining
+2025-02-24 11:49:57,303 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -1000.0µL remaining
+2025-02-24 11:49:57,303 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -1010.0µL remaining
+2025-02-24 11:49:57,303 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -6960.0µL remaining
+2025-02-24 11:49:57,303 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -7000.0µL remaining
+2025-02-24 11:49:57,303 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -7040.0µL remaining
+2025-02-24 11:49:57,303 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4305.33999999999µL remaining
+2025-02-24 11:49:57,303 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4331.99999999999µL remaining
+2025-02-24 11:49:57,303 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4358.65999999999µL remaining
+2025-02-24 11:49:57,303 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -9614.66000000002µL remaining
+2025-02-24 11:49:57,303 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -9668.00000000002µL remaining
+2025-02-24 11:49:57,303 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -9721.34000000002µL remaining
+2025-02-24 11:49:57,320 - lab_controller - INFO - Generated worklist and plate layout
+2025-02-24 11:49:57,322 - lab_controller - INFO - Started evagreen monitoring
+2025-02-24 11:50:03,381 - lab_automation - INFO - Evagreen data updated, processing assemblies...
+2025-02-24 11:50:03,684 - lab_automation - INFO - Initialized PlateDataHandler:
+2025-02-24 11:50:03,684 - lab_automation - INFO -   data_dir: data
+2025-02-24 11:50:03,684 - lab_automation - INFO -   input_file: raw_plate_data.csv
+2025-02-24 11:50:03,684 - lab_automation - INFO -   output_file: phenotype.json
+2025-02-24 11:50:03,685 - lab_controller - INFO - Started plate data monitoring
+2025-02-24 11:50:03,685 - lab_automation - INFO - Transitioned to plate monitoring
+2025-02-24 11:50:16,383 - lab_controller - INFO - Shutting down...
+2025-02-24 11:53:32,137 - lab_controller - INFO - Starting lab automation system
+2025-02-24 11:53:36,903 - lab_controller - INFO - New sequence detected
+2025-02-24 11:53:37,033 - lab_controller - INFO - Updated DNA volumes
+2025-02-24 11:53:37,033 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -805.0µL remaining
+2025-02-24 11:53:37,033 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -795.0µL remaining
+2025-02-24 11:53:37,033 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -805.0µL remaining
+2025-02-24 11:53:37,033 - lab_controller - INFO - Fragment p2f3 in well C06: used 5.0µL, -195.0µL remaining
+2025-02-24 11:53:37,033 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0µL, -170.0µL remaining
+2025-02-24 11:53:37,033 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, -200.0µL remaining
+2025-02-24 11:53:37,033 - lab_controller - INFO - Fragment p3f6 in well D09: used 5.0µL, -135.0µL remaining
+2025-02-24 11:53:37,034 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, -40.0µL remaining
+2025-02-24 11:53:37,034 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -810.0µL remaining
+2025-02-24 11:53:37,035 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -800.0µL remaining
+2025-02-24 11:53:37,035 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -810.0µL remaining
+2025-02-24 11:53:37,035 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, -410.0µL remaining
+2025-02-24 11:53:37,035 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, -5.0µL remaining
+2025-02-24 11:53:37,036 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, -205.0µL remaining
+2025-02-24 11:53:37,036 - lab_controller - INFO - Fragment p6f6 in well G09: used 5.0µL, 0.0µL remaining
+2025-02-24 11:53:37,036 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0µL, -100.0µL remaining
+2025-02-24 11:53:37,036 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -815.0µL remaining
+2025-02-24 11:53:37,037 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -805.0µL remaining
+2025-02-24 11:53:37,037 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -815.0µL remaining
+2025-02-24 11:53:37,037 - lab_controller - INFO - Fragment p2f3 in well C06: used 5.0µL, -200.0µL remaining
+2025-02-24 11:53:37,037 - lab_controller - INFO - Fragment p3f4 in well D07: used 5.0µL, -190.0µL remaining
+2025-02-24 11:53:37,037 - lab_controller - INFO - Fragment p3f5 in well D08: used 5.0µL, -10.0µL remaining
+2025-02-24 11:53:37,037 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0µL, -130.0µL remaining
+2025-02-24 11:53:37,037 - lab_controller - INFO - Fragment p1f7 in well B10: used 5.0µL, -130.0µL remaining
+2025-02-24 11:53:37,037 - lab_controller - INFO - Updated reagent volumes
+2025-02-24 11:53:37,037 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -1020.0µL remaining
+2025-02-24 11:53:37,037 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -1030.0µL remaining
+2025-02-24 11:53:37,038 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -1040.0µL remaining
+2025-02-24 11:53:37,038 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -16460.0µL remaining
+2025-02-24 11:53:37,038 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -16505.0µL remaining
+2025-02-24 11:53:37,038 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -16550.0µL remaining
+2025-02-24 11:53:37,038 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -1020.0µL remaining
+2025-02-24 11:53:37,038 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -1030.0µL remaining
+2025-02-24 11:53:37,038 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -1040.0µL remaining
+2025-02-24 11:53:37,040 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -7080.0µL remaining
+2025-02-24 11:53:37,040 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -7120.0µL remaining
+2025-02-24 11:53:37,040 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -7160.0µL remaining
+2025-02-24 11:53:37,040 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4385.31999999999µL remaining
+2025-02-24 11:53:37,040 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4411.97999999999µL remaining
+2025-02-24 11:53:37,040 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4438.639999999989µL remaining
+2025-02-24 11:53:37,040 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -9774.68000000002µL remaining
+2025-02-24 11:53:37,040 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -9828.02000000002µL remaining
+2025-02-24 11:53:37,040 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -9881.36000000002µL remaining
+2025-02-24 11:53:37,109 - lab_controller - INFO - Generated worklist and plate layout
+2025-02-24 11:53:37,111 - lab_controller - INFO - Started evagreen monitoring
+2025-02-24 11:53:39,689 - lab_automation - INFO - Evagreen data updated, processing assemblies...
+2025-02-24 11:53:40,011 - lab_automation - INFO - Initialized PlateDataHandler:
+2025-02-24 11:53:40,011 - lab_automation - INFO -   data_dir: data
+2025-02-24 11:53:40,011 - lab_automation - INFO -   input_file: raw_plate_data.csv
+2025-02-24 11:53:40,011 - lab_automation - INFO -   output_file: phenotype.json
+2025-02-24 11:53:40,012 - lab_controller - INFO - Started plate data monitoring
+2025-02-24 11:53:40,012 - lab_automation - INFO - Transitioned to plate monitoring
+2025-02-24 11:54:56,849 - lab_controller - INFO - Shutting down...
+2025-02-24 11:54:59,341 - lab_controller - INFO - Starting lab automation system
+2025-02-24 11:55:04,436 - lab_controller - INFO - New sequence detected
+2025-02-24 11:55:04,537 - lab_controller - INFO - Updated DNA volumes
+2025-02-24 11:55:04,537 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -820.0µL remaining
+2025-02-24 11:55:04,537 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -810.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -820.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Fragment p2f3 in well C06: used 5.0µL, -205.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0µL, -175.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, -205.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Fragment p3f6 in well D09: used 5.0µL, -140.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, -45.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -825.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -815.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -825.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, -415.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, -10.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, -210.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Fragment p6f6 in well G09: used 5.0µL, -5.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0µL, -105.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -830.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -820.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -830.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Fragment p2f3 in well C06: used 5.0µL, -210.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Fragment p3f4 in well D07: used 5.0µL, -195.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Fragment p3f5 in well D08: used 5.0µL, -15.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0µL, -135.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Fragment p1f7 in well B10: used 5.0µL, -135.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Updated reagent volumes
+2025-02-24 11:55:04,538 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -1050.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -1060.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -1070.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -16595.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -16640.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -16685.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -1050.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -1060.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -1070.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -7200.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -7240.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -7280.0µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4465.299999999989µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4491.959999999989µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4518.619999999989µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -9934.70000000002µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -9988.04000000002µL remaining
+2025-02-24 11:55:04,538 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -10041.380000000021µL remaining
+2025-02-24 11:55:04,560 - lab_controller - INFO - Generated worklist and plate layout
+2025-02-24 11:55:04,563 - lab_controller - INFO - Started evagreen monitoring
+2025-02-24 11:55:09,895 - lab_automation - INFO - Evagreen data updated, processing assemblies...
+2025-02-24 11:55:10,218 - lab_automation - INFO - Initialized PlateDataHandler:
+2025-02-24 11:55:10,218 - lab_automation - INFO -   data_dir: data
+2025-02-24 11:55:10,218 - lab_automation - INFO -   input_file: raw_plate_data.csv
+2025-02-24 11:55:10,218 - lab_automation - INFO -   output_file: phenotype.json
+2025-02-24 11:55:10,219 - lab_controller - INFO - Started plate data monitoring
+2025-02-24 11:55:10,219 - lab_automation - INFO - Transitioned to plate monitoring
+2025-02-24 11:57:21,138 - lab_controller - INFO - Shutting down...
+2025-02-24 11:57:23,199 - lab_controller - INFO - Starting lab automation system
+2025-02-24 11:57:34,353 - lab_controller - INFO - New sequence detected
+2025-02-24 11:57:34,466 - lab_controller - INFO - Updated DNA volumes
+2025-02-24 11:57:34,466 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -835.0µL remaining
+2025-02-24 11:57:34,466 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -825.0µL remaining
+2025-02-24 11:57:34,466 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -835.0µL remaining
+2025-02-24 11:57:34,466 - lab_controller - INFO - Fragment p2f3 in well C06: used 5.0µL, -215.0µL remaining
+2025-02-24 11:57:34,466 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0µL, -180.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, -210.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Fragment p3f6 in well D09: used 5.0µL, -145.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, -50.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -840.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -830.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -840.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, -420.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, -15.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, -215.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Fragment p6f6 in well G09: used 5.0µL, -10.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0µL, -110.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -845.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -835.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -845.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Fragment p2f3 in well C06: used 5.0µL, -220.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Fragment p3f4 in well D07: used 5.0µL, -200.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Fragment p3f5 in well D08: used 5.0µL, -20.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0µL, -140.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Fragment p1f7 in well B10: used 5.0µL, -140.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Updated reagent volumes
+2025-02-24 11:57:34,467 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -1080.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -1090.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -1100.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -16730.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -16775.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -16820.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -1080.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -1090.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -1100.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -7320.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -7360.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -7400.0µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4545.279999999989µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4571.939999999989µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4598.5999999999885µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -10094.720000000021µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -10148.060000000021µL remaining
+2025-02-24 11:57:34,467 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -10201.400000000021µL remaining
+2025-02-24 11:57:34,486 - lab_controller - INFO - Generated worklist and plate layout
+2025-02-24 11:57:34,488 - lab_controller - INFO - Started evagreen monitoring
+2025-02-24 11:57:40,470 - lab_automation - INFO - Evagreen data updated, processing assemblies...
+2025-02-24 11:57:40,927 - lab_automation - INFO - Initialized PlateDataHandler:
+2025-02-24 11:57:40,927 - lab_automation - INFO -   data_dir: data
+2025-02-24 11:57:40,927 - lab_automation - INFO -   input_file: raw_plate_data.csv
+2025-02-24 11:57:40,927 - lab_automation - INFO -   output_file: phenotype.json
+2025-02-24 11:57:40,928 - lab_controller - INFO - Started plate data monitoring
+2025-02-24 11:57:40,928 - lab_automation - INFO - Transitioned to plate monitoring
+2025-02-24 11:58:07,029 - lab_controller - INFO - Shutting down...
+2025-02-24 12:06:36,382 - lab_controller - INFO - Starting lab automation system
+2025-02-24 12:06:43,331 - lab_controller - INFO - New sequence detected
+2025-02-24 12:06:43,467 - lab_controller - INFO - Updated DNA volumes
+2025-02-24 12:06:43,467 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -850.0µL remaining
+2025-02-24 12:06:43,467 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -840.0µL remaining
+2025-02-24 12:06:43,467 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -850.0µL remaining
+2025-02-24 12:06:43,467 - lab_controller - INFO - Fragment p2f3 in well C06: used 5.0µL, -225.0µL remaining
+2025-02-24 12:06:43,467 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0µL, -185.0µL remaining
+2025-02-24 12:06:43,467 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, -215.0µL remaining
+2025-02-24 12:06:43,467 - lab_controller - INFO - Fragment p3f6 in well D09: used 5.0µL, -150.0µL remaining
+2025-02-24 12:06:43,467 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, -55.0µL remaining
+2025-02-24 12:06:43,467 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -855.0µL remaining
+2025-02-24 12:06:43,467 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -845.0µL remaining
+2025-02-24 12:06:43,467 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -855.0µL remaining
+2025-02-24 12:06:43,467 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, -425.0µL remaining
+2025-02-24 12:06:43,467 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, -20.0µL remaining
+2025-02-24 12:06:43,467 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, -220.0µL remaining
+2025-02-24 12:06:43,467 - lab_controller - INFO - Fragment p6f6 in well G09: used 5.0µL, -15.0µL remaining
+2025-02-24 12:06:43,467 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0µL, -115.0µL remaining
+2025-02-24 12:06:43,467 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -860.0µL remaining
+2025-02-24 12:06:43,467 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -850.0µL remaining
+2025-02-24 12:06:43,467 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -860.0µL remaining
+2025-02-24 12:06:43,467 - lab_controller - INFO - Fragment p2f3 in well C06: used 5.0µL, -230.0µL remaining
+2025-02-24 12:06:43,468 - lab_controller - INFO - Fragment p3f4 in well D07: used 5.0µL, -205.0µL remaining
+2025-02-24 12:06:43,468 - lab_controller - INFO - Fragment p3f5 in well D08: used 5.0µL, -25.0µL remaining
+2025-02-24 12:06:43,468 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0µL, -145.0µL remaining
+2025-02-24 12:06:43,468 - lab_controller - INFO - Fragment p1f7 in well B10: used 5.0µL, -145.0µL remaining
+2025-02-24 12:06:43,468 - lab_controller - INFO - Updated reagent volumes
+2025-02-24 12:06:43,468 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -1110.0µL remaining
+2025-02-24 12:06:43,468 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -1120.0µL remaining
+2025-02-24 12:06:43,468 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -1130.0µL remaining
+2025-02-24 12:06:43,468 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -16865.0µL remaining
+2025-02-24 12:06:43,468 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -16910.0µL remaining
+2025-02-24 12:06:43,468 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -16955.0µL remaining
+2025-02-24 12:06:43,468 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -1110.0µL remaining
+2025-02-24 12:06:43,468 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -1120.0µL remaining
+2025-02-24 12:06:43,468 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -1130.0µL remaining
+2025-02-24 12:06:43,468 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -7440.0µL remaining
+2025-02-24 12:06:43,468 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -7480.0µL remaining
+2025-02-24 12:06:43,468 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -7520.0µL remaining
+2025-02-24 12:06:43,468 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4625.259999999988µL remaining
+2025-02-24 12:06:43,468 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4651.919999999988µL remaining
+2025-02-24 12:06:43,468 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4678.579999999988µL remaining
+2025-02-24 12:06:43,468 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -10254.740000000022µL remaining
+2025-02-24 12:06:43,468 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -10308.080000000022µL remaining
+2025-02-24 12:06:43,468 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -10361.420000000022µL remaining
+2025-02-24 12:06:43,486 - lab_controller - INFO - Generated worklist and plate layout
+2025-02-24 12:06:43,488 - lab_controller - INFO - Started evagreen monitoring
+2025-02-24 12:06:45,967 - lab_automation - INFO - Evagreen data updated, processing assemblies...
+2025-02-24 12:06:46,294 - lab_automation - INFO - Initialized PlateDataHandler:
+2025-02-24 12:06:46,294 - lab_automation - INFO -   data_dir: data
+2025-02-24 12:06:46,294 - lab_automation - INFO -   input_file: raw_plate_data.csv
+2025-02-24 12:06:46,294 - lab_automation - INFO -   output_file: phenotype.json
+2025-02-24 12:06:46,295 - lab_controller - INFO - Started plate data monitoring
+2025-02-24 12:06:46,295 - lab_automation - INFO - Transitioned to plate monitoring
+2025-02-24 12:07:09,435 - lab_controller - INFO - Shutting down...
+2025-02-24 12:08:15,706 - lab_controller - INFO - Starting lab automation system
+2025-02-24 12:08:25,344 - lab_controller - INFO - New sequence detected
+2025-02-24 12:08:25,454 - lab_controller - INFO - Updated DNA volumes
+2025-02-24 12:08:25,454 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -865.0µL remaining
+2025-02-24 12:08:25,454 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -855.0µL remaining
+2025-02-24 12:08:25,454 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -865.0µL remaining
+2025-02-24 12:08:25,454 - lab_controller - INFO - Fragment p2f3 in well C06: used 5.0µL, -235.0µL remaining
+2025-02-24 12:08:25,454 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0µL, -190.0µL remaining
+2025-02-24 12:08:25,454 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0µL, -220.0µL remaining
+2025-02-24 12:08:25,454 - lab_controller - INFO - Fragment p3f6 in well D09: used 5.0µL, -155.0µL remaining
+2025-02-24 12:08:25,454 - lab_controller - INFO - Fragment p4f7 in well E10: used 5.0µL, -60.0µL remaining
+2025-02-24 12:08:25,454 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -870.0µL remaining
+2025-02-24 12:08:25,454 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -860.0µL remaining
+2025-02-24 12:08:25,454 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -870.0µL remaining
+2025-02-24 12:08:25,454 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0µL, -430.0µL remaining
+2025-02-24 12:08:25,454 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0µL, -25.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0µL, -225.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Fragment p6f6 in well G09: used 5.0µL, -20.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0µL, -120.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0µL, -875.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0µL, -865.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0µL, -875.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Fragment p2f3 in well C06: used 5.0µL, -240.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Fragment p3f4 in well D07: used 5.0µL, -210.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Fragment p3f5 in well D08: used 5.0µL, -30.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0µL, -150.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Fragment p1f7 in well B10: used 5.0µL, -150.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Updated reagent volumes
+2025-02-24 12:08:25,455 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -1140.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -1150.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0µL, -1160.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -17000.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -17045.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Reagent Primers in well D07: used 45.0µL, -17090.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -1140.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -1150.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0µL, -1160.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -7560.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -7600.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Reagent Water in well E08: used 40.0µL, -7640.0µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4705.239999999988µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4731.899999999988µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66µL, -4758.559999999988µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -10414.760000000022µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -10468.100000000022µL remaining
+2025-02-24 12:08:25,455 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34µL, -10521.440000000022µL remaining
+2025-02-24 12:08:25,474 - lab_controller - INFO - Generated worklist and plate layout
+2025-02-24 12:08:25,476 - lab_controller - INFO - Started evagreen monitoring
+2025-02-24 12:08:28,573 - lab_automation - INFO - Evagreen data updated, processing assemblies...
+2025-02-24 12:08:28,895 - lab_automation - INFO - Initialized PlateDataHandler:
+2025-02-24 12:08:28,895 - lab_automation - INFO -   data_dir: data
+2025-02-24 12:08:28,895 - lab_automation - INFO -   input_file: raw_plate_data.csv
+2025-02-24 12:08:28,895 - lab_automation - INFO -   output_file: phenotype.json
+2025-02-24 12:08:28,896 - lab_controller - INFO - Started plate data monitoring
+2025-02-24 12:08:28,896 - lab_automation - INFO - Transitioned to plate monitoring
+2025-02-24 12:09:04,828 - lab_controller - INFO - Shutting down...

@@ -1,7 +1,7 @@
 {
   "GGMM": {
     "well": "D06",
-    "volume": -860.0,
+    "volume": -1160.0,
     "history": [
       {
         "timestamp": "2025-01-14T11:48:39.550564",
@@ -932,12 +932,162 @@
         "timestamp": "2025-02-14T16:31:02.952755",
         "volume_used": 10.0,
         "volume_remaining": -860.0
+      },
+      {
+        "timestamp": "2025-02-24T11:30:16.036666",
+        "volume_used": 10.0,
+        "volume_remaining": -870.0
+      },
+      {
+        "timestamp": "2025-02-24T11:30:16.036666",
+        "volume_used": 10.0,
+        "volume_remaining": -880.0
+      },
+      {
+        "timestamp": "2025-02-24T11:30:16.036666",
+        "volume_used": 10.0,
+        "volume_remaining": -890.0
+      },
+      {
+        "timestamp": "2025-02-24T11:33:37.430207",
+        "volume_used": 10.0,
+        "volume_remaining": -900.0
+      },
+      {
+        "timestamp": "2025-02-24T11:33:37.430207",
+        "volume_used": 10.0,
+        "volume_remaining": -910.0
+      },
+      {
+        "timestamp": "2025-02-24T11:33:37.430207",
+        "volume_used": 10.0,
+        "volume_remaining": -920.0
+      },
+      {
+        "timestamp": "2025-02-24T11:46:38.081368",
+        "volume_used": 10.0,
+        "volume_remaining": -930.0
+      },
+      {
+        "timestamp": "2025-02-24T11:46:38.081368",
+        "volume_used": 10.0,
+        "volume_remaining": -940.0
+      },
+      {
+        "timestamp": "2025-02-24T11:46:38.081368",
+        "volume_used": 10.0,
+        "volume_remaining": -950.0
+      },
+      {
+        "timestamp": "2025-02-24T11:48:20.282847",
+        "volume_used": 10.0,
+        "volume_remaining": -960.0
+      },
+      {
+        "timestamp": "2025-02-24T11:48:20.282847",
+        "volume_used": 10.0,
+        "volume_remaining": -970.0
+      },
+      {
+        "timestamp": "2025-02-24T11:48:20.282847",
+        "volume_used": 10.0,
+        "volume_remaining": -980.0
+      },
+      {
+        "timestamp": "2025-02-24T11:49:57.269033",
+        "volume_used": 10.0,
+        "volume_remaining": -990.0
+      },
+      {
+        "timestamp": "2025-02-24T11:49:57.269033",
+        "volume_used": 10.0,
+        "volume_remaining": -1000.0
+      },
+      {
+        "timestamp": "2025-02-24T11:49:57.269033",
+        "volume_used": 10.0,
+        "volume_remaining": -1010.0
+      },
+      {
+        "timestamp": "2025-02-24T11:53:36.977054",
+        "volume_used": 10.0,
+        "volume_remaining": -1020.0
+      },
+      {
+        "timestamp": "2025-02-24T11:53:36.977054",
+        "volume_used": 10.0,
+        "volume_remaining": -1030.0
+      },
+      {
+        "timestamp": "2025-02-24T11:53:36.977054",
+        "volume_used": 10.0,
+        "volume_remaining": -1040.0
+      },
+      {
+        "timestamp": "2025-02-24T11:55:04.503096",
+        "volume_used": 10.0,
+        "volume_remaining": -1050.0
+      },
+      {
+        "timestamp": "2025-02-24T11:55:04.503096",
+        "volume_used": 10.0,
+        "volume_remaining": -1060.0
+      },
+      {
+        "timestamp": "2025-02-24T11:55:04.503096",
+        "volume_used": 10.0,
+        "volume_remaining": -1070.0
+      },
+      {
+        "timestamp": "2025-02-24T11:57:34.421162",
+        "volume_used": 10.0,
+        "volume_remaining": -1080.0
+      },
+      {
+        "timestamp": "2025-02-24T11:57:34.421162",
+        "volume_used": 10.0,
+        "volume_remaining": -1090.0
+      },
+      {
+        "timestamp": "2025-02-24T11:57:34.421162",
+        "volume_used": 10.0,
+        "volume_remaining": -1100.0
+      },
+      {
+        "timestamp": "2025-02-24T12:06:43.427240",
+        "volume_used": 10.0,
+        "volume_remaining": -1110.0
+      },
+      {
+        "timestamp": "2025-02-24T12:06:43.427240",
+        "volume_used": 10.0,
+        "volume_remaining": -1120.0
+      },
+      {
+        "timestamp": "2025-02-24T12:06:43.427240",
+        "volume_used": 10.0,
+        "volume_remaining": -1130.0
+      },
+      {
+        "timestamp": "2025-02-24T12:08:25.416247",
+        "volume_used": 10.0,
+        "volume_remaining": -1140.0
+      },
+      {
+        "timestamp": "2025-02-24T12:08:25.416247",
+        "volume_used": 10.0,
+        "volume_remaining": -1150.0
+      },
+      {
+        "timestamp": "2025-02-24T12:08:25.416247",
+        "volume_used": 10.0,
+        "volume_remaining": -1160.0
       }
     ]
   },
   "Primers": {
     "well": "D07",
-    "volume": -15740.0,
+    "volume": -17090.0,
     "history": [
       {
         "timestamp": "2025-01-14T11:48:39.552647",
@@ -1868,12 +2018,162 @@
         "timestamp": "2025-02-14T16:31:02.961518",
         "volume_used": 90.0,
         "volume_remaining": -15740.0
+      },
+      {
+        "timestamp": "2025-02-24T11:30:16.046911",
+        "volume_used": 45.0,
+        "volume_remaining": -15785.0
+      },
+      {
+        "timestamp": "2025-02-24T11:30:16.046911",
+        "volume_used": 45.0,
+        "volume_remaining": -15830.0
+      },
+      {
+        "timestamp": "2025-02-24T11:30:16.046911",
+        "volume_used": 45.0,
+        "volume_remaining": -15875.0
+      },
+      {
+        "timestamp": "2025-02-24T11:33:37.438737",
+        "volume_used": 45.0,
+        "volume_remaining": -15920.0
+      },
+      {
+        "timestamp": "2025-02-24T11:33:37.438737",
+        "volume_used": 45.0,
+        "volume_remaining": -15965.0
+      },
+      {
+        "timestamp": "2025-02-24T11:33:37.438737",
+        "volume_used": 45.0,
+        "volume_remaining": -16010.0
+      },
+      {
+        "timestamp": "2025-02-24T11:46:38.090706",
+        "volume_used": 45.0,
+        "volume_remaining": -16055.0
+      },
+      {
+        "timestamp": "2025-02-24T11:46:38.090706",
+        "volume_used": 45.0,
+        "volume_remaining": -16100.0
+      },
+      {
+        "timestamp": "2025-02-24T11:46:38.090706",
+        "volume_used": 45.0,
+        "volume_remaining": -16145.0
+      },
+      {
+        "timestamp": "2025-02-24T11:48:20.293067",
+        "volume_used": 45.0,
+        "volume_remaining": -16190.0
+      },
+      {
+        "timestamp": "2025-02-24T11:48:20.293067",
+        "volume_used": 45.0,
+        "volume_remaining": -16235.0
+      },
+      {
+        "timestamp": "2025-02-24T11:48:20.293067",
+        "volume_used": 45.0,
+        "volume_remaining": -16280.0
+      },
+      {
+        "timestamp": "2025-02-24T11:49:57.280117",
+        "volume_used": 45.0,
+        "volume_remaining": -16325.0
+      },
+      {
+        "timestamp": "2025-02-24T11:49:57.280117",
+        "volume_used": 45.0,
+        "volume_remaining": -16370.0
+      },
+      {
+        "timestamp": "2025-02-24T11:49:57.280117",
+        "volume_used": 45.0,
+        "volume_remaining": -16415.0
+      },
+      {
+        "timestamp": "2025-02-24T11:53:36.989179",
+        "volume_used": 45.0,
+        "volume_remaining": -16460.0
+      },
+      {
+        "timestamp": "2025-02-24T11:53:36.989179",
+        "volume_used": 45.0,
+        "volume_remaining": -16505.0
+      },
+      {
+        "timestamp": "2025-02-24T11:53:36.989179",
+        "volume_used": 45.0,
+        "volume_remaining": -16550.0
+      },
+      {
+        "timestamp": "2025-02-24T11:55:04.512696",
+        "volume_used": 45.0,
+        "volume_remaining": -16595.0
+      },
+      {
+        "timestamp": "2025-02-24T11:55:04.512696",
+        "volume_used": 45.0,
+        "volume_remaining": -16640.0
+      },
+      {
+        "timestamp": "2025-02-24T11:55:04.512696",
+        "volume_used": 45.0,
+        "volume_remaining": -16685.0
+      },
+      {
+        "timestamp": "2025-02-24T11:57:34.437733",
+        "volume_used": 45.0,
+        "volume_remaining": -16730.0
+      },
+      {
+        "timestamp": "2025-02-24T11:57:34.437733",
+        "volume_used": 45.0,
+        "volume_remaining": -16775.0
+      },
+      {
+        "timestamp": "2025-02-24T11:57:34.437733",
+        "volume_used": 45.0,
+        "volume_remaining": -16820.0
+      },
+      {
+        "timestamp": "2025-02-24T12:06:43.436296",
+        "volume_used": 45.0,
+        "volume_remaining": -16865.0
+      },
+      {
+        "timestamp": "2025-02-24T12:06:43.436296",
+        "volume_used": 45.0,
+        "volume_remaining": -16910.0
+      },
+      {
+        "timestamp": "2025-02-24T12:06:43.436296",
+        "volume_used": 45.0,
+        "volume_remaining": -16955.0
+      },
+      {
+        "timestamp": "2025-02-24T12:08:25.429409",
+        "volume_used": 45.0,
+        "volume_remaining": -17000.0
+      },
+      {
+        "timestamp": "2025-02-24T12:08:25.429409",
+        "volume_used": 45.0,
+        "volume_remaining": -17045.0
+      },
+      {
+        "timestamp": "2025-02-24T12:08:25.429409",
+        "volume_used": 45.0,
+        "volume_remaining": -17090.0
       }
     ]
   },
   "PCRMM": {
     "well": "D08",
-    "volume": -860.0,
+    "volume": -1160.0,
     "history": [
       {
         "timestamp": "2025-01-14T11:48:39.553497",
@@ -2804,12 +3104,162 @@
         "timestamp": "2025-02-14T16:31:02.966398",
         "volume_used": 10.0,
         "volume_remaining": -860.0
+      },
+      {
+        "timestamp": "2025-02-24T11:30:16.052101",
+        "volume_used": 10.0,
+        "volume_remaining": -870.0
+      },
+      {
+        "timestamp": "2025-02-24T11:30:16.052101",
+        "volume_used": 10.0,
+        "volume_remaining": -880.0
+      },
+      {
+        "timestamp": "2025-02-24T11:30:16.052101",
+        "volume_used": 10.0,
+        "volume_remaining": -890.0
+      },
+      {
+        "timestamp": "2025-02-24T11:33:37.444324",
+        "volume_used": 10.0,
+        "volume_remaining": -900.0
+      },
+      {
+        "timestamp": "2025-02-24T11:33:37.444324",
+        "volume_used": 10.0,
+        "volume_remaining": -910.0
+      },
+      {
+        "timestamp": "2025-02-24T11:33:37.444324",
+        "volume_used": 10.0,
+        "volume_remaining": -920.0
+      },
+      {
+        "timestamp": "2025-02-24T11:46:38.099652",
+        "volume_used": 10.0,
+        "volume_remaining": -930.0
+      },
+      {
+        "timestamp": "2025-02-24T11:46:38.099652",
+        "volume_used": 10.0,
+        "volume_remaining": -940.0
+      },
+      {
+        "timestamp": "2025-02-24T11:46:38.099652",
+        "volume_used": 10.0,
+        "volume_remaining": -950.0
+      },
+      {
+        "timestamp": "2025-02-24T11:48:20.298618",
+        "volume_used": 10.0,
+        "volume_remaining": -960.0
+      },
+      {
+        "timestamp": "2025-02-24T11:48:20.298618",
+        "volume_used": 10.0,
+        "volume_remaining": -970.0
+      },
+      {
+        "timestamp": "2025-02-24T11:48:20.298618",
+        "volume_used": 10.0,
+        "volume_remaining": -980.0
+      },
+      {
+        "timestamp": "2025-02-24T11:49:57.286054",
+        "volume_used": 10.0,
+        "volume_remaining": -990.0
+      },
+      {
+        "timestamp": "2025-02-24T11:49:57.286054",
+        "volume_used": 10.0,
+        "volume_remaining": -1000.0
+      },
+      {
+        "timestamp": "2025-02-24T11:49:57.286054",
+        "volume_used": 10.0,
+        "volume_remaining": -1010.0
+      },
+      {
+        "timestamp": "2025-02-24T11:53:36.995356",
+        "volume_used": 10.0,
+        "volume_remaining": -1020.0
+      },
+      {
+        "timestamp": "2025-02-24T11:53:36.995356",
+        "volume_used": 10.0,
+        "volume_remaining": -1030.0
+      },
+      {
+        "timestamp": "2025-02-24T11:53:36.995356",
+        "volume_used": 10.0,
+        "volume_remaining": -1040.0
+      },
+      {
+        "timestamp": "2025-02-24T11:55:04.519177",
+        "volume_used": 10.0,
+        "volume_remaining": -1050.0
+      },
+      {
+        "timestamp": "2025-02-24T11:55:04.519177",
+        "volume_used": 10.0,
+        "volume_remaining": -1060.0
+      },
+      {
+        "timestamp": "2025-02-24T11:55:04.519177",
+        "volume_used": 10.0,
+        "volume_remaining": -1070.0
+      },
+      {
+        "timestamp": "2025-02-24T11:57:34.444890",
+        "volume_used": 10.0,
+        "volume_remaining": -1080.0
+      },
+      {
+        "timestamp": "2025-02-24T11:57:34.444890",
+        "volume_used": 10.0,
+        "volume_remaining": -1090.0
+      },
+      {
+        "timestamp": "2025-02-24T11:57:34.444890",
+        "volume_used": 10.0,
+        "volume_remaining": -1100.0
+      },
+      {
+        "timestamp": "2025-02-24T12:06:43.442471",
+        "volume_used": 10.0,
+        "volume_remaining": -1110.0
+      },
+      {
+        "timestamp": "2025-02-24T12:06:43.442471",
+        "volume_used": 10.0,
+        "volume_remaining": -1120.0
+      },
+      {
+        "timestamp": "2025-02-24T12:06:43.442471",
+        "volume_used": 10.0,
+        "volume_remaining": -1130.0
+      },
+      {
+        "timestamp": "2025-02-24T12:08:25.435916",
+        "volume_used": 10.0,
+        "volume_remaining": -1140.0
+      },
+      {
+        "timestamp": "2025-02-24T12:08:25.435916",
+        "volume_used": 10.0,
+        "volume_remaining": -1150.0
+      },
+      {
+        "timestamp": "2025-02-24T12:08:25.435916",
+        "volume_used": 10.0,
+        "volume_remaining": -1160.0
       }
     ]
   },
   "E. coli extract": {
     "well": "E06",
-    "volume": -3958.759999999992,
+    "volume": -4758.559999999988,
     "history": [
       {
         "timestamp": "2025-01-14T11:48:39.555150",
@@ -3740,12 +4190,162 @@
         "timestamp": "2025-02-14T16:31:02.976511",
         "volume_used": 26.66,
         "volume_remaining": -3958.759999999992
+      },
+      {
+        "timestamp": "2025-02-24T11:30:16.061646",
+        "volume_used": 26.66,
+        "volume_remaining": -3985.419999999992
+      },
+      {
+        "timestamp": "2025-02-24T11:30:16.061646",
+        "volume_used": 26.66,
+        "volume_remaining": -4012.0799999999917
+      },
+      {
+        "timestamp": "2025-02-24T11:30:16.061646",
+        "volume_used": 26.66,
+        "volume_remaining": -4038.7399999999916
+      },
+      {
+        "timestamp": "2025-02-24T11:33:37.456126",
+        "volume_used": 26.66,
+        "volume_remaining": -4065.3999999999915
+      },
+      {
+        "timestamp": "2025-02-24T11:33:37.456126",
+        "volume_used": 26.66,
+        "volume_remaining": -4092.0599999999913
+      },
+      {
+        "timestamp": "2025-02-24T11:33:37.456126",
+        "volume_used": 26.66,
+        "volume_remaining": -4118.719999999991
+      },
+      {
+        "timestamp": "2025-02-24T11:46:38.111648",
+        "volume_used": 26.66,
+        "volume_remaining": -4145.379999999991
+      },
+      {
+        "timestamp": "2025-02-24T11:46:38.111648",
+        "volume_used": 26.66,
+        "volume_remaining": -4172.039999999991
+      },
+      {
+        "timestamp": "2025-02-24T11:46:38.111648",
+        "volume_used": 26.66,
+        "volume_remaining": -4198.699999999991
+      },
+      {
+        "timestamp": "2025-02-24T11:48:20.310009",
+        "volume_used": 26.66,
+        "volume_remaining": -4225.359999999991
+      },
+      {
+        "timestamp": "2025-02-24T11:48:20.310009",
+        "volume_used": 26.66,
+        "volume_remaining": -4252.01999999999
+      },
+      {
+        "timestamp": "2025-02-24T11:48:20.310009",
+        "volume_used": 26.66,
+        "volume_remaining": -4278.67999999999
+      },
+      {
+        "timestamp": "2025-02-24T11:49:57.297336",
+        "volume_used": 26.66,
+        "volume_remaining": -4305.33999999999
+      },
+      {
+        "timestamp": "2025-02-24T11:49:57.297336",
+        "volume_used": 26.66,
+        "volume_remaining": -4331.99999999999
+      },
+      {
+        "timestamp": "2025-02-24T11:49:57.297336",
+        "volume_used": 26.66,
+        "volume_remaining": -4358.65999999999
+      },
+      {
+        "timestamp": "2025-02-24T11:53:37.012330",
+        "volume_used": 26.66,
+        "volume_remaining": -4385.31999999999
+      },
+      {
+        "timestamp": "2025-02-24T11:53:37.012330",
+        "volume_used": 26.66,
+        "volume_remaining": -4411.97999999999
+      },
+      {
+        "timestamp": "2025-02-24T11:53:37.012330",
+        "volume_used": 26.66,
+        "volume_remaining": -4438.639999999989
+      },
+      {
+        "timestamp": "2025-02-24T11:55:04.531641",
+        "volume_used": 26.66,
+        "volume_remaining": -4465.299999999989
+      },
+      {
+        "timestamp": "2025-02-24T11:55:04.531641",
+        "volume_used": 26.66,
+        "volume_remaining": -4491.959999999989
+      },
+      {
+        "timestamp": "2025-02-24T11:55:04.531641",
+        "volume_used": 26.66,
+        "volume_remaining": -4518.619999999989
+      },
+      {
+        "timestamp": "2025-02-24T11:57:34.461215",
+        "volume_used": 26.66,
+        "volume_remaining": -4545.279999999989
+      },
+      {
+        "timestamp": "2025-02-24T11:57:34.461215",
+        "volume_used": 26.66,
+        "volume_remaining": -4571.939999999989
+      },
+      {
+        "timestamp": "2025-02-24T11:57:34.461215",
+        "volume_used": 26.66,
+        "volume_remaining": -4598.5999999999885
+      },
+      {
+        "timestamp": "2025-02-24T12:06:43.455140",
+        "volume_used": 26.66,
+        "volume_remaining": -4625.259999999988
+      },
+      {
+        "timestamp": "2025-02-24T12:06:43.455140",
+        "volume_used": 26.66,
+        "volume_remaining": -4651.919999999988
+      },
+      {
+        "timestamp": "2025-02-24T12:06:43.455140",
+        "volume_used": 26.66,
+        "volume_remaining": -4678.579999999988
+      },
+      {
+        "timestamp": "2025-02-24T12:08:25.448764",
+        "volume_used": 26.66,
+        "volume_remaining": -4705.239999999988
+      },
+      {
+        "timestamp": "2025-02-24T12:08:25.448764",
+        "volume_used": 26.66,
+        "volume_remaining": -4731.899999999988
+      },
+      {
+        "timestamp": "2025-02-24T12:08:25.448764",
+        "volume_used": 26.66,
+        "volume_remaining": -4758.559999999988
       }
     ]
   },
   "TXTLMM": {
     "well": "E07",
-    "volume": -8921.240000000018,
+    "volume": -10521.440000000022,
     "history": [
       {
         "timestamp": "2025-01-14T11:48:39.555150",
@@ -4676,12 +5276,162 @@
         "timestamp": "2025-02-14T16:31:02.976511",
         "volume_used": 53.34,
         "volume_remaining": -8921.240000000018
+      },
+      {
+        "timestamp": "2025-02-24T11:30:16.061646",
+        "volume_used": 53.34,
+        "volume_remaining": -8974.580000000018
+      },
+      {
+        "timestamp": "2025-02-24T11:30:16.061646",
+        "volume_used": 53.34,
+        "volume_remaining": -9027.920000000018
+      },
+      {
+        "timestamp": "2025-02-24T11:30:16.061646",
+        "volume_used": 53.34,
+        "volume_remaining": -9081.260000000018
+      },
+      {
+        "timestamp": "2025-02-24T11:33:37.456126",
+        "volume_used": 53.34,
+        "volume_remaining": -9134.600000000019
+      },
+      {
+        "timestamp": "2025-02-24T11:33:37.456126",
+        "volume_used": 53.34,
+        "volume_remaining": -9187.940000000019
+      },
+      {
+        "timestamp": "2025-02-24T11:33:37.456126",
+        "volume_used": 53.34,
+        "volume_remaining": -9241.280000000019
+      },
+      {
+        "timestamp": "2025-02-24T11:46:38.111648",
+        "volume_used": 53.34,
+        "volume_remaining": -9294.620000000019
+      },
+      {
+        "timestamp": "2025-02-24T11:46:38.111648",
+        "volume_used": 53.34,
+        "volume_remaining": -9347.96000000002
+      },
+      {
+        "timestamp": "2025-02-24T11:46:38.111648",
+        "volume_used": 53.34,
+        "volume_remaining": -9401.30000000002
+      },
+      {
+        "timestamp": "2025-02-24T11:48:20.310009",
+        "volume_used": 53.34,
+        "volume_remaining": -9454.64000000002
+      },
+      {
+        "timestamp": "2025-02-24T11:48:20.310009",
+        "volume_used": 53.34,
+        "volume_remaining": -9507.98000000002
+      },
+      {
+        "timestamp": "2025-02-24T11:48:20.310009",
+        "volume_used": 53.34,
+        "volume_remaining": -9561.32000000002
+      },
+      {
+        "timestamp": "2025-02-24T11:49:57.297336",
+        "volume_used": 53.34,
+        "volume_remaining": -9614.66000000002
+      },
+      {
+        "timestamp": "2025-02-24T11:49:57.297336",
+        "volume_used": 53.34,
+        "volume_remaining": -9668.00000000002
+      },
+      {
+        "timestamp": "2025-02-24T11:49:57.297336",
+        "volume_used": 53.34,
+        "volume_remaining": -9721.34000000002
+      },
+      {
+        "timestamp": "2025-02-24T11:53:37.012330",
+        "volume_used": 53.34,
+        "volume_remaining": -9774.68000000002
+      },
+      {
+        "timestamp": "2025-02-24T11:53:37.012330",
+        "volume_used": 53.34,
+        "volume_remaining": -9828.02000000002
+      },
+      {
+        "timestamp": "2025-02-24T11:53:37.012330",
+        "volume_used": 53.34,
+        "volume_remaining": -9881.36000000002
+      },
+      {
+        "timestamp": "2025-02-24T11:55:04.531641",
+        "volume_used": 53.34,
+        "volume_remaining": -9934.70000000002
+      },
+      {
+        "timestamp": "2025-02-24T11:55:04.531641",
+        "volume_used": 53.34,
+        "volume_remaining": -9988.04000000002
+      },
+      {
+        "timestamp": "2025-02-24T11:55:04.531641",
+        "volume_used": 53.34,
+        "volume_remaining": -10041.380000000021
+      },
+      {
+        "timestamp": "2025-02-24T11:57:34.461215",
+        "volume_used": 53.34,
+        "volume_remaining": -10094.720000000021
+      },
+      {
+        "timestamp": "2025-02-24T11:57:34.461215",
+        "volume_used": 53.34,
+        "volume_remaining": -10148.060000000021
+      },
+      {
+        "timestamp": "2025-02-24T11:57:34.461215",
+        "volume_used": 53.34,
+        "volume_remaining": -10201.400000000021
+      },
+      {
+        "timestamp": "2025-02-24T12:06:43.455140",
+        "volume_used": 53.34,
+        "volume_remaining": -10254.740000000022
+      },
+      {
+        "timestamp": "2025-02-24T12:06:43.455140",
+        "volume_used": 53.34,
+        "volume_remaining": -10308.080000000022
+      },
+      {
+        "timestamp": "2025-02-24T12:06:43.455140",
+        "volume_used": 53.34,
+        "volume_remaining": -10361.420000000022
+      },
+      {
+        "timestamp": "2025-02-24T12:08:25.448764",
+        "volume_used": 53.34,
+        "volume_remaining": -10414.760000000022
+      },
+      {
+        "timestamp": "2025-02-24T12:08:25.448764",
+        "volume_used": 53.34,
+        "volume_remaining": -10468.100000000022
+      },
+      {
+        "timestamp": "2025-02-24T12:08:25.448764",
+        "volume_used": 53.34,
+        "volume_remaining": -10521.440000000022
       }
     ]
   },
   "Water": {
     "well": "E08",
-    "volume": -6440.0,
+    "volume": -7640.0,
     "history": [
       {
         "timestamp": "2025-01-14T11:48:39.554312",
@@ -5612,6 +6362,156 @@
         "timestamp": "2025-02-14T16:31:02.971087",
         "volume_used": 40.0,
         "volume_remaining": -6440.0
+      },
+      {
+        "timestamp": "2025-02-24T11:30:16.057062",
+        "volume_used": 40.0,
+        "volume_remaining": -6480.0
+      },
+      {
+        "timestamp": "2025-02-24T11:30:16.057062",
+        "volume_used": 40.0,
+        "volume_remaining": -6520.0
+      },
+      {
+        "timestamp": "2025-02-24T11:30:16.057062",
+        "volume_used": 40.0,
+        "volume_remaining": -6560.0
+      },
+      {
+        "timestamp": "2025-02-24T11:33:37.450438",
+        "volume_used": 40.0,
+        "volume_remaining": -6600.0
+      },
+      {
+        "timestamp": "2025-02-24T11:33:37.450438",
+        "volume_used": 40.0,
+        "volume_remaining": -6640.0
+      },
+      {
+        "timestamp": "2025-02-24T11:33:37.450438",
+        "volume_used": 40.0,
+        "volume_remaining": -6680.0
+      },
+      {
+        "timestamp": "2025-02-24T11:46:38.105406",
+        "volume_used": 40.0,
+        "volume_remaining": -6720.0
+      },
+      {
+        "timestamp": "2025-02-24T11:46:38.105406",
+        "volume_used": 40.0,
+        "volume_remaining": -6760.0
+      },
+      {
+        "timestamp": "2025-02-24T11:46:38.105406",
+        "volume_used": 40.0,
+        "volume_remaining": -6800.0
+      },
+      {
+        "timestamp": "2025-02-24T11:48:20.304509",
+        "volume_used": 40.0,
+        "volume_remaining": -6840.0
+      },
+      {
+        "timestamp": "2025-02-24T11:48:20.304509",
+        "volume_used": 40.0,
+        "volume_remaining": -6880.0
+      },
+      {
+        "timestamp": "2025-02-24T11:48:20.304509",
+        "volume_used": 40.0,
+        "volume_remaining": -6920.0
+      },
+      {
+        "timestamp": "2025-02-24T11:49:57.291734",
+        "volume_used": 40.0,
+        "volume_remaining": -6960.0
+      },
+      {
+        "timestamp": "2025-02-24T11:49:57.291734",
+        "volume_used": 40.0,
+        "volume_remaining": -7000.0
+      },
+      {
+        "timestamp": "2025-02-24T11:49:57.291734",
+        "volume_used": 40.0,
+        "volume_remaining": -7040.0
+      },
+      {
+        "timestamp": "2025-02-24T11:53:37.001689",
+        "volume_used": 40.0,
+        "volume_remaining": -7080.0
+      },
+      {
+        "timestamp": "2025-02-24T11:53:37.001689",
+        "volume_used": 40.0,
+        "volume_remaining": -7120.0
+      },
+      {
+        "timestamp": "2025-02-24T11:53:37.001689",
+        "volume_used": 40.0,
+        "volume_remaining": -7160.0
+      },
+      {
+        "timestamp": "2025-02-24T11:55:04.525242",
+        "volume_used": 40.0,
+        "volume_remaining": -7200.0
+      },
+      {
+        "timestamp": "2025-02-24T11:55:04.525242",
+        "volume_used": 40.0,
+        "volume_remaining": -7240.0
+      },
+      {
+        "timestamp": "2025-02-24T11:55:04.525242",
+        "volume_used": 40.0,
+        "volume_remaining": -7280.0
+      },
+      {
+        "timestamp": "2025-02-24T11:57:34.454655",
+        "volume_used": 40.0,
+        "volume_remaining": -7320.0
+      },
+      {
+        "timestamp": "2025-02-24T11:57:34.454655",
+        "volume_used": 40.0,
+        "volume_remaining": -7360.0
+      },
+      {
+        "timestamp": "2025-02-24T11:57:34.454655",
+        "volume_used": 40.0,
+        "volume_remaining": -7400.0
+      },
+      {
+        "timestamp": "2025-02-24T12:06:43.448227",
+        "volume_used": 40.0,
+        "volume_remaining": -7440.0
+      },
+      {
+        "timestamp": "2025-02-24T12:06:43.448227",
+        "volume_used": 40.0,
+        "volume_remaining": -7480.0
+      },
+      {
+        "timestamp": "2025-02-24T12:06:43.448227",
+        "volume_used": 40.0,
+        "volume_remaining": -7520.0
+      },
+      {
+        "timestamp": "2025-02-24T12:08:25.442751",
+        "volume_used": 40.0,
+        "volume_remaining": -7560.0
+      },
+      {
+        "timestamp": "2025-02-24T12:08:25.442751",
+        "volume_used": 40.0,
+        "volume_remaining": -7600.0
+      },
+      {
+        "timestamp": "2025-02-24T12:08:25.442751",
+        "volume_used": 40.0,
+        "volume_remaining": -7640.0
       }
     ]
   }
