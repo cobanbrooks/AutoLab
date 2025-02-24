@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import json
 
 # Constants
 THRESHOLD = 100
@@ -10,6 +11,7 @@ NEW_SUBSTRATE_PATH = 'worklists/Assay_substrate_filtered.csv'
 ORIGINAL_PROTEIN_PATH = 'worklists/Assay_protein.csv'
 NEW_PROTEIN_PATH = 'worklists/Assay_protein_filtered.csv'
 EVAGREEN_PATH = 'data/raw_evagreen_data.csv'
+PHENOTYPE_PATH = 'data/phenotype.json'
 
 # Read the file line by line
 with open(EVAGREEN_PATH, 'r') as f:
@@ -58,6 +60,37 @@ values = {
 }
 
 print(f"Detected values: {values}")  # Debug print
+
+# Update phenotype.json
+with open(PHENOTYPE_PATH, 'r') as f:
+    phenotype_data = json.load(f)
+
+# Get list of sequences in order
+sequences = list(phenotype_data.keys())
+
+# Initialize or update the data structure
+for seq in sequences:
+    if isinstance(phenotype_data[seq], dict):
+        if 'measurements' not in phenotype_data[seq]:
+            phenotype_data[seq]['measurements'] = [0.0, 0.0, 0.0]
+        phenotype_data[seq]['valid'] = True  # Default to True
+    else:
+        phenotype_data[seq] = {
+            'measurements': [0.0, 0.0, 0.0],
+            'valid': True
+        }
+
+# Update valid field based on evagreen values
+if values['A12'] < THRESHOLD and len(sequences) > 0:
+    phenotype_data[sequences[0]]['valid'] = False
+if values['C12'] < THRESHOLD and len(sequences) > 1:
+    phenotype_data[sequences[1]]['valid'] = False
+if values['E12'] < THRESHOLD and len(sequences) > 2:
+    phenotype_data[sequences[2]]['valid'] = False
+
+# Save updated phenotype data
+with open(PHENOTYPE_PATH, 'w') as f:
+    json.dump(phenotype_data, f, indent=4)
 
 # Create mapping of which indices/wells to remove based on well positions
 txtl_remove_mapping = {

@@ -118,6 +118,22 @@ def normalize_plate_data(input_file, output_file, sequence_file):
                 means.append(None)
         sequence_mapping[seq] = means
     
+    # Load existing phenotype data to get 'valid' values
+    try:
+        with open(output_file, 'r') as f:
+            existing_data = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        existing_data = {}
+
+    # Create new phenotype data structure
+    phenotype_data = {}
+    for seq, measurements in sequence_mapping.items():
+        phenotype_data[seq] = {
+            "measurements": measurements,
+            # Keep existing valid status if it exists, otherwise default to True
+            "valid": existing_data.get(seq, {}).get("valid", True)
+        }
+    
     # Create output DataFrames for normalized values
     rows = 'ABCDEFGH'
     cols = range(1, 13)
@@ -133,28 +149,24 @@ def normalize_plate_data(input_file, output_file, sequence_file):
                                index=list(rows),
                                columns=[str(i) for i in cols])
     
-    # Save normalized data to CSV
-    df_normalized.to_csv(output_file)
-    
-    return df_normalized, sequence_mapping
+    return df_normalized, phenotype_data
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--input', required=True, help="Path to input file")
     parser.add_argument('--output', required=True, help="Path to output file")
-    parser.add_argument('--sequence_file', required=True, help="Path to sequence file")  # Add this line
+    parser.add_argument('--sequence_file', required=True, help="Path to sequence file")
 
     args = parser.parse_args()
 
-    df_norm, seq_mapping = normalize_plate_data(args.input, args.output, args.sequence_file)
+    df_norm, phenotype_data = normalize_plate_data(args.input, args.output, args.sequence_file)
 
-    # Save the sequence mapping to the phenotype file
-    phenotype_file = args.output
-    with open(phenotype_file, 'w') as f:
-        json.dump(seq_mapping, f, indent=4)
+    # Save the phenotype data
+    with open(args.output, 'w') as f:
+        json.dump(phenotype_data, f, indent=4)
         print("\nPhenotype file written")
 
 if __name__ == "__main__":
-    main()  # Call the main function
+    main() 
 
     
