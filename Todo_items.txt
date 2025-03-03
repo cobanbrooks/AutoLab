@@ -1,24 +1,16 @@
 To do items:
 
 Coding:
-- Volume tracking for reagents x
-    Need to place worklists in worklist dir and test reading those volumes x
-    Make new dir for inventories x
 
 
 - Running CSV with all tested protein variants and corresponding specificities
-- Plate data processing script (need do run assay first)
 - Retry proteins if inactive below threshold
 - Run method from command line
 
-Lab prep:
-- Midiprep low frags
-    In process
 
-- Make reagents + substrates
-- Test each step at a time with gels
+- Make reagents + substrates x
+- Test each step at a time with gels x
 
 Robot:
-- 60uL and 300uL liquid handling
-- Optimize pipetting spacing
+- Optimize pipetting spacing x
 

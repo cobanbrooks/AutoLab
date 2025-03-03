@@ -13,10 +13,14 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from data_transfer import SFTPTransfer
 
+
+
+
 # Status Tracking
 class LabState(Enum):
     IDLE = "Waiting for new sequence"
     SEQUENCE_RECEIVED = "New sequence received, generating instructions"
+    MONITORING_EVAGREEN = "Monitoring evagreen data"
     EXPERIMENTING = "Robot performing DNA assembly, amplification, expression, assay"
     PROCESSING = "Processing plate data"
     ERROR = "Error encountered"
@@ -51,8 +55,11 @@ class PlateDataHandler(FileSystemEventHandler):
             subprocess.run([
                 'python', 'process_plate_data.py',
                 '--input', input_path,
-                '--output', output_path
+                '--output', output_path,
+                '--sequence_file', os.path.join(self.data_dir,'sequence_query.txt')
             ], check=True)
+
+            time.sleep(1)
             
             # Transfer to GPU server
             if self.transfer.connect():
@@ -85,6 +92,29 @@ class PlateDataHandler(FileSystemEventHandler):
             self.process_and_transfer()
             self.last_processed_hash = current_hash
 
+class EvagreenHandler(FileSystemEventHandler):
+    def __init__(self, controller):
+        self.controller = controller
+        self.logger = logging.getLogger('lab_automation')
+        
+    def on_modified(self, event):
+        if event.src_path.endswith('raw_evagreen_data.csv'):
+            self.logger.info("Evagreen data updated, processing assemblies...")
+            try:
+                # Run the assembly update script
+                subprocess.run(['python', 'update_valid_assemblies.py'], check=True)
+                
+                # Stop evagreen monitoring and start plate monitoring
+                if self.controller.evagreen_observer:
+                    self.controller.evagreen_observer.stop()
+                    self.controller.evagreen_observer = None
+                
+                self.controller.start_plate_monitoring()
+                self.logger.info("Transitioned to plate monitoring")
+                
+            except Exception as e:
+                self.logger.error(f"Error processing assemblies: {e}")
+                self.controller.status = LabState.ERROR
 
 class DNATracker:
     def __init__(self, inventory_dir='inventories'):
@@ -453,6 +483,7 @@ class LabController:
         self.status = LabState.IDLE
         self.sequence_observer = None
         self.plate_observer = None
+        self.evagreen_observer = None
 
     class SequenceHandler(FileSystemEventHandler):
         def __init__(self, controller):
@@ -467,8 +498,8 @@ class LabController:
                 self.controller.logger.info("New sequence detected")
                 self.controller.status = LabState.SEQUENCE_RECEIVED
                 if self.controller.generate_lab_files():
-                    self.controller.status = LabState.EXPERIMENTING
-                    self.controller.start_plate_monitoring()
+                    self.controller.status = LabState.MONITORING_EVAGREEN
+                    self.controller.start_evagreen_monitoring()
 
     def start_sequence_monitoring(self):
         handler = self.SequenceHandler(self)
@@ -494,7 +525,13 @@ class LabController:
         self.plate_observer.start()
         self.logger.info("Started plate data monitoring")
 
-
+    def start_evagreen_monitoring(self):
+        """Start monitoring evagreen_monitor.json for changes"""
+        handler = EvagreenHandler(self)
+        self.evagreen_observer = Observer()
+        self.evagreen_observer.schedule(handler, self.config['paths']['data_dir'])
+        self.evagreen_observer.start()
+        self.logger.info("Started evagreen monitoring")
 
     def generate_lab_files(self):
         """Generate worklist and plate layout files"""
@@ -554,30 +591,12 @@ class LabController:
             ], check=True)
             
             self.logger.info("Generated worklist and plate layout")
-            self.sequence_observer.stop() #here
+            self.sequence_observer.stop()
             return True
             
         except Exception as e:
             self.logger.error(f"Error generating lab files: {e}")
             return False
-    '''      
-    def start_plate_monitoring(self):
-        """Start monitoring plate_data.csv for changes"""
-
-        if self.plate_observer:
-            self.plate_observer.stop()
-            self.plate_observer.join()
-
-        handler = PlateDataHandler(
-            self.config['paths']['data_dir'],
-            self.config['files']['plate_data'],
-            self.config['files']['processed_data']
-        )
-        
-        self.plate_observer = Observer()
-        self.plate_observer.schedule(handler, self.config['paths']['data_dir'], recursive=False)
-        self.plate_observer.start()
-        '''
         
     def run(self):
         self.logger.info("Starting lab automation system")
@@ -590,6 +609,9 @@ class LabController:
             if self.sequence_observer:
                 self.sequence_observer.stop()
                 self.sequence_observer.join()
+            if self.evagreen_observer:
+                self.evagreen_observer.stop()
+                self.evagreen_observer.join()
             if self.plate_observer:
                 self.plate_observer.stop()
                 self.plate_observer.join()
@@ -610,15 +632,15 @@ if __name__ == "__main__":
                 'logs_dir': "logs"
             },
             'files': {
-                'plate_data': "plate_data.csv",
-                'processed_data': "processed_plate_data.csv",
+                'plate_data': "raw_plate_data.csv",
+                'processed_data': "phenotype.json",
                 'sequence_query': "sequence_query.txt",
                 'sequence_segments': "sequence_segments.csv"
             },
             'sftp': {
                 'hostname': "coltrane.egr.duke.edu",
                 'username': "cb643",
-                'remote_path': "/home/cb643",
+                'remote_path': "/home/cb643/self_driving/data/plate_data",
                 'key_filename': "/Users/cobanbrooks/.ssh/id_rsa",
                 'port': 22
             }
