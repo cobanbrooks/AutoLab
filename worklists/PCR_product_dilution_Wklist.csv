@@ -1,7 +1,7 @@
 ﻿Index,Source_Plate,Source_Well,Destination_Plate,Destination_Well,Volume,Pre_Aspirate_Mix_Volume,Post_Dispense_Mix_Volume
-01,Rxn_plate,A04,Rxn_plate,A05,10,0,0
-02,Rxn_plate,C04,Rxn_plate,C05,10,0,0
-03,Rxn_plate,E04,Rxn_plate,E05,10,0,0
-04,Reagents,E08,Rxn_plate,A05,40,0,30
-05,Reagents,E08,Rxn_plate,C05,40,0,30
-06,Reagents,E08,Rxn_plate,E05,40,0,30
+01,Rxn_plate,A04,Rxn_plate,A05,15,0,0
+02,Rxn_plate,C04,Rxn_plate,C05,15,0,0
+03,Rxn_plate,E04,Rxn_plate,E05,15,0,0
+04,Reagents,E08,Rxn_plate,A05,60,0,50
+05,Reagents,E08,Rxn_plate,C05,60,0,50
+06,Reagents,E08,Rxn_plate,E05,60,0,50
