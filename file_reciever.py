@@ -3,7 +3,9 @@ import os
 
 app = Flask(__name__)
 
-UPLOAD_FOLDER = 'C:\\SequenceQueries'
+BASE_UPLOAD_DIR = os.path.dirname(os.fspath(__file__)) #Current dir
+target_dir = 'data'
+UPLOAD_FOLDER = os.path.join(BASE_UPLOAD_DIR,target_dir)
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
 
