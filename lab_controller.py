@@ -304,7 +304,8 @@ class RgntTracker:
                 "PCRMM",
                 "E. coli extract",
                 "TXTLMM",
-                "Water"
+                "Water",
+                "EvaGreen"  # Added new reagent
             ]
 
             inventory = {}
@@ -315,6 +316,7 @@ class RgntTracker:
                     col = str(f + 5).zfill(2)
                     well = f"{row}{col}"
                     wells.append(well)
+            wells.append('E09')  # Added new well for EvaGreen in E09
 
             for well, reagent in zip(wells, reagents):
                 reagent_id = reagent
