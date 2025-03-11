@@ -61,6 +61,9 @@ class PlateDataHandler(FileSystemEventHandler):
 
             time.sleep(1)
             
+            # Update sequence tracking CSV
+            self.update_sequence_tracking_csv(output_path)
+            
             # Transfer to GPU server
             if self.transfer.connect():
                 self.transfer.transfer_file(output_path)
@@ -81,6 +84,52 @@ class PlateDataHandler(FileSystemEventHandler):
                 
         except Exception as e:
             self.logger.error(f"Error processing/transferring data: {e}")
+
+    def update_sequence_tracking_csv(self, phenotype_file_path):
+        """Update running CSV of all sequences tested with their measurements"""
+        try:
+            csv_file_path = os.path.join(self.data_dir, 'sequence_tracking.csv')
+            
+            # Read the phenotype data from JSON
+            with open(phenotype_file_path, 'r') as f:
+                phenotype_data = json.load(f)
+            
+            # Create a dataframe with existing data if CSV exists
+            if os.path.exists(csv_file_path):
+                existing_df = pd.read_csv(csv_file_path)
+            else:
+                existing_df = pd.DataFrame(columns=['sequence', 'A1', 'A2', 'A3', 'valid', 'agent'])
+            
+            # Process each sequence in the new phenotype data
+            new_entries = []
+            for agent_idx, (sequence, data) in enumerate(phenotype_data.items(), 1):
+                # Skip if this sequence is already in our tracking CSV
+                if sequence in existing_df['sequence'].values:
+                    continue
+                    
+                # Extract measurements and valid flag
+                measurements = data.get('measurements', [0, 0, 0])
+                valid = data.get('valid', False)
+                
+                # Create new entry
+                new_entries.append({
+                    'sequence': sequence,
+                    'A1': measurements[0] if len(measurements) > 0 else 0,
+                    'A2': measurements[1] if len(measurements) > 1 else 0,
+                    'A3': measurements[2] if len(measurements) > 2 else 0,
+                    'valid': valid,
+                    'agent': agent_idx  # 1, 2, or 3 based on order in JSON
+                })
+            
+            # Add new entries to existing dataframe
+            if new_entries:
+                new_df = pd.DataFrame(new_entries)
+                updated_df = pd.concat([existing_df, new_df], ignore_index=True)
+                updated_df.to_csv(csv_file_path, index=False)
+                self.logger.info(f"Added {len(new_entries)} new sequences to tracking CSV")
+            
+        except Exception as e:
+            self.logger.error(f"Error updating sequence tracking CSV: {e}")
 
     def on_modified(self, event):
         if event.src_path.endswith(self.input_filename):
@@ -305,7 +354,8 @@ class RgntTracker:
                 "PCRMM",
                 "E. coli extract",
                 "TXTLMM",
-                "Water"
+                "Water",
+                "EvaGreen"  # Added new reagent
             ]
 
             inventory = {}
@@ -316,6 +366,7 @@ class RgntTracker:
                     col = str(f + 5).zfill(2)
                     well = f"{row}{col}"
                     wells.append(well)
+            wells.append('E09')  # Added new well for EvaGreen in E09
 
             for well, reagent in zip(wells, reagents):
                 reagent_id = reagent

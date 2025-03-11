@@ -3705,49 +3705,49 @@ RuntimeError: Cannot add watch <ObservedWatch: path='data', is_recursive=False> 
 2025-03-05 16:15:34,361 - lab_controller - INFO - Starting lab automation system
 2025-03-05 16:18:54,645 - lab_controller - INFO - New sequence detected
 2025-03-05 16:18:54,748 - lab_controller - INFO - Updated DNA volumes
-2025-03-05 16:18:54,749 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0無, -880.0無 remaining
-2025-03-05 16:18:54,749 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0無, -870.0無 remaining
-2025-03-05 16:18:54,749 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0無, -880.0無 remaining
-2025-03-05 16:18:54,749 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0無, -435.0無 remaining
-2025-03-05 16:18:54,749 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0無, -195.0無 remaining
-2025-03-05 16:18:54,749 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0無, -225.0無 remaining
-2025-03-05 16:18:54,749 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0無, 155.0無 remaining
-2025-03-05 16:18:54,749 - lab_controller - INFO - Fragment p1f7 in well B10: used 5.0無, -155.0無 remaining
-2025-03-05 16:18:54,749 - lab_controller - INFO - Fragment p3f0 in well D03: used 5.0無, 195.0無 remaining
-2025-03-05 16:18:54,750 - lab_controller - INFO - Fragment p3f1 in well D04: used 5.0無, 195.0無 remaining
-2025-03-05 16:18:54,750 - lab_controller - INFO - Fragment p3f2 in well D05: used 5.0無, 195.0無 remaining
-2025-03-05 16:18:54,750 - lab_controller - INFO - Fragment p3f3 in well D06: used 5.0無, 195.0無 remaining
-2025-03-05 16:18:54,750 - lab_controller - INFO - Fragment p3f4 in well D07: used 5.0無, -215.0無 remaining
-2025-03-05 16:18:54,750 - lab_controller - INFO - Fragment p3f5 in well D08: used 5.0無, -35.0無 remaining
-2025-03-05 16:18:54,750 - lab_controller - INFO - Fragment p3f6 in well D09: used 5.0無, -160.0無 remaining
-2025-03-05 16:18:54,750 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0無, 145.0無 remaining
-2025-03-05 16:18:54,750 - lab_controller - INFO - Fragment p5f0 in well F03: used 5.0無, 195.0無 remaining
-2025-03-05 16:18:54,750 - lab_controller - INFO - Fragment p5f1 in well F04: used 5.0無, 195.0無 remaining
-2025-03-05 16:18:54,750 - lab_controller - INFO - Fragment p5f2 in well F05: used 5.0無, 195.0無 remaining
-2025-03-05 16:18:54,750 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0無, 190.0無 remaining
-2025-03-05 16:18:54,751 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0無, -30.0無 remaining
-2025-03-05 16:18:54,751 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0無, -230.0無 remaining
-2025-03-05 16:18:54,751 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0無, -155.0無 remaining
-2025-03-05 16:18:54,751 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0無, -125.0無 remaining
+2025-03-05 16:18:54,749 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0嚙盤, -880.0嚙盤 remaining
+2025-03-05 16:18:54,749 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0嚙盤, -870.0嚙盤 remaining
+2025-03-05 16:18:54,749 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0嚙盤, -880.0嚙盤 remaining
+2025-03-05 16:18:54,749 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0嚙盤, -435.0嚙盤 remaining
+2025-03-05 16:18:54,749 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0嚙盤, -195.0嚙盤 remaining
+2025-03-05 16:18:54,749 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0嚙盤, -225.0嚙盤 remaining
+2025-03-05 16:18:54,749 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0嚙盤, 155.0嚙盤 remaining
+2025-03-05 16:18:54,749 - lab_controller - INFO - Fragment p1f7 in well B10: used 5.0嚙盤, -155.0嚙盤 remaining
+2025-03-05 16:18:54,749 - lab_controller - INFO - Fragment p3f0 in well D03: used 5.0嚙盤, 195.0嚙盤 remaining
+2025-03-05 16:18:54,750 - lab_controller - INFO - Fragment p3f1 in well D04: used 5.0嚙盤, 195.0嚙盤 remaining
+2025-03-05 16:18:54,750 - lab_controller - INFO - Fragment p3f2 in well D05: used 5.0嚙盤, 195.0嚙盤 remaining
+2025-03-05 16:18:54,750 - lab_controller - INFO - Fragment p3f3 in well D06: used 5.0嚙盤, 195.0嚙盤 remaining
+2025-03-05 16:18:54,750 - lab_controller - INFO - Fragment p3f4 in well D07: used 5.0嚙盤, -215.0嚙盤 remaining
+2025-03-05 16:18:54,750 - lab_controller - INFO - Fragment p3f5 in well D08: used 5.0嚙盤, -35.0嚙盤 remaining
+2025-03-05 16:18:54,750 - lab_controller - INFO - Fragment p3f6 in well D09: used 5.0嚙盤, -160.0嚙盤 remaining
+2025-03-05 16:18:54,750 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0嚙盤, 145.0嚙盤 remaining
+2025-03-05 16:18:54,750 - lab_controller - INFO - Fragment p5f0 in well F03: used 5.0嚙盤, 195.0嚙盤 remaining
+2025-03-05 16:18:54,750 - lab_controller - INFO - Fragment p5f1 in well F04: used 5.0嚙盤, 195.0嚙盤 remaining
+2025-03-05 16:18:54,750 - lab_controller - INFO - Fragment p5f2 in well F05: used 5.0嚙盤, 195.0嚙盤 remaining
+2025-03-05 16:18:54,750 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0嚙盤, 190.0嚙盤 remaining
+2025-03-05 16:18:54,751 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0嚙盤, -30.0嚙盤 remaining
+2025-03-05 16:18:54,751 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0嚙盤, -230.0嚙盤 remaining
+2025-03-05 16:18:54,751 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0嚙盤, -155.0嚙盤 remaining
+2025-03-05 16:18:54,751 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0嚙盤, -125.0嚙盤 remaining
 2025-03-05 16:18:54,751 - lab_controller - INFO - Updated reagent volumes
-2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1170.0無 remaining
-2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1180.0無 remaining
-2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1190.0無 remaining
-2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -17135.0無 remaining
-2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -17180.0無 remaining
-2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -17225.0無 remaining
-2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1170.0無 remaining
-2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1180.0無 remaining
-2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1190.0無 remaining
-2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -7700.0無 remaining
-2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -7760.0無 remaining
-2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -7820.0無 remaining
-2025-03-05 16:18:54,752 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -4785.2199999999875無 remaining
-2025-03-05 16:18:54,752 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -4811.879999999987無 remaining
-2025-03-05 16:18:54,752 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -4838.539999999987無 remaining
-2025-03-05 16:18:54,752 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -10574.780000000022無 remaining
-2025-03-05 16:18:54,752 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -10628.120000000023無 remaining
-2025-03-05 16:18:54,752 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -10681.460000000023無 remaining
+2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0嚙盤, -1170.0嚙盤 remaining
+2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0嚙盤, -1180.0嚙盤 remaining
+2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0嚙盤, -1190.0嚙盤 remaining
+2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent Primers in well D07: used 45.0嚙盤, -17135.0嚙盤 remaining
+2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent Primers in well D07: used 45.0嚙盤, -17180.0嚙盤 remaining
+2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent Primers in well D07: used 45.0嚙盤, -17225.0嚙盤 remaining
+2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0嚙盤, -1170.0嚙盤 remaining
+2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0嚙盤, -1180.0嚙盤 remaining
+2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0嚙盤, -1190.0嚙盤 remaining
+2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent Water in well E08: used 60.0嚙盤, -7700.0嚙盤 remaining
+2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent Water in well E08: used 60.0嚙盤, -7760.0嚙盤 remaining
+2025-03-05 16:18:54,751 - lab_controller - INFO - Reagent Water in well E08: used 60.0嚙盤, -7820.0嚙盤 remaining
+2025-03-05 16:18:54,752 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66嚙盤, -4785.2199999999875嚙盤 remaining
+2025-03-05 16:18:54,752 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66嚙盤, -4811.879999999987嚙盤 remaining
+2025-03-05 16:18:54,752 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66嚙盤, -4838.539999999987嚙盤 remaining
+2025-03-05 16:18:54,752 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34嚙盤, -10574.780000000022嚙盤 remaining
+2025-03-05 16:18:54,752 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34嚙盤, -10628.120000000023嚙盤 remaining
+2025-03-05 16:18:54,752 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34嚙盤, -10681.460000000023嚙盤 remaining
 2025-03-05 16:18:54,794 - lab_controller - INFO - Generated worklist and plate layout
 2025-03-05 16:18:54,795 - lab_controller - INFO - Started evagreen monitoring
 2025-03-05 16:19:51,636 - lab_automation - INFO - Evagreen data updated, processing assemblies...
@@ -3758,49 +3758,49 @@ RuntimeError: Cannot add watch <ObservedWatch: path='data', is_recursive=False> 
 2025-03-05 16:22:13,504 - lab_controller - INFO - Starting lab automation system
 2025-03-05 16:22:22,599 - lab_controller - INFO - New sequence detected
 2025-03-05 16:22:22,723 - lab_controller - INFO - Updated DNA volumes
-2025-03-05 16:22:22,723 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0無, -885.0無 remaining
-2025-03-05 16:22:22,723 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0無, -875.0無 remaining
-2025-03-05 16:22:22,724 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0無, -885.0無 remaining
-2025-03-05 16:22:22,724 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0無, -440.0無 remaining
-2025-03-05 16:22:22,724 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0無, -200.0無 remaining
-2025-03-05 16:22:22,724 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0無, -230.0無 remaining
-2025-03-05 16:22:22,724 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0無, 150.0無 remaining
-2025-03-05 16:22:22,724 - lab_controller - INFO - Fragment p1f7 in well B10: used 5.0無, -160.0無 remaining
-2025-03-05 16:22:22,724 - lab_controller - INFO - Fragment p3f0 in well D03: used 5.0無, 190.0無 remaining
-2025-03-05 16:22:22,724 - lab_controller - INFO - Fragment p3f1 in well D04: used 5.0無, 190.0無 remaining
-2025-03-05 16:22:22,725 - lab_controller - INFO - Fragment p3f2 in well D05: used 5.0無, 190.0無 remaining
-2025-03-05 16:22:22,725 - lab_controller - INFO - Fragment p3f3 in well D06: used 5.0無, 190.0無 remaining
-2025-03-05 16:22:22,725 - lab_controller - INFO - Fragment p3f4 in well D07: used 5.0無, -220.0無 remaining
-2025-03-05 16:22:22,725 - lab_controller - INFO - Fragment p3f5 in well D08: used 5.0無, -40.0無 remaining
-2025-03-05 16:22:22,725 - lab_controller - INFO - Fragment p3f6 in well D09: used 5.0無, -165.0無 remaining
-2025-03-05 16:22:22,725 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0無, 140.0無 remaining
-2025-03-05 16:22:22,725 - lab_controller - INFO - Fragment p5f0 in well F03: used 5.0無, 190.0無 remaining
-2025-03-05 16:22:22,725 - lab_controller - INFO - Fragment p5f1 in well F04: used 5.0無, 190.0無 remaining
-2025-03-05 16:22:22,726 - lab_controller - INFO - Fragment p5f2 in well F05: used 5.0無, 190.0無 remaining
-2025-03-05 16:22:22,726 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0無, 185.0無 remaining
-2025-03-05 16:22:22,726 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0無, -35.0無 remaining
-2025-03-05 16:22:22,726 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0無, -235.0無 remaining
-2025-03-05 16:22:22,726 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0無, -160.0無 remaining
-2025-03-05 16:22:22,726 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0無, -130.0無 remaining
+2025-03-05 16:22:22,723 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0嚙盤, -885.0嚙盤 remaining
+2025-03-05 16:22:22,723 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0嚙盤, -875.0嚙盤 remaining
+2025-03-05 16:22:22,724 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0嚙盤, -885.0嚙盤 remaining
+2025-03-05 16:22:22,724 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0嚙盤, -440.0嚙盤 remaining
+2025-03-05 16:22:22,724 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0嚙盤, -200.0嚙盤 remaining
+2025-03-05 16:22:22,724 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0嚙盤, -230.0嚙盤 remaining
+2025-03-05 16:22:22,724 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0嚙盤, 150.0嚙盤 remaining
+2025-03-05 16:22:22,724 - lab_controller - INFO - Fragment p1f7 in well B10: used 5.0嚙盤, -160.0嚙盤 remaining
+2025-03-05 16:22:22,724 - lab_controller - INFO - Fragment p3f0 in well D03: used 5.0嚙盤, 190.0嚙盤 remaining
+2025-03-05 16:22:22,724 - lab_controller - INFO - Fragment p3f1 in well D04: used 5.0嚙盤, 190.0嚙盤 remaining
+2025-03-05 16:22:22,725 - lab_controller - INFO - Fragment p3f2 in well D05: used 5.0嚙盤, 190.0嚙盤 remaining
+2025-03-05 16:22:22,725 - lab_controller - INFO - Fragment p3f3 in well D06: used 5.0嚙盤, 190.0嚙盤 remaining
+2025-03-05 16:22:22,725 - lab_controller - INFO - Fragment p3f4 in well D07: used 5.0嚙盤, -220.0嚙盤 remaining
+2025-03-05 16:22:22,725 - lab_controller - INFO - Fragment p3f5 in well D08: used 5.0嚙盤, -40.0嚙盤 remaining
+2025-03-05 16:22:22,725 - lab_controller - INFO - Fragment p3f6 in well D09: used 5.0嚙盤, -165.0嚙盤 remaining
+2025-03-05 16:22:22,725 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0嚙盤, 140.0嚙盤 remaining
+2025-03-05 16:22:22,725 - lab_controller - INFO - Fragment p5f0 in well F03: used 5.0嚙盤, 190.0嚙盤 remaining
+2025-03-05 16:22:22,725 - lab_controller - INFO - Fragment p5f1 in well F04: used 5.0嚙盤, 190.0嚙盤 remaining
+2025-03-05 16:22:22,726 - lab_controller - INFO - Fragment p5f2 in well F05: used 5.0嚙盤, 190.0嚙盤 remaining
+2025-03-05 16:22:22,726 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0嚙盤, 185.0嚙盤 remaining
+2025-03-05 16:22:22,726 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0嚙盤, -35.0嚙盤 remaining
+2025-03-05 16:22:22,726 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0嚙盤, -235.0嚙盤 remaining
+2025-03-05 16:22:22,726 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0嚙盤, -160.0嚙盤 remaining
+2025-03-05 16:22:22,726 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0嚙盤, -130.0嚙盤 remaining
 2025-03-05 16:22:22,726 - lab_controller - INFO - Updated reagent volumes
-2025-03-05 16:22:22,726 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1200.0無 remaining
-2025-03-05 16:22:22,726 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1210.0無 remaining
-2025-03-05 16:22:22,727 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1220.0無 remaining
-2025-03-05 16:22:22,727 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -17270.0無 remaining
-2025-03-05 16:22:22,727 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -17315.0無 remaining
-2025-03-05 16:22:22,727 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -17360.0無 remaining
-2025-03-05 16:22:22,727 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1200.0無 remaining
-2025-03-05 16:22:22,727 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1210.0無 remaining
-2025-03-05 16:22:22,727 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1220.0無 remaining
-2025-03-05 16:22:22,727 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -7880.0無 remaining
-2025-03-05 16:22:22,727 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -7940.0無 remaining
-2025-03-05 16:22:22,728 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -8000.0無 remaining
-2025-03-05 16:22:22,728 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -4865.199999999987無 remaining
-2025-03-05 16:22:22,728 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -4891.859999999987無 remaining
-2025-03-05 16:22:22,728 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -4918.519999999987無 remaining
-2025-03-05 16:22:22,728 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -10734.800000000023無 remaining
-2025-03-05 16:22:22,728 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -10788.140000000023無 remaining
-2025-03-05 16:22:22,728 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -10841.480000000023無 remaining
+2025-03-05 16:22:22,726 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0嚙盤, -1200.0嚙盤 remaining
+2025-03-05 16:22:22,726 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0嚙盤, -1210.0嚙盤 remaining
+2025-03-05 16:22:22,727 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0嚙盤, -1220.0嚙盤 remaining
+2025-03-05 16:22:22,727 - lab_controller - INFO - Reagent Primers in well D07: used 45.0嚙盤, -17270.0嚙盤 remaining
+2025-03-05 16:22:22,727 - lab_controller - INFO - Reagent Primers in well D07: used 45.0嚙盤, -17315.0嚙盤 remaining
+2025-03-05 16:22:22,727 - lab_controller - INFO - Reagent Primers in well D07: used 45.0嚙盤, -17360.0嚙盤 remaining
+2025-03-05 16:22:22,727 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0嚙盤, -1200.0嚙盤 remaining
+2025-03-05 16:22:22,727 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0嚙盤, -1210.0嚙盤 remaining
+2025-03-05 16:22:22,727 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0嚙盤, -1220.0嚙盤 remaining
+2025-03-05 16:22:22,727 - lab_controller - INFO - Reagent Water in well E08: used 60.0嚙盤, -7880.0嚙盤 remaining
+2025-03-05 16:22:22,727 - lab_controller - INFO - Reagent Water in well E08: used 60.0嚙盤, -7940.0嚙盤 remaining
+2025-03-05 16:22:22,728 - lab_controller - INFO - Reagent Water in well E08: used 60.0嚙盤, -8000.0嚙盤 remaining
+2025-03-05 16:22:22,728 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66嚙盤, -4865.199999999987嚙盤 remaining
+2025-03-05 16:22:22,728 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66嚙盤, -4891.859999999987嚙盤 remaining
+2025-03-05 16:22:22,728 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66嚙盤, -4918.519999999987嚙盤 remaining
+2025-03-05 16:22:22,728 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34嚙盤, -10734.800000000023嚙盤 remaining
+2025-03-05 16:22:22,728 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34嚙盤, -10788.140000000023嚙盤 remaining
+2025-03-05 16:22:22,728 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34嚙盤, -10841.480000000023嚙盤 remaining
 2025-03-05 16:22:22,768 - lab_controller - INFO - Generated worklist and plate layout
 2025-03-05 16:22:22,769 - lab_controller - INFO - Started evagreen monitoring
 2025-03-05 16:22:37,975 - lab_automation - INFO - Evagreen data updated, processing assemblies...
@@ -3808,332 +3808,3 @@ RuntimeError: Cannot add watch <ObservedWatch: path='data', is_recursive=False> 
 2025-03-05 16:22:38,019 - lab_automation - INFO - Evagreen data updated, processing assemblies...
 2025-03-05 16:22:38,060 - lab_automation - ERROR - Error processing assemblies: Command '['python', 'update_valid_assemblies.py']' returned non-zero exit status 1.
 2025-03-05 16:22:49,836 - lab_controller - INFO - Shutting down...
-2025-03-10 14:22:51,854 - lab_controller - INFO - Starting lab automation system
-2025-03-10 14:23:01,248 - lab_controller - INFO - New sequence detected
-2025-03-10 14:23:01,352 - lab_controller - INFO - Updated DNA volumes
-2025-03-10 14:23:01,352 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0無, -890.0無 remaining
-2025-03-10 14:23:01,352 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0無, -880.0無 remaining
-2025-03-10 14:23:01,352 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0無, -890.0無 remaining
-2025-03-10 14:23:01,353 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0無, -445.0無 remaining
-2025-03-10 14:23:01,353 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0無, -205.0無 remaining
-2025-03-10 14:23:01,353 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0無, -235.0無 remaining
-2025-03-10 14:23:01,353 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0無, 145.0無 remaining
-2025-03-10 14:23:01,353 - lab_controller - INFO - Fragment p1f7 in well B10: used 5.0無, -165.0無 remaining
-2025-03-10 14:23:01,353 - lab_controller - INFO - Fragment p3f0 in well D03: used 5.0無, 185.0無 remaining
-2025-03-10 14:23:01,353 - lab_controller - INFO - Fragment p3f1 in well D04: used 5.0無, 185.0無 remaining
-2025-03-10 14:23:01,353 - lab_controller - INFO - Fragment p3f2 in well D05: used 5.0無, 185.0無 remaining
-2025-03-10 14:23:01,353 - lab_controller - INFO - Fragment p3f3 in well D06: used 5.0無, 185.0無 remaining
-2025-03-10 14:23:01,353 - lab_controller - INFO - Fragment p3f4 in well D07: used 5.0無, -225.0無 remaining
-2025-03-10 14:23:01,354 - lab_controller - INFO - Fragment p3f5 in well D08: used 5.0無, -45.0無 remaining
-2025-03-10 14:23:01,354 - lab_controller - INFO - Fragment p3f6 in well D09: used 5.0無, -170.0無 remaining
-2025-03-10 14:23:01,354 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0無, 135.0無 remaining
-2025-03-10 14:23:01,354 - lab_controller - INFO - Fragment p5f0 in well F03: used 5.0無, 185.0無 remaining
-2025-03-10 14:23:01,354 - lab_controller - INFO - Fragment p5f1 in well F04: used 5.0無, 185.0無 remaining
-2025-03-10 14:23:01,354 - lab_controller - INFO - Fragment p5f2 in well F05: used 5.0無, 185.0無 remaining
-2025-03-10 14:23:01,354 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0無, 180.0無 remaining
-2025-03-10 14:23:01,354 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0無, -40.0無 remaining
-2025-03-10 14:23:01,354 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0無, -240.0無 remaining
-2025-03-10 14:23:01,354 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0無, -165.0無 remaining
-2025-03-10 14:23:01,354 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0無, -135.0無 remaining
-2025-03-10 14:23:01,354 - lab_controller - INFO - Updated reagent volumes
-2025-03-10 14:23:01,355 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1230.0無 remaining
-2025-03-10 14:23:01,355 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1240.0無 remaining
-2025-03-10 14:23:01,355 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1250.0無 remaining
-2025-03-10 14:23:01,355 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -17405.0無 remaining
-2025-03-10 14:23:01,355 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -17450.0無 remaining
-2025-03-10 14:23:01,355 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -17495.0無 remaining
-2025-03-10 14:23:01,355 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1230.0無 remaining
-2025-03-10 14:23:01,355 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1240.0無 remaining
-2025-03-10 14:23:01,355 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1250.0無 remaining
-2025-03-10 14:23:01,355 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -8060.0無 remaining
-2025-03-10 14:23:01,355 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -8120.0無 remaining
-2025-03-10 14:23:01,355 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -8180.0無 remaining
-2025-03-10 14:23:01,355 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -4945.179999999987無 remaining
-2025-03-10 14:23:01,356 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -4971.8399999999865無 remaining
-2025-03-10 14:23:01,356 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -4998.499999999986無 remaining
-2025-03-10 14:23:01,356 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -10894.820000000023無 remaining
-2025-03-10 14:23:01,356 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -10948.160000000024無 remaining
-2025-03-10 14:23:01,356 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -11001.500000000024無 remaining
-2025-03-10 14:23:01,394 - lab_controller - INFO - Generated worklist and plate layout
-2025-03-10 14:23:01,395 - lab_controller - INFO - Started evagreen monitoring
-2025-03-10 14:23:25,609 - lab_automation - INFO - Evagreen data updated, processing assemblies...
-2025-03-10 14:23:25,651 - lab_automation - ERROR - Error processing assemblies: Command '['python', 'update_valid_assemblies.py']' returned non-zero exit status 1.
-2025-03-10 14:23:25,652 - lab_automation - INFO - Evagreen data updated, processing assemblies...
-2025-03-10 14:23:25,691 - lab_automation - ERROR - Error processing assemblies: Command '['python', 'update_valid_assemblies.py']' returned non-zero exit status 1.
-2025-03-10 14:23:32,156 - lab_controller - INFO - Shutting down...
-2025-03-10 14:46:32,659 - lab_controller - INFO - Starting lab automation system
-2025-03-10 14:46:38,510 - lab_controller - INFO - New sequence detected
-2025-03-10 14:46:38,615 - lab_controller - INFO - Updated DNA volumes
-2025-03-10 14:46:38,615 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0無, -895.0無 remaining
-2025-03-10 14:46:38,616 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0無, -885.0無 remaining
-2025-03-10 14:46:38,616 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0無, -895.0無 remaining
-2025-03-10 14:46:38,616 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0無, -450.0無 remaining
-2025-03-10 14:46:38,616 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0無, -210.0無 remaining
-2025-03-10 14:46:38,616 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0無, -240.0無 remaining
-2025-03-10 14:46:38,616 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0無, 140.0無 remaining
-2025-03-10 14:46:38,616 - lab_controller - INFO - Fragment p1f7 in well B10: used 5.0無, -170.0無 remaining
-2025-03-10 14:46:38,616 - lab_controller - INFO - Fragment p3f0 in well D03: used 5.0無, 180.0無 remaining
-2025-03-10 14:46:38,617 - lab_controller - INFO - Fragment p3f1 in well D04: used 5.0無, 180.0無 remaining
-2025-03-10 14:46:38,617 - lab_controller - INFO - Fragment p3f2 in well D05: used 5.0無, 180.0無 remaining
-2025-03-10 14:46:38,617 - lab_controller - INFO - Fragment p3f3 in well D06: used 5.0無, 180.0無 remaining
-2025-03-10 14:46:38,617 - lab_controller - INFO - Fragment p3f4 in well D07: used 5.0無, -230.0無 remaining
-2025-03-10 14:46:38,617 - lab_controller - INFO - Fragment p3f5 in well D08: used 5.0無, -50.0無 remaining
-2025-03-10 14:46:38,617 - lab_controller - INFO - Fragment p3f6 in well D09: used 5.0無, -175.0無 remaining
-2025-03-10 14:46:38,617 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0無, 130.0無 remaining
-2025-03-10 14:46:38,617 - lab_controller - INFO - Fragment p5f0 in well F03: used 5.0無, 180.0無 remaining
-2025-03-10 14:46:38,618 - lab_controller - INFO - Fragment p5f1 in well F04: used 5.0無, 180.0無 remaining
-2025-03-10 14:46:38,618 - lab_controller - INFO - Fragment p5f2 in well F05: used 5.0無, 180.0無 remaining
-2025-03-10 14:46:38,618 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0無, 175.0無 remaining
-2025-03-10 14:46:38,618 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0無, -45.0無 remaining
-2025-03-10 14:46:38,618 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0無, -245.0無 remaining
-2025-03-10 14:46:38,618 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0無, -170.0無 remaining
-2025-03-10 14:46:38,618 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0無, -140.0無 remaining
-2025-03-10 14:46:38,618 - lab_controller - INFO - Updated reagent volumes
-2025-03-10 14:46:38,619 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1260.0無 remaining
-2025-03-10 14:46:38,619 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1270.0無 remaining
-2025-03-10 14:46:38,619 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1280.0無 remaining
-2025-03-10 14:46:38,619 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -17540.0無 remaining
-2025-03-10 14:46:38,619 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -17585.0無 remaining
-2025-03-10 14:46:38,619 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -17630.0無 remaining
-2025-03-10 14:46:38,619 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1260.0無 remaining
-2025-03-10 14:46:38,619 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1270.0無 remaining
-2025-03-10 14:46:38,619 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1280.0無 remaining
-2025-03-10 14:46:38,619 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -8240.0無 remaining
-2025-03-10 14:46:38,619 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -8300.0無 remaining
-2025-03-10 14:46:38,619 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -8360.0無 remaining
-2025-03-10 14:46:38,620 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -5025.159999999986無 remaining
-2025-03-10 14:46:38,620 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -5051.819999999986無 remaining
-2025-03-10 14:46:38,620 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -5078.479999999986無 remaining
-2025-03-10 14:46:38,620 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -11054.840000000024無 remaining
-2025-03-10 14:46:38,620 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -11108.180000000024無 remaining
-2025-03-10 14:46:38,620 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -11161.520000000024無 remaining
-2025-03-10 14:46:38,657 - lab_controller - INFO - Generated worklist and plate layout
-2025-03-10 14:46:38,659 - lab_controller - INFO - Started evagreen monitoring
-2025-03-10 14:46:45,353 - lab_automation - INFO - Evagreen data updated, processing assemblies...
-2025-03-10 14:46:45,395 - lab_automation - ERROR - Error processing assemblies: Command '['python', 'update_valid_assemblies.py']' returned non-zero exit status 1.
-2025-03-10 14:46:45,395 - lab_automation - INFO - Evagreen data updated, processing assemblies...
-2025-03-10 14:46:45,437 - lab_automation - ERROR - Error processing assemblies: Command '['python', 'update_valid_assemblies.py']' returned non-zero exit status 1.
-2025-03-10 14:46:55,974 - lab_controller - INFO - Shutting down...
-2025-03-10 14:53:47,603 - lab_controller - INFO - Starting lab automation system
-2025-03-10 14:53:52,013 - lab_controller - INFO - New sequence detected
-2025-03-10 14:53:52,125 - lab_controller - INFO - Updated DNA volumes
-2025-03-10 14:53:52,125 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0無, -900.0無 remaining
-2025-03-10 14:53:52,125 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0無, -890.0無 remaining
-2025-03-10 14:53:52,125 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0無, -900.0無 remaining
-2025-03-10 14:53:52,126 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0無, -455.0無 remaining
-2025-03-10 14:53:52,126 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0無, -215.0無 remaining
-2025-03-10 14:53:52,126 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0無, -245.0無 remaining
-2025-03-10 14:53:52,126 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0無, 135.0無 remaining
-2025-03-10 14:53:52,126 - lab_controller - INFO - Fragment p1f7 in well B10: used 5.0無, -175.0無 remaining
-2025-03-10 14:53:52,126 - lab_controller - INFO - Fragment p3f0 in well D03: used 5.0無, 175.0無 remaining
-2025-03-10 14:53:52,126 - lab_controller - INFO - Fragment p3f1 in well D04: used 5.0無, 175.0無 remaining
-2025-03-10 14:53:52,127 - lab_controller - INFO - Fragment p3f2 in well D05: used 5.0無, 175.0無 remaining
-2025-03-10 14:53:52,127 - lab_controller - INFO - Fragment p3f3 in well D06: used 5.0無, 175.0無 remaining
-2025-03-10 14:53:52,127 - lab_controller - INFO - Fragment p3f4 in well D07: used 5.0無, -235.0無 remaining
-2025-03-10 14:53:52,127 - lab_controller - INFO - Fragment p3f5 in well D08: used 5.0無, -55.0無 remaining
-2025-03-10 14:53:52,127 - lab_controller - INFO - Fragment p3f6 in well D09: used 5.0無, -180.0無 remaining
-2025-03-10 14:53:52,127 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0無, 125.0無 remaining
-2025-03-10 14:53:52,127 - lab_controller - INFO - Fragment p5f0 in well F03: used 5.0無, 175.0無 remaining
-2025-03-10 14:53:52,127 - lab_controller - INFO - Fragment p5f1 in well F04: used 5.0無, 175.0無 remaining
-2025-03-10 14:53:52,127 - lab_controller - INFO - Fragment p5f2 in well F05: used 5.0無, 175.0無 remaining
-2025-03-10 14:53:52,128 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0無, 170.0無 remaining
-2025-03-10 14:53:52,128 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0無, -50.0無 remaining
-2025-03-10 14:53:52,128 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0無, -250.0無 remaining
-2025-03-10 14:53:52,128 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0無, -175.0無 remaining
-2025-03-10 14:53:52,128 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0無, -145.0無 remaining
-2025-03-10 14:53:52,128 - lab_controller - INFO - Updated reagent volumes
-2025-03-10 14:53:52,128 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1290.0無 remaining
-2025-03-10 14:53:52,128 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1300.0無 remaining
-2025-03-10 14:53:52,128 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1310.0無 remaining
-2025-03-10 14:53:52,128 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -17675.0無 remaining
-2025-03-10 14:53:52,129 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -17720.0無 remaining
-2025-03-10 14:53:52,129 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -17765.0無 remaining
-2025-03-10 14:53:52,129 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1290.0無 remaining
-2025-03-10 14:53:52,129 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1300.0無 remaining
-2025-03-10 14:53:52,129 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1310.0無 remaining
-2025-03-10 14:53:52,129 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -8420.0無 remaining
-2025-03-10 14:53:52,129 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -8480.0無 remaining
-2025-03-10 14:53:52,129 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -8540.0無 remaining
-2025-03-10 14:53:52,129 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -5105.139999999986無 remaining
-2025-03-10 14:53:52,129 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -5131.799999999986無 remaining
-2025-03-10 14:53:52,129 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -5158.4599999999855無 remaining
-2025-03-10 14:53:52,129 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -11214.860000000024無 remaining
-2025-03-10 14:53:52,129 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -11268.200000000024無 remaining
-2025-03-10 14:53:52,129 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -11321.540000000025無 remaining
-2025-03-10 14:53:52,168 - lab_controller - INFO - Generated worklist and plate layout
-2025-03-10 14:53:52,169 - lab_controller - INFO - Started evagreen monitoring
-2025-03-10 14:53:55,759 - lab_automation - INFO - Evagreen data updated, processing assemblies...
-2025-03-10 14:53:55,804 - lab_automation - ERROR - Error processing assemblies: Command '['python', 'update_valid_assemblies.py']' returned non-zero exit status 1.
-2025-03-10 14:53:55,804 - lab_automation - INFO - Evagreen data updated, processing assemblies...
-2025-03-10 14:53:55,846 - lab_automation - ERROR - Error processing assemblies: Command '['python', 'update_valid_assemblies.py']' returned non-zero exit status 1.
-2025-03-10 14:54:00,211 - lab_controller - INFO - Shutting down...
-2025-03-10 14:55:55,830 - lab_controller - INFO - Starting lab automation system
-2025-03-10 14:55:59,386 - lab_controller - INFO - New sequence detected
-2025-03-10 14:55:59,495 - lab_controller - INFO - Updated DNA volumes
-2025-03-10 14:55:59,495 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0無, -905.0無 remaining
-2025-03-10 14:55:59,495 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0無, -895.0無 remaining
-2025-03-10 14:55:59,495 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0無, -905.0無 remaining
-2025-03-10 14:55:59,496 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0無, -460.0無 remaining
-2025-03-10 14:55:59,496 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0無, -220.0無 remaining
-2025-03-10 14:55:59,496 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0無, -250.0無 remaining
-2025-03-10 14:55:59,496 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0無, 130.0無 remaining
-2025-03-10 14:55:59,497 - lab_controller - INFO - Fragment p1f7 in well B10: used 5.0無, -180.0無 remaining
-2025-03-10 14:55:59,497 - lab_controller - INFO - Fragment p3f0 in well D03: used 5.0無, 170.0無 remaining
-2025-03-10 14:55:59,498 - lab_controller - INFO - Fragment p3f1 in well D04: used 5.0無, 170.0無 remaining
-2025-03-10 14:55:59,499 - lab_controller - INFO - Fragment p3f2 in well D05: used 5.0無, 170.0無 remaining
-2025-03-10 14:55:59,499 - lab_controller - INFO - Fragment p3f3 in well D06: used 5.0無, 170.0無 remaining
-2025-03-10 14:55:59,499 - lab_controller - INFO - Fragment p3f4 in well D07: used 5.0無, -240.0無 remaining
-2025-03-10 14:55:59,499 - lab_controller - INFO - Fragment p3f5 in well D08: used 5.0無, -60.0無 remaining
-2025-03-10 14:55:59,499 - lab_controller - INFO - Fragment p3f6 in well D09: used 5.0無, -185.0無 remaining
-2025-03-10 14:55:59,499 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0無, 120.0無 remaining
-2025-03-10 14:55:59,499 - lab_controller - INFO - Fragment p5f0 in well F03: used 5.0無, 170.0無 remaining
-2025-03-10 14:55:59,499 - lab_controller - INFO - Fragment p5f1 in well F04: used 5.0無, 170.0無 remaining
-2025-03-10 14:55:59,499 - lab_controller - INFO - Fragment p5f2 in well F05: used 5.0無, 170.0無 remaining
-2025-03-10 14:55:59,500 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0無, 165.0無 remaining
-2025-03-10 14:55:59,500 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0無, -55.0無 remaining
-2025-03-10 14:55:59,500 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0無, -255.0無 remaining
-2025-03-10 14:55:59,501 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0無, -180.0無 remaining
-2025-03-10 14:55:59,501 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0無, -150.0無 remaining
-2025-03-10 14:55:59,501 - lab_controller - INFO - Updated reagent volumes
-2025-03-10 14:55:59,501 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1320.0無 remaining
-2025-03-10 14:55:59,501 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1330.0無 remaining
-2025-03-10 14:55:59,501 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1340.0無 remaining
-2025-03-10 14:55:59,501 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -17810.0無 remaining
-2025-03-10 14:55:59,502 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -17855.0無 remaining
-2025-03-10 14:55:59,502 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -17900.0無 remaining
-2025-03-10 14:55:59,502 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1320.0無 remaining
-2025-03-10 14:55:59,502 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1330.0無 remaining
-2025-03-10 14:55:59,502 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1340.0無 remaining
-2025-03-10 14:55:59,502 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -8600.0無 remaining
-2025-03-10 14:55:59,502 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -8660.0無 remaining
-2025-03-10 14:55:59,502 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -8720.0無 remaining
-2025-03-10 14:55:59,502 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -5185.119999999985無 remaining
-2025-03-10 14:55:59,502 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -5211.779999999985無 remaining
-2025-03-10 14:55:59,502 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -5238.439999999985無 remaining
-2025-03-10 14:55:59,503 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -11374.880000000025無 remaining
-2025-03-10 14:55:59,503 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -11428.220000000025無 remaining
-2025-03-10 14:55:59,503 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -11481.560000000025無 remaining
-2025-03-10 14:55:59,541 - lab_controller - INFO - Generated worklist and plate layout
-2025-03-10 14:55:59,542 - lab_controller - INFO - Started evagreen monitoring
-2025-03-10 14:56:02,664 - lab_automation - INFO - Evagreen data updated, processing assemblies...
-2025-03-10 14:56:02,707 - lab_automation - ERROR - Error processing assemblies: Command '['python', 'update_valid_assemblies.py']' returned non-zero exit status 1.
-2025-03-10 14:56:02,707 - lab_automation - INFO - Evagreen data updated, processing assemblies...
-2025-03-10 14:56:02,747 - lab_automation - ERROR - Error processing assemblies: Command '['python', 'update_valid_assemblies.py']' returned non-zero exit status 1.
-2025-03-10 14:56:05,167 - lab_controller - INFO - Shutting down...
-2025-03-10 14:57:54,266 - lab_controller - INFO - Starting lab automation system
-2025-03-10 14:57:57,755 - lab_controller - INFO - New sequence detected
-2025-03-10 14:57:57,863 - lab_controller - INFO - Updated DNA volumes
-2025-03-10 14:57:57,863 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0無, -910.0無 remaining
-2025-03-10 14:57:57,863 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0無, -900.0無 remaining
-2025-03-10 14:57:57,863 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0無, -910.0無 remaining
-2025-03-10 14:57:57,863 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0無, -465.0無 remaining
-2025-03-10 14:57:57,864 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0無, -225.0無 remaining
-2025-03-10 14:57:57,864 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0無, -255.0無 remaining
-2025-03-10 14:57:57,864 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0無, 125.0無 remaining
-2025-03-10 14:57:57,864 - lab_controller - INFO - Fragment p1f7 in well B10: used 5.0無, -185.0無 remaining
-2025-03-10 14:57:57,864 - lab_controller - INFO - Fragment p3f0 in well D03: used 5.0無, 165.0無 remaining
-2025-03-10 14:57:57,864 - lab_controller - INFO - Fragment p3f1 in well D04: used 5.0無, 165.0無 remaining
-2025-03-10 14:57:57,864 - lab_controller - INFO - Fragment p3f2 in well D05: used 5.0無, 165.0無 remaining
-2025-03-10 14:57:57,864 - lab_controller - INFO - Fragment p3f3 in well D06: used 5.0無, 165.0無 remaining
-2025-03-10 14:57:57,864 - lab_controller - INFO - Fragment p3f4 in well D07: used 5.0無, -245.0無 remaining
-2025-03-10 14:57:57,865 - lab_controller - INFO - Fragment p3f5 in well D08: used 5.0無, -65.0無 remaining
-2025-03-10 14:57:57,865 - lab_controller - INFO - Fragment p3f6 in well D09: used 5.0無, -190.0無 remaining
-2025-03-10 14:57:57,865 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0無, 115.0無 remaining
-2025-03-10 14:57:57,865 - lab_controller - INFO - Fragment p5f0 in well F03: used 5.0無, 165.0無 remaining
-2025-03-10 14:57:57,865 - lab_controller - INFO - Fragment p5f1 in well F04: used 5.0無, 165.0無 remaining
-2025-03-10 14:57:57,865 - lab_controller - INFO - Fragment p5f2 in well F05: used 5.0無, 165.0無 remaining
-2025-03-10 14:57:57,865 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0無, 160.0無 remaining
-2025-03-10 14:57:57,865 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0無, -60.0無 remaining
-2025-03-10 14:57:57,865 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0無, -260.0無 remaining
-2025-03-10 14:57:57,865 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0無, -185.0無 remaining
-2025-03-10 14:57:57,866 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0無, -155.0無 remaining
-2025-03-10 14:57:57,866 - lab_controller - INFO - Updated reagent volumes
-2025-03-10 14:57:57,866 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1350.0無 remaining
-2025-03-10 14:57:57,866 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1360.0無 remaining
-2025-03-10 14:57:57,866 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1370.0無 remaining
-2025-03-10 14:57:57,866 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -17945.0無 remaining
-2025-03-10 14:57:57,866 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -17990.0無 remaining
-2025-03-10 14:57:57,866 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -18035.0無 remaining
-2025-03-10 14:57:57,866 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1350.0無 remaining
-2025-03-10 14:57:57,866 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1360.0無 remaining
-2025-03-10 14:57:57,867 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1370.0無 remaining
-2025-03-10 14:57:57,867 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -8780.0無 remaining
-2025-03-10 14:57:57,867 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -8840.0無 remaining
-2025-03-10 14:57:57,867 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -8900.0無 remaining
-2025-03-10 14:57:57,867 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -5265.099999999985無 remaining
-2025-03-10 14:57:57,867 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -5291.759999999985無 remaining
-2025-03-10 14:57:57,867 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -5318.419999999985無 remaining
-2025-03-10 14:57:57,867 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -11534.900000000025無 remaining
-2025-03-10 14:57:57,867 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -11588.240000000025無 remaining
-2025-03-10 14:57:57,867 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -11641.580000000025無 remaining
-2025-03-10 14:57:57,906 - lab_controller - INFO - Generated worklist and plate layout
-2025-03-10 14:57:57,908 - lab_controller - INFO - Started evagreen monitoring
-2025-03-10 14:58:03,108 - lab_automation - INFO - Evagreen data updated, processing assemblies...
-2025-03-10 14:58:03,494 - lab_automation - INFO - Initialized PlateDataHandler:
-2025-03-10 14:58:03,494 - lab_automation - INFO -   data_dir: data
-2025-03-10 14:58:03,494 - lab_automation - INFO -   input_file: raw_plate_data.csv
-2025-03-10 14:58:03,494 - lab_automation - INFO -   output_file: phenotype.json
-2025-03-10 14:58:03,495 - lab_controller - INFO - Started plate data monitoring
-2025-03-10 14:58:03,495 - lab_automation - INFO - Transitioned to plate monitoring
-2025-03-10 14:58:42,454 - lab_automation - INFO - Plate data modified, processing...
-2025-03-10 14:58:42,498 - lab_automation - ERROR - Error processing/transferring data: Command '['python', 'process_plate_data.py', '--input', 'data\\raw_plate_data.csv', '--output', 'data\\phenotype.json', '--sequence_file', 'data\\sequence_query.txt']' returned non-zero exit status 1.
-2025-03-10 14:58:50,684 - lab_controller - INFO - Shutting down...
-2025-03-10 15:00:51,845 - lab_controller - INFO - Starting lab automation system
-2025-03-10 15:00:55,827 - lab_controller - INFO - New sequence detected
-2025-03-10 15:00:55,953 - lab_controller - INFO - Updated DNA volumes
-2025-03-10 15:00:55,953 - lab_controller - INFO - Fragment p1f0 in well B03: used 5.0無, -915.0無 remaining
-2025-03-10 15:00:55,953 - lab_controller - INFO - Fragment p1f1 in well B04: used 5.0無, -905.0無 remaining
-2025-03-10 15:00:55,953 - lab_controller - INFO - Fragment p1f2 in well B05: used 5.0無, -915.0無 remaining
-2025-03-10 15:00:55,953 - lab_controller - INFO - Fragment p1f3 in well B06: used 5.0無, -470.0無 remaining
-2025-03-10 15:00:55,954 - lab_controller - INFO - Fragment p1f4 in well B07: used 5.0無, -230.0無 remaining
-2025-03-10 15:00:55,954 - lab_controller - INFO - Fragment p1f5 in well B08: used 5.0無, -260.0無 remaining
-2025-03-10 15:00:55,954 - lab_controller - INFO - Fragment p1f6 in well B09: used 5.0無, 120.0無 remaining
-2025-03-10 15:00:55,954 - lab_controller - INFO - Fragment p1f7 in well B10: used 5.0無, -190.0無 remaining
-2025-03-10 15:00:55,954 - lab_controller - INFO - Fragment p3f0 in well D03: used 5.0無, 160.0無 remaining
-2025-03-10 15:00:55,954 - lab_controller - INFO - Fragment p3f1 in well D04: used 5.0無, 160.0無 remaining
-2025-03-10 15:00:55,954 - lab_controller - INFO - Fragment p3f2 in well D05: used 5.0無, 160.0無 remaining
-2025-03-10 15:00:55,954 - lab_controller - INFO - Fragment p3f3 in well D06: used 5.0無, 160.0無 remaining
-2025-03-10 15:00:55,954 - lab_controller - INFO - Fragment p3f4 in well D07: used 5.0無, -250.0無 remaining
-2025-03-10 15:00:55,955 - lab_controller - INFO - Fragment p3f5 in well D08: used 5.0無, -70.0無 remaining
-2025-03-10 15:00:55,955 - lab_controller - INFO - Fragment p3f6 in well D09: used 5.0無, -195.0無 remaining
-2025-03-10 15:00:55,955 - lab_controller - INFO - Fragment p3f7 in well D10: used 5.0無, 110.0無 remaining
-2025-03-10 15:00:55,955 - lab_controller - INFO - Fragment p5f0 in well F03: used 5.0無, 160.0無 remaining
-2025-03-10 15:00:55,955 - lab_controller - INFO - Fragment p5f1 in well F04: used 5.0無, 160.0無 remaining
-2025-03-10 15:00:55,955 - lab_controller - INFO - Fragment p5f2 in well F05: used 5.0無, 160.0無 remaining
-2025-03-10 15:00:55,955 - lab_controller - INFO - Fragment p5f3 in well F06: used 5.0無, 155.0無 remaining
-2025-03-10 15:00:55,955 - lab_controller - INFO - Fragment p5f4 in well F07: used 5.0無, -65.0無 remaining
-2025-03-10 15:00:55,955 - lab_controller - INFO - Fragment p5f5 in well F08: used 5.0無, -265.0無 remaining
-2025-03-10 15:00:55,955 - lab_controller - INFO - Fragment p5f6 in well F09: used 5.0無, -190.0無 remaining
-2025-03-10 15:00:55,956 - lab_controller - INFO - Fragment p5f7 in well F10: used 5.0無, -160.0無 remaining
-2025-03-10 15:00:55,956 - lab_controller - INFO - Updated reagent volumes
-2025-03-10 15:00:55,956 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1380.0無 remaining
-2025-03-10 15:00:55,956 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1390.0無 remaining
-2025-03-10 15:00:55,956 - lab_controller - INFO - Reagent GGMM in well D06: used 10.0無, -1400.0無 remaining
-2025-03-10 15:00:55,956 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -18080.0無 remaining
-2025-03-10 15:00:55,956 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -18125.0無 remaining
-2025-03-10 15:00:55,956 - lab_controller - INFO - Reagent Primers in well D07: used 45.0無, -18170.0無 remaining
-2025-03-10 15:00:55,956 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1380.0無 remaining
-2025-03-10 15:00:55,957 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1390.0無 remaining
-2025-03-10 15:00:55,957 - lab_controller - INFO - Reagent PCRMM in well D08: used 10.0無, -1400.0無 remaining
-2025-03-10 15:00:55,957 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -8960.0無 remaining
-2025-03-10 15:00:55,957 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -9020.0無 remaining
-2025-03-10 15:00:55,957 - lab_controller - INFO - Reagent Water in well E08: used 60.0無, -9080.0無 remaining
-2025-03-10 15:00:55,957 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -5345.0799999999845無 remaining
-2025-03-10 15:00:55,957 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -5371.739999999984無 remaining
-2025-03-10 15:00:55,957 - lab_controller - INFO - Reagent E. coli extract in well E06: used 26.66無, -5398.399999999984無 remaining
-2025-03-10 15:00:55,957 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -11694.920000000026無 remaining
-2025-03-10 15:00:55,957 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -11748.260000000026無 remaining
-2025-03-10 15:00:55,958 - lab_controller - INFO - Reagent TXTLMM in well E07: used 53.34無, -11801.600000000026無 remaining
-2025-03-10 15:00:56,012 - lab_controller - INFO - Generated worklist and plate layout
-2025-03-10 15:00:56,013 - lab_controller - INFO - Started evagreen monitoring
-2025-03-10 15:00:58,804 - lab_automation - INFO - Evagreen data updated, processing assemblies...
-2025-03-10 15:00:59,182 - lab_automation - INFO - Initialized PlateDataHandler:
-2025-03-10 15:00:59,183 - lab_automation - INFO -   data_dir: data
-2025-03-10 15:00:59,183 - lab_automation - INFO -   input_file: raw_plate_data.csv
-2025-03-10 15:00:59,183 - lab_automation - INFO -   output_file: phenotype.json
-2025-03-10 15:00:59,184 - lab_controller - INFO - Started plate data monitoring
-2025-03-10 15:00:59,184 - lab_automation - INFO - Transitioned to plate monitoring
-2025-03-10 15:01:01,539 - lab_automation - INFO - Plate data modified, processing...
-2025-03-10 15:01:23,916 - data_transfer - ERROR - Connection failed: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
-2025-03-10 15:01:23,916 - lab_automation - ERROR - Failed to connect to GPU server
-2025-03-10 15:01:41,759 - lab_controller - INFO - Shutting down...
