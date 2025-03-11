@@ -1,11 +1,22 @@
-485,535
+Read 1:494,512
 	1	2	3	4	5	6	7	8	9	10	11	12
-A												15	485,535
-B													485,535
-C												18	485,535
-D													485,535
-E												18	485,535
-F													485,535
-G													485,535
-H													485,535
+A	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW			Read 1:494,512
+B													Read 1:494,512
+C	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW			Read 1:494,512
+D													Read 1:494,512
+E	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW			Read 1:494,512
+F													Read 1:494,512
+G													Read 1:494,512
+H													Read 1:494,512
+
+Mean RFU [Read 2:272,445]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A			Mean RFU [Read 2:272,445]
+B													Mean RFU [Read 2:272,445]
+C	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A			Mean RFU [Read 2:272,445]
+D													Mean RFU [Read 2:272,445]
+E	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A			Mean RFU [Read 2:272,445]
+F													Mean RFU [Read 2:272,445]
+G													Mean RFU [Read 2:272,445]
+H													Mean RFU [Read 2:272,445]
 
