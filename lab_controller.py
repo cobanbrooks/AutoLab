@@ -51,9 +51,9 @@ class PlateDataHandler(FileSystemEventHandler):
             # Process the data
             input_path = os.path.join(self.data_dir, self.input_filename)
             output_path = os.path.join(self.data_dir, self.output_filename)
-            
+            python_path = sys.executable
             subprocess.run([
-                'python', 'process_plate_data.py',
+                python_path, 'process_plate_data.py',
                 '--input', input_path,
                 '--output', output_path,
                 '--sequence_file', os.path.join(self.data_dir,'sequence_query.txt')
@@ -101,8 +101,9 @@ class EvagreenHandler(FileSystemEventHandler):
         if event.src_path.endswith('raw_evagreen_data.csv'):
             self.logger.info("Evagreen data updated, processing assemblies...")
             try:
-                # Run the assembly update script
-                subprocess.run(['python', 'update_valid_assemblies.py'], check=True)
+                # Use the current Python interpreter (from your conda environment)
+                python_path = sys.executable
+                subprocess.run([python_path, 'update_valid_assemblies.py'], check=True)
                 
                 # Stop evagreen monitoring and start plate monitoring
                 if self.controller.evagreen_observer:
@@ -537,8 +538,9 @@ class LabController:
         """Generate worklist and plate layout files"""
         try:
             # Generate pipetting worklist
+            python_path = sys.executable
             subprocess.run([
-                'python', 'seq_to_pipetting_steps.py',
+                python_path, 'seq_to_pipetting_steps.py',
                 os.path.join(self.config['paths']['data_dir'], 'sequence_query.txt'),
                 os.path.join(self.config['paths']['data_dir'], 'sequence_segments.csv'), 
                 self.config['paths']['worklists_dir']
@@ -583,8 +585,9 @@ class LabController:
                 )
             
             # Generate plate layout
+            python_path = sys.executable
             subprocess.run([
-                'python', 'generate_assay_plate.py',
+                python_path, 'generate_assay_plate.py',
                 os.path.join(self.config['paths']['data_dir'], 'sequence_query.txt'),
                 os.path.join(self.config['paths']['data_dir'], 'sequence_segments.csv'), 
                 'plate_layout.json'
