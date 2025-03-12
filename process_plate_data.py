@@ -24,7 +24,7 @@ def normalize_plate_data(input_file, output_file, sequence_file):
         if line.startswith('Read 1:494,512'):
             current_section = 'fluorescein'
             continue
-        elif line.startswith('Mean RFU'):
+        elif line.startswith('Mean V'):
             current_section = 'rfu'
             continue
         
@@ -35,8 +35,8 @@ def normalize_plate_data(input_file, output_file, sequence_file):
         # Remove section labels from end of lines
         if 'Read 1:494,512' in line:
             line = line.split('Read 1:494,512')[0]
-        elif 'Mean RFU' in line:
-            line = line.split('Mean RFU')[0]
+        elif 'Mean V' in line:
+            line = line.split('Mean V')[0]
             
         # Split by tabs
         parts = line.split('\t')
@@ -78,15 +78,33 @@ def normalize_plate_data(input_file, output_file, sequence_file):
                 norm_constant = fluor_value / col_averages[col]
                 normalized_data[well] = rfu_value / norm_constant
     
+    # Get negative control values from column 10
+    glucose_control = normalized_data.get("A10")
+    xylose_control = normalized_data.get("C10")
+    mannose_control = normalized_data.get("E10")
+    
+    # Subtract negative controls from respective rows
+    background_subtracted = {}
+    for well, value in normalized_data.items():
+        row = well[0]
+        if row == 'A' and glucose_control is not None:
+            background_subtracted[well] = max(0, value - glucose_control)
+        elif row == 'C' and xylose_control is not None:
+            background_subtracted[well] = max(0, value - xylose_control)
+        elif row == 'E' and mannose_control is not None:
+            background_subtracted[well] = max(0, value - mannose_control)
+        else:
+            background_subtracted[well] = value
+    
     # Group replicates and calculate statistics
     replicate_stats = {}
-    cols = sorted(set(well[1:] for well in normalized_data.keys()))
+    cols = sorted(set(well[1:] for well in background_subtracted.keys()))
     
     for col in cols:
-        # Get normalized values for this column's replicates (rows A, C, E)
-        replicates = [normalized_data.get(f"A{col}"),
-                     normalized_data.get(f"C{col}"),
-                     normalized_data.get(f"E{col}")]
+        # Get background-subtracted values for this column's replicates (rows A, C, E)
+        replicates = [background_subtracted.get(f"A{col}"),
+                     background_subtracted.get(f"C{col}"),
+                     background_subtracted.get(f"E{col}")]
         replicates = [x for x in replicates if x is not None]  # Remove None values
         
         if len(replicates) >= 2:  # Need at least 2 values for statistics
@@ -134,7 +152,7 @@ def normalize_plate_data(input_file, output_file, sequence_file):
             "valid": existing_data.get(seq, {}).get("valid", True)
         }
     
-    # Create output DataFrames for normalized values
+    # Create output DataFrames for background-subtracted normalized values
     rows = 'ABCDEFGH'
     cols = range(1, 13)
     output_data = []
@@ -142,7 +160,7 @@ def normalize_plate_data(input_file, output_file, sequence_file):
         row_data = []
         for col in cols:
             well = f"{row}{col}"
-            row_data.append(normalized_data.get(well, None))
+            row_data.append(background_subtracted.get(well, None))
         output_data.append(row_data)
     
     df_normalized = pd.DataFrame(output_data, 
