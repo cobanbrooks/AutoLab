@@ -1,22 +1,22 @@
 Read 1:494,512
 	1	2	3	4	5	6	7	8	9	10	11	12
-A	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW			Read 1:494,512
+A	80	80	80	80	80	80	80	80	80	80			Read 1:494,512
 B													Read 1:494,512
-C	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW			Read 1:494,512
+C	80	80	80	80	80	80	80	80	80	80			Read 1:494,512
 D													Read 1:494,512
-E	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW	OVRFLW			Read 1:494,512
+E	80	80	80	80	80	80	80	80	80	80			Read 1:494,512
 F													Read 1:494,512
 G													Read 1:494,512
 H													Read 1:494,512
 
-Mean RFU [Read 2:272,445]
+Mean V [Read 2:272,445]
 	1	2	3	4	5	6	7	8	9	10	11	12
-A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A			Mean RFU [Read 2:272,445]
-B													Mean RFU [Read 2:272,445]
-C	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A			Mean RFU [Read 2:272,445]
-D													Mean RFU [Read 2:272,445]
-E	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A	#N/A			Mean RFU [Read 2:272,445]
-F													Mean RFU [Read 2:272,445]
-G													Mean RFU [Read 2:272,445]
-H													Mean RFU [Read 2:272,445]
+A	100	100	100	100	100	100	100	100	100	50			Mean V [Read 2:272,445]
+B													Mean V [Read 2:272,445]
+C	100	100	100	100	100	100	100	100	100	50			Mean V [Read 2:272,445]
+D													Mean V [Read 2:272,445]
+E	100	100	100	100	100	100	100	100	100	50			Mean V [Read 2:272,445]
+F													Mean V [Read 2:272,445]
+G													Mean V [Read 2:272,445]
+H													Mean V [Read 2:272,445]
 
