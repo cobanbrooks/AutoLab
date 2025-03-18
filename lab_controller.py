@@ -535,7 +535,7 @@ class LabController:
         self.status = LabState.IDLE
         self.sequence_observer = None
         self.plate_observer = None
-        self.evagreen_observer = None
+        # self.evagreen_observer = None  # Comment out evagreen observer
 
     class SequenceHandler(FileSystemEventHandler):
         def __init__(self, controller):
@@ -550,8 +550,11 @@ class LabController:
                 self.controller.logger.info("New sequence detected")
                 self.controller.status = LabState.SEQUENCE_RECEIVED
                 if self.controller.generate_lab_files():
-                    self.controller.status = LabState.MONITORING_EVAGREEN
-                    self.controller.start_evagreen_monitoring()
+                    # self.controller.status = LabState.MONITORING_EVAGREEN
+                    # self.controller.start_evagreen_monitoring()
+                    self.controller.status = LabState.EXPERIMENTING  # Changed status
+                    self.controller.start_plate_monitoring()  # Start plate monitoring directly
+                    self.controller.logger.info("Skipping evagreen monitoring, started plate monitoring")
 
     def start_sequence_monitoring(self):
         handler = self.SequenceHandler(self)
@@ -579,11 +582,16 @@ class LabController:
 
     def start_evagreen_monitoring(self):
         """Start monitoring evagreen_monitor.json for changes"""
-        handler = EvagreenHandler(self)
-        self.evagreen_observer = Observer()
-        self.evagreen_observer.schedule(handler, self.config['paths']['data_dir'])
-        self.evagreen_observer.start()
-        self.logger.info("Started evagreen monitoring")
+        # Comment out or keep as a placeholder that now starts plate monitoring
+        self.logger.info("Evagreen monitoring disabled, starting plate monitoring directly")
+        self.start_plate_monitoring()
+        
+        # Original code - commented out:
+        # handler = EvagreenHandler(self)
+        # self.evagreen_observer = Observer()
+        # self.evagreen_observer.schedule(handler, self.config['paths']['data_dir'])
+        # self.evagreen_observer.start()
+        # self.logger.info("Started evagreen monitoring")
 
     def generate_lab_files(self):
         """Generate worklist and plate layout files"""
@@ -663,9 +671,9 @@ class LabController:
             if self.sequence_observer:
                 self.sequence_observer.stop()
                 self.sequence_observer.join()
-            if self.evagreen_observer:
-                self.evagreen_observer.stop()
-                self.evagreen_observer.join()
+            # if self.evagreen_observer:  # Comment out evagreen observer cleanup
+            #     self.evagreen_observer.stop()
+            #     self.evagreen_observer.join()
             if self.plate_observer:
                 self.plate_observer.stop()
                 self.plate_observer.join()
